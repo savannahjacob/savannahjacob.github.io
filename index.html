@@ -91,27 +91,6 @@
             letter-spacing: 1px;
         }
         
-        .section-title {
-            position: relative;
-            margin-bottom: 2.5rem;
-            font-weight: 700;
-        }
-        
-        .section-title:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -10px;
-            width: 50px;
-            height: 4px;
-            background: var(--accent);
-            border-radius: 2px;
-        }
-        
-        .section-title.text-center:after {
-            left: 50%;
-            transform: translateX(-50%);
-        }
         
         .btn-primary {
             background-color: var(--accent);
@@ -461,6 +440,153 @@
                 flex: 0 0 auto;
             }
         }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+        }
+        
+        .country-btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            background-color: #ffffff;
+            border: 2px solid #e0e0e0;
+            cursor: pointer;
+            width: 150px;
+            height: 120px;
+        }
+        
+        .country-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            border-color: #3498db;
+        }
+        
+        .country-btn.active {
+            background-color: #e8f4fc;
+            border-color: #3498db;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+        }
+        
+        .country-logo {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        
+        .country-name {
+            font-weight: 600;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .universities-container {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            min-height: 250px;
+            position: relative;
+        }
+        
+        .university-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+            margin: 10px;
+            transition: all 0.3s ease;
+            height: 180px;
+        }
+        
+        .university-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .university-logo {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
+            object-fit: contain;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .university-logo img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        
+        .university-name {
+            font-weight: 600;
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        .carousel-control-prev, .carousel-control-next {
+            width: 40px;
+            height: 40px;
+            background-color: #3498db;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.8;
+        }
+        
+        .carousel-control-prev {
+            left: -20px;
+        }
+        
+        .carousel-control-next {
+            right: -20px;
+        }
+        
+        .carousel-control-prev:hover, .carousel-control-next:hover {
+            opacity: 1;
+        }
+        
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            width: 20px;
+            height: 20px;
+        }
+        
+        .no-universities {
+            text-align: center;
+            padding: 50px;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .country-btn {
+                width: 120px;
+                height: 100px;
+                padding: 10px;
+            }
+            
+            .country-logo {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .carousel-control-prev {
+                left: -10px;
+            }
+            
+            .carousel-control-next {
+                right: -10px;
+            }
+        }
     </style>
 </head>
 <body class="" style="">
@@ -638,419 +764,239 @@
         </div>
     </section>
 
-    <!-- Participating Institutions -->
-    <section class="py-5 bg-light" id="institutions">
+   
+
+   <section class="participating-institutions">
         <div class="container py-5">
-            <h2 class="section-title text-center">Participating Institutions</h2>
-            <p class="text-center mb-5">Meet representatives from these prestigious universities and colleges from around the world</p>
+            <h2 class="section-title">Participating Institutions</h2>
             
-            <!-- Country Filter -->
-            <div class="country-filter">
-                <button class="country-btn" data-country="all">
-                    <span class="country-flag">🌎</span> All Countries
-                </button>
-                <button class="country-btn" data-country="uk">
-                    <span class="country-flag">🇬🇧</span> UK
-                </button>
-                <button class="country-btn" data-country="usa">
-                    <span class="country-flag">🇺🇸</span> USA
-                </button>
-                <button class="country-btn" data-country="canada">
-                    <span class="country-flag">🇨🇦</span> Canada
-                </button>
-                <button class="country-btn active" data-country="australia">
-                    <span class="country-flag">🇦🇺</span> Australia
-                </button>
-                <button class="country-btn" data-country="newzealand">
-                    <span class="country-flag">🇳🇿</span> New Zealand
-                </button>
-                <button class="country-btn" data-country="ireland">
-                    <span class="country-flag">🇮🇪</span> Ireland
-                </button>
-                <button class="country-btn" data-country="germany">
-                    <span class="country-flag">🇩🇪</span> Germany
-                </button>
-            </div>
-            
-            <!-- Institutions Grid -->
-            <div class="row g-4" id="institutionsGrid">
-                <!-- UK Universities -->
-                <div class="col-md-6 col-lg-4 institution-item" data-country="uk" style="display: none;">
-                    <div class="institution-card shadow-sm">
-                        <div class="institution-logo">
-                            <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="60" fill="#003C71"></rect>
-                                <text x="50" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">University of</text>
-                                <text x="50" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">MANCHESTER</text>
+            <div class="country-buttons-container">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <div class="country-btn active" data-country="usa">
+                            <svg class="country-logo" viewBox="0 0 512 512">
+                                <rect width="512" height="512" fill="#f0f0f0"></rect>
+                                <g fill="#d80027">
+                                    <rect width="512" height="39.4" y="39.4"></rect>
+                                    <rect width="512" height="39.4" y="118.2"></rect>
+                                    <rect width="512" height="39.4" y="197"></rect>
+                                    <rect width="512" height="39.4" y="275.8"></rect>
+                                    <rect width="512" height="39.4" y="354.6"></rect>
+                                    <rect width="512" height="39.4" y="433.4"></rect>
+                                </g>
+                                <rect width="275.8" height="275.8" fill="#2e3560"></rect>
+                                <g fill="#f0f0f0">
+                                    <circle cx="35" cy="35" r="10"></circle>
+                                    <circle cx="75" cy="35" r="10"></circle>
+                                    <circle cx="115" cy="35" r="10"></circle>
+                                    <circle cx="155" cy="35" r="10"></circle>
+                                    <circle cx="195" cy="35" r="10"></circle>
+                                    <circle cx="235" cy="35" r="10"></circle>
+                                    <circle cx="55" cy="65" r="10"></circle>
+                                    <circle cx="95" cy="65" r="10"></circle>
+                                    <circle cx="135" cy="65" r="10"></circle>
+                                    <circle cx="175" cy="65" r="10"></circle>
+                                    <circle cx="215" cy="65" r="10"></circle>
+                                    <circle cx="255" cy="65" r="10"></circle>
+                                    <circle cx="35" cy="95" r="10"></circle>
+                                    <circle cx="75" cy="95" r="10"></circle>
+                                    <circle cx="115" cy="95" r="10"></circle>
+                                    <circle cx="155" cy="95" r="10"></circle>
+                                    <circle cx="195" cy="95" r="10"></circle>
+                                    <circle cx="235" cy="95" r="10"></circle>
+                                    <circle cx="55" cy="125" r="10"></circle>
+                                    <circle cx="95" cy="125" r="10"></circle>
+                                    <circle cx="135" cy="125" r="10"></circle>
+                                    <circle cx="175" cy="125" r="10"></circle>
+                                    <circle cx="215" cy="125" r="10"></circle>
+                                    <circle cx="255" cy="125" r="10"></circle>
+                                    <circle cx="35" cy="155" r="10"></circle>
+                                    <circle cx="75" cy="155" r="10"></circle>
+                                    <circle cx="115" cy="155" r="10"></circle>
+                                    <circle cx="155" cy="155" r="10"></circle>
+                                    <circle cx="195" cy="155" r="10"></circle>
+                                    <circle cx="235" cy="155" r="10"></circle>
+                                    <circle cx="55" cy="185" r="10"></circle>
+                                    <circle cx="95" cy="185" r="10"></circle>
+                                    <circle cx="135" cy="185" r="10"></circle>
+                                    <circle cx="175" cy="185" r="10"></circle>
+                                    <circle cx="215" cy="185" r="10"></circle>
+                                    <circle cx="255" cy="185" r="10"></circle>
+                                    <circle cx="35" cy="215" r="10"></circle>
+                                    <circle cx="75" cy="215" r="10"></circle>
+                                    <circle cx="115" cy="215" r="10"></circle>
+                                    <circle cx="155" cy="215" r="10"></circle>
+                                    <circle cx="195" cy="215" r="10"></circle>
+                                    <circle cx="235" cy="215" r="10"></circle>
+                                    <circle cx="55" cy="245" r="10"></circle>
+                                    <circle cx="95" cy="245" r="10"></circle>
+                                    <circle cx="135" cy="245" r="10"></circle>
+                                    <circle cx="175" cy="245" r="10"></circle>
+                                    <circle cx="215" cy="245" r="10"></circle>
+                                    <circle cx="255" cy="245" r="10"></circle>
+                                </g>
                             </svg>
-                        </div>
-                        <div class="institution-details">
-                            <h3 class="institution-name">University of Manchester</h3>
-                            <div class="institution-location">
-                                <i class="fas fa-map-marker-alt"></i> Manchester, United Kingdom
-                            </div>
-                            <div class="institution-programs">
-                                <strong>Popular Programs:</strong>
-                                <ul class="mb-0 ps-3">
-                                    <li>Business &amp; Management</li>
-                                    <li>Engineering &amp; Technology</li>
-                                    <li>Computer Science</li>
-                                </ul>
-                            </div>
-                            <div class="institution-footer mt-3">
-                                <span class="institution-tag">Top 50 Global</span>
-                                <span class="institution-tag">Scholarships</span>
-                            </div>
+                            <div class="country-name">United States</div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 institution-item" data-country="uk" style="display: none;">
-                    <div class="institution-card shadow-sm">
-                        <div class="institution-logo">
-                            <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="60" fill="#002147"></rect>
-                                <text x="50" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">University of</text>
-                                <text x="50" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">BIRMINGHAM</text>
+                    <div class="col-auto">
+                        <div class="country-btn" data-country="uk">
+                            <svg class="country-logo" viewBox="0 0 512 512">
+                                <rect width="512" height="512" fill="#f0f0f0"></rect>
+                                <path fill="#0052b4" d="M512,512H0V0H512z M300.5,256L512,68V0H447l-196,132.8L54.5,0H0v68L211.5,256L0,444v68h54.5l196.5-132.8L447,512h65v-68L300.5,256z"></path>
+                                <path fill="#d80027" d="M512,0v40.3L322.8,166.6h66.7L512,40.3V0H512z M189.2,166.6L0,40.3V0h66.7L256,126.3h-66.8V166.6z M0,471.7l189.2-126.3h-66.7L0,471.7V512h66.7L256,385.7h-66.8V471.7z M445.2,385.7L512,430.3V512h-66.7L256,385.7h66.8V385.7H445.2z"></path>
+                                <path fill="#d80027" d="M0,0.1h512v512H0V0.1z M512,221.5H291.8V0.1h-71.7v221.4H0v71.7h220.1v221.4h71.7V293.2H512V221.5z"></path>
                             </svg>
-                        </div>
-                        <div class="institution-details">
-                            <h3 class="institution-name">University of Birmingham</h3>
-                            <div class="institution-location">
-                                <i class="fas fa-map-marker-alt"></i> Birmingham, United Kingdom
-                            </div>
-                            <div class="institution-programs">
-                                <strong>Popular Programs:</strong>
-                                <ul class="mb-0 ps-3">
-                                    <li>Medicine &amp; Health Sciences</li>
-                                    <li>Business &amp; Economics</li>
-                                    <li>Social Sciences</li>
-                                </ul>
-                            </div>
-                            <div class="institution-footer mt-3">
-                                <span class="institution-tag">Russell Group</span>
-                                <span class="institution-tag">Work Placement</span>
-                            </div>
+                            <div class="country-name">United Kingdom</div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 institution-item" data-country="uk" style="display: none;">
-                    <div class="institution-card shadow-sm">
-                        <div class="institution-logo">
-                            <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="60" fill="#4B2E83"></rect>
-                                <text x="50" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">University of</text>
-                                <text x="50" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">LEEDS</text>
+                    <div class="col-auto">
+                        <div class="country-btn" data-country="germany">
+                            <svg class="country-logo" viewBox="0 0 512 512">
+                                <rect width="512" height="170.7" y="0" fill="#000000"></rect>
+                                <rect width="512" height="170.7" y="170.7" fill="#dd0000"></rect>
+                                <rect width="512" height="170.7" y="341.3" fill="#ffce00"></rect>
                             </svg>
-                        </div>
-                        <div class="institution-details">
-                            <h3 class="institution-name">University of Leeds</h3>
-                            <div class="institution-location">
-                                <i class="fas fa-map-marker-alt"></i> Leeds, United Kingdom
-                            </div>
-                            <div class="institution-programs">
-                                <strong>Popular Programs:</strong>
-                                <ul class="mb-0 ps-3">
-                                    <li>Arts &amp; Humanities</li>
-                                    <li>Engineering &amp; Computing</li>
-                                    <li>Business &amp; Law</li>
-                                </ul>
-                            </div>
-                            <div class="institution-footer mt-3">
-                                <span class="institution-tag">Top 100</span>
-                                <span class="institution-tag">Research Excellence</span>
-                            </div>
+                            <div class="country-name">Germany</div>
                         </div>
                     </div>
-                </div>
-                
-                <!-- USA Universities -->
-                <div class="col-md-6 col-lg-4 institution-item" data-country="usa" style="display: none;">
-                    <div class="institution-card shadow-sm">
-                        <div class="institution-logo">
-                            <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="60" fill="#C41230"></rect>
-                                <text x="50" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Arizona State</text>
-                                <text x="50" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">UNIVERSITY</text>
+                    <div class="col-auto">
+                        <div class="country-btn" data-country="france">
+                            <svg class="country-logo" viewBox="0 0 512 512">
+                                <rect width="170.7" height="512" x="0" fill="#0052b4"></rect>
+                                <rect width="170.7" height="512" x="170.7" fill="#f0f0f0"></rect>
+                                <rect width="170.7" height="512" x="341.3" fill="#d80027"></rect>
                             </svg>
-                        </div>
-                        <div class="institution-details">
-                            <h3 class="institution-name">Arizona State University</h3>
-                            <div class="institution-location">
-                                <i class="fas fa-map-marker-alt"></i> Arizona, USA
-                            </div>
-                            <div class="institution-programs">
-                                <strong>Popular Programs:</strong>
-                                <ul class="mb-0 ps-3">
-                                    <li>Business &amp; Management</li>
-                                    <li>Engineering &amp; Innovation</li>
-                                    <li>Computer Science &amp; IT</li>
-                                </ul>
-                            </div>
-                            <div class="institution-footer mt-3">
-                                <span class="institution-tag">Innovation Leader</span>
-                                <span class="institution-tag">OPT Extension</span>
-                            </div>
+                            <div class="country-name">France</div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 institution-item" data-country="usa" style="display: none;">
-                    <div class="institution-card shadow-sm">
-                        <div class="institution-logo">
-                            <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="60" fill="#00205B"></rect>
-                                <text x="50" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Northeastern</text>
-                                <text x="50" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">UNIVERSITY</text>
+                    <div class="col-auto">
+                        <div class="country-btn" data-country="australia">
+                            <svg class="country-logo" viewBox="0 0 512 512">
+                                <rect width="512" height="512" fill="#0052b4"></rect>
+                                <g fill="#f0f0f0">
+                                    <path d="M256,0 L256,256 L0,256 L0,0 L256,0 z"></path>
+                                    <polygon points="160,128 170,153 196,153 175,169 185,194 160,178 135,194 145,169 124,153 150,153"></polygon>
+                                    <polygon points="85,85 93,100 110,100 96,110 104,125 85,115 66,125 74,110 60,100 77,100"></polygon>
+                                    <polygon points="85,256-85 93,256-70 110,256-70 96,256-60 104,256-45 85,256-55 66,256-45 74,256-60 60,256-70 77,256-70"></polygon>
+                                    <polygon points="256-85,256-85 256-93,256-70 256-110,256-70 256-96,256-60 256-104,256-45 256-85,256-55 256-66,256-45 256-74,256-60 256-60,256-70 256-77,256-70"></polygon>
+                                    <path d="M382,199 L364,199 L364,217 L346,217 L346,235 L364,235 L364,253 L382,253 L382,235 L400,235 L400,217 L382,217 z"></path>
+                                    <path d="M419,273 L410,259 L401,273 L419,273 z"></path>
+                                    <path d="M401,239 L410,253 L419,239 L401,239 z"></path>
+                                    <path d="M444,248 L430,239 L430,257 L444,248 z"></path>
+                                    <path d="M376,248 L390,257 L390,239 L376,248 z"></path>
+                                    <path d="M436,277 L427,263 L418,277 L436,277 z"></path>
+                                    <path d="M418,219 L427,233 L436,219 L418,219 z"></path>
+                                    <path d="M457,248 L443,239 L443,257 L457,248 z"></path>
+                                    <path d="M363,248 L377,257 L377,239 L363,248 z"></path>
+                                </g>
+                                <g fill="#d80027">
+                                    <path d="M256,0 L256,256 L0,256 L0,0 L256,0 z M144,0 L112,0 L112,112 L0,112 L0,144 L112,144 L112,256 L144,256 L144,144 L256,144 L256,112 L144,112 z"></path>
+                                    <path d="M0,0 L0,16 L208,144 L256,144 L256,112 L48,0 L0,0 z"></path>
+                                    <path d="M0,256 L0,240 L208,112 L256,112 L256,144 L48,256 L0,256 z"></path>
+                                    <path d="M0,0 L0,16 L208,144 L256,144 L256,112 L48,0 L0,0 z"></path>
+                                    <path d="M0,256 L0,240 L208,112 L256,112 L256,144 L48,256 L0,256 z"></path>
+                                    <path d="M0,0 L0,16 L208,144 L256,144 L256,112 L48,0 L0,0 z"></path>
+                                    <path d="M0,256 L0,240 L208,112 L256,112 L256,144 L48,256 L0,256 z"></path>
+                                    <path d="M0,0 L0,16 L208,144 L256,144 L256,112 L48,0 L0,0 z"></path>
+                                    <path d="M0,256 L0,240 L208,112 L256,112 L256,144 L48,256 L0,256 z"></path>
+                                </g>
                             </svg>
-                        </div>
-                        <div class="institution-details">
-                            <h3 class="institution-name">Northeastern University</h3>
-                            <div class="institution-location">
-                                <i class="fas fa-map-marker-alt"></i> Boston, USA
-                            </div>
-                            <div class="institution-programs">
-                                <strong>Popular Programs:</strong>
-                                <ul class="mb-0 ps-3">
-                                    <li>Computer Science</li>
-                                    <li>Business Analytics</li>
-                                    <li>Engineering Management</li>
-                                </ul>
-                            </div>
-                            <div class="institution-footer mt-3">
-                                <span class="institution-tag">Co-op Programs</span>
-                                <span class="institution-tag">STEM Focus</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Canada Universities -->
-                <div class="col-md-6 col-lg-4 institution-item" data-country="canada" style="display: none;">
-                    <div class="institution-card shadow-sm">
-                        <div class="institution-logo">
-                            <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="60" fill="#002A5C"></rect>
-                                <text x="50" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">University of</text>
-                                <text x="50" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">TORONTO</text>
-                            </svg>
-                        </div>
-                        <div class="institution-details">
-                            <h3 class="institution-name">University of Toronto</h3>
-                            <div class="institution-location">
-                                <i class="fas fa-map-marker-alt"></i> Toronto, Canada
-                            </div>
-                            <div class="institution-programs">
-                                <strong>Popular Programs:</strong>
-                                <ul class="mb-0 ps-3">
-                                    <li>Computer Science</li>
-                                    <li>Business &amp; Management</li>
-                                    <li>Engineering &amp; Applied Science</li>
-                                </ul>
-                            </div>
-                            <div class="institution-footer mt-3">
-                                <span class="institution-tag">Top 20 Global</span>
-                                <span class="institution-tag">Research Intensive</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 institution-item" data-country="canada" style="display: none;">
-                    <div class="institution-card shadow-sm">
-                        <div class="institution-logo">
-                            <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="60" fill="#B1040E"></rect>
-                                <text x="50" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">University of</text>
-                                <text x="50" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">CALGARY</text>
-                            </svg>
-                        </div>
-                        <div class="institution-details">
-                            <h3 class="institution-name">University of Calgary</h3>
-                            <div class="institution-location">
-                                <i class="fas fa-map-marker-alt"></i> Calgary, Canada
-                            </div>
-                            <div class="institution-programs">
-                                <strong>Popular Programs:</strong>
-                                <ul class="mb-0 ps-3">
-                                    <li>Engineering &amp; Energy</li>
-                                    <li>Business &amp; Economics</li>
-                                    <li>Environmental Science</li>
-                                </ul>
-                            </div>
-                            <div class="institution-footer mt-3">
-                                <span class="institution-tag">Work Permit</span>
-                                <span class="institution-tag">Immigration Pathway</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Australia Universities -->
-                <div class="col-md-6 col-lg-4 institution-item" data-country="australia" style="display: block;">
-                    <div class="institution-card shadow-sm">
-                        <div class="institution-logo">
-                            <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="60" fill="#00467F"></rect>
-                                <text x="50" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Deakin</text>
-                                <text x="50" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">UNIVERSITY</text>
-                            </svg>
-                        </div>
-                        <div class="institution-details">
-                            <h3 class="institution-name">Deakin University</h3>
-                            <div class="institution-location">
-                                <i class="fas fa-map-marker-alt"></i> Melbourne, Australia
-                            </div>
-                            <div class="institution-programs">
-                                <strong>Popular Programs:</strong>
-                                <ul class="mb-0 ps-3">
-                                    <li>Business &amp; Management</li>
-                                    <li>IT &amp; Computer Science</li>
-                                    <li>Health Sciences</li>
-                                </ul>
-                            </div>
-                            <div class="institution-footer mt-3">
-                                <span class="institution-tag">Work Rights</span>
-                                <span class="institution-tag">Industry Connections</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-6 col-lg-4 institution-item" data-country="australia" style="display: block;">
-                    <div class="institution-card shadow-sm">
-                        <div class="institution-logo">
-                            <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="60" fill="#E02E3D"></rect>
-                                <text x="50" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Macquarie</text>
-                                <text x="50" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">UNIVERSITY</text>
-                            </svg>
-                        </div>
-                        <div class="institution-details">
-                            <h3 class="institution-name">Macquarie University</h3>
-                            <div class="institution-location">
-                                <i class="fas fa-map-marker-alt"></i> Sydney, Australia
-                            </div>
-                            <div class="institution-programs">
-                                <strong>Popular Programs:</strong>
-                                <ul class="mb-0 ps-3">
-                                    <li>Business &amp; Commerce</li>
-                                    <li>Media &amp; Communications</li>
-                                    <li>Information Technology</li>
-                                </ul>
-                            </div>
-                            <div class="institution-footer mt-3">
-                                <span class="institution-tag">Internships</span>
-                                <span class="institution-tag">Global Recognition</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- New Zealand Universities -->
-                <div class="col-md-6 col-lg-4 institution-item" data-country="newzealand" style="display: none;">
-                    <div class="institution-card shadow-sm">
-                        <div class="institution-logo">
-                            <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="60" fill="#00529B"></rect>
-                                <text x="50" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">University of</text>
-                                <text x="50" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">AUCKLAND</text>
-                            </svg>
-                        </div>
-                        <div class="institution-details">
-                            <h3 class="institution-name">University of Auckland</h3>
-                            <div class="institution-location">
-                                <i class="fas fa-map-marker-alt"></i> Auckland, New Zealand
-                            </div>
-                            <div class="institution-programs">
-                                <strong>Popular Programs:</strong>
-                                <ul class="mb-0 ps-3">
-                                    <li>Engineering &amp; Technology</li>
-                                    <li>Business &amp; Economics</li>
-                                    <li>Health Sciences</li>
-                                </ul>
-                            </div>
-                            <div class="institution-footer mt-3">
-                                <span class="institution-tag">Top 100 Global</span>
-                                <span class="institution-tag">Post-Study Work Visa</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Ireland Universities -->
-                <div class="col-md-6 col-lg-4 institution-item" data-country="ireland" style="display: none;">
-                    <div class="institution-card shadow-sm">
-                        <div class="institution-logo">
-                            <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="60" fill="#A91E22"></rect>
-                                <text x="50" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Trinity College</text>
-                                <text x="50" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">DUBLIN</text>
-                            </svg>
-                        </div>
-                        <div class="institution-details">
-                            <h3 class="institution-name">Trinity College Dublin</h3>
-                            <div class="institution-location">
-                                <i class="fas fa-map-marker-alt"></i> Dublin, Ireland
-                            </div>
-                            <div class="institution-programs">
-                                <strong>Popular Programs:</strong>
-                                <ul class="mb-0 ps-3">
-                                    <li>Business &amp; Economics</li>
-                                    <li>Computer Science</li>
-                                    <li>Arts &amp; Humanities</li>
-                                </ul>
-                            </div>
-                            <div class="institution-footer mt-3">
-                                <span class="institution-tag">Historic University</span>
-                                <span class="institution-tag">EU Work Rights</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Germany Universities -->
-                <div class="col-md-6 col-lg-4 institution-item" data-country="germany" style="display: none;">
-                    <div class="institution-card shadow-sm">
-                        <div class="institution-logo">
-                            <svg viewBox="0 0 100 60" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="100" height="60" fill="#003359"></rect>
-                                <text x="50" y="35" font-family="Arial" font-size="12" fill="white" text-anchor="middle">Technical University of</text>
-                                <text x="50" y="50" font-family="Arial" font-size="14" font-weight="bold" fill="white" text-anchor="middle">MUNICH</text>
-                            </svg>
-                        </div>
-                        <div class="institution-details">
-                            <h3 class="institution-name">Technical University of Munich</h3>
-                            <div class="institution-location">
-                                <i class="fas fa-map-marker-alt"></i> Munich, Germany
-                            </div>
-                            <div class="institution-programs">
-                                <strong>Popular Programs:</strong>
-                                <ul class="mb-0 ps-3">
-                                    <li>Engineering &amp; Technology</li>
-                                    <li>Computer Science</li>
-                                    <li>Natural Sciences</li>
-                                </ul>
-                            </div>
-                            <div class="institution-footer mt-3">
-                                <span class="institution-tag">English Programs</span>
-                                <span class="institution-tag">Research Excellence</span>
-                            </div>
+                            <div class="country-name">Australia</div>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div class="text-center mt-5">
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">
-                    <i class="fas fa-handshake me-2"></i> Meet University Representatives
-                </button>
+            <div class="universities-container">
+                <div id="universitiesContent">
+                    <div id="universitiesCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                <div class="carousel-item active carousel-item-start"><div class="row">
+                            <div class="col-md-3">
+                                <div class="university-card">
+                                    <div class="university-logo"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#A51C30"></rect>
+                            <text x="50" y="50" font-family="serif" font-size="70" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">H</text>
+                            <text x="50" y="75" font-family="serif" font-size="12" fill="white" text-anchor="middle">VERITAS</text>
+                          </svg></div>
+                                    <div class="university-name">Harvard University</div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-3">
+                                <div class="university-card">
+                                    <div class="university-logo"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#8C1515"></rect>
+                            <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"></path>
+                            <path d="M30,30 L70,30 L70,70 L30,70 Z" fill="#8C1515"></path>
+                            <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">S</text>
+                          </svg></div>
+                                    <div class="university-name">Stanford University</div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-3">
+                                <div class="university-card">
+                                    <div class="university-logo"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#A31F34"></rect>
+                            <rect x="10" y="30" width="15" height="40" fill="white"></rect>
+                            <rect x="30" y="30" width="15" height="40" fill="white"></rect>
+                            <rect x="50" y="30" width="15" height="40" fill="white"></rect>
+                            <rect x="70" y="30" width="20" height="15" fill="white"></rect>
+                            <rect x="70" y="55" width="20" height="15" fill="white"></rect>
+                          </svg></div>
+                                    <div class="university-name">MIT</div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-3">
+                                <div class="university-card">
+                                    <div class="university-logo"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#00356B"></rect>
+                            <text x="50" y="60" font-family="serif" font-size="50" font-weight="bold" fill="white" text-anchor="middle">Y</text>
+                            <path d="M30,75 L70,75 L70,80 L30,80 Z" fill="white"></path>
+                          </svg></div>
+                                    <div class="university-name">Yale University</div>
+                                </div>
+                            </div>
+                        </div></div><div class="carousel-item carousel-item-next carousel-item-start"><div class="row">
+                            <div class="col-md-3">
+                                <div class="university-card">
+                                    <div class="university-logo"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#FF8F00"></rect>
+                            <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"></path>
+                            <text x="50" y="60" font-family="serif" font-size="40" font-weight="bold" fill="#FF8F00" text-anchor="middle">P</text>
+                          </svg></div>
+                                    <div class="university-name">Princeton University</div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-md-3">
+                                <div class="university-card">
+                                    <div class="university-logo"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#B9D9EB"></rect>
+                            <circle cx="50" cy="50" r="30" fill="white"></circle>
+                            <text x="50" y="60" font-family="serif" font-size="40" font-weight="bold" fill="#B9D9EB" text-anchor="middle">C</text>
+                          </svg></div>
+                                    <div class="university-name">Columbia University</div>
+                                </div>
+                            </div>
+                        </div></div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#universitiesCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#universitiesCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-
-   
 
     <!-- Who Will You Meet -->
     <section class="py-5" id="meet">
@@ -1472,6 +1418,290 @@
                         item.style.display = 'block';
                     });
                 }
+            });
+        });
+        // University data by country with proper university logos
+        const universitiesData = {
+            usa: [
+                { 
+                    name: "Harvard University", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#A51C30"/>
+                            <text x="50" y="50" font-family="serif" font-size="70" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">H</text>
+                            <text x="50" y="75" font-family="serif" font-size="12" fill="white" text-anchor="middle">VERITAS</text>
+                          </svg>`
+                },
+                { 
+                    name: "Stanford University", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#8C1515"/>
+                            <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"/>
+                            <path d="M30,30 L70,30 L70,70 L30,70 Z" fill="#8C1515"/>
+                            <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">S</text>
+                          </svg>`
+                },
+                { 
+                    name: "MIT", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#A31F34"/>
+                            <rect x="10" y="30" width="15" height="40" fill="white"/>
+                            <rect x="30" y="30" width="15" height="40" fill="white"/>
+                            <rect x="50" y="30" width="15" height="40" fill="white"/>
+                            <rect x="70" y="30" width="20" height="15" fill="white"/>
+                            <rect x="70" y="55" width="20" height="15" fill="white"/>
+                          </svg>`
+                },
+                { 
+                    name: "Yale University", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#00356B"/>
+                            <text x="50" y="60" font-family="serif" font-size="50" font-weight="bold" fill="white" text-anchor="middle">Y</text>
+                            <path d="M30,75 L70,75 L70,80 L30,80 Z" fill="white"/>
+                          </svg>`
+                },
+                { 
+                    name: "Princeton University", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#FF8F00"/>
+                            <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"/>
+                            <text x="50" y="60" font-family="serif" font-size="40" font-weight="bold" fill="#FF8F00" text-anchor="middle">P</text>
+                          </svg>`
+                },
+                { 
+                    name: "Columbia University", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#B9D9EB"/>
+                            <circle cx="50" cy="50" r="30" fill="white"/>
+                            <text x="50" y="60" font-family="serif" font-size="40" font-weight="bold" fill="#B9D9EB" text-anchor="middle">C</text>
+                          </svg>`
+                }
+            ],
+            uk: [
+                { 
+                    name: "University of Oxford", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#002147"/>
+                            <text x="50" y="40" font-family="serif" font-size="30" font-weight="bold" fill="white" text-anchor="middle">OX</text>
+                            <path d="M30,50 L70,50 L70,70 L50,80 L30,70 Z" fill="white"/>
+                          </svg>`
+                },
+                { 
+                    name: "University of Cambridge", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#A3C1AD"/>
+                            <path d="M20,30 L80,30 L80,70 L20,70 Z" fill="white"/>
+                            <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="#A3C1AD" text-anchor="middle">CAM</text>
+                          </svg>`
+                },
+                { 
+                    name: "Imperial College London", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#003E74"/>
+                            <text x="50" y="45" font-family="serif" font-size="30" font-weight="bold" fill="white" text-anchor="middle">ICL</text>
+                            <path d="M30,55 L70,55 L70,70 L30,70 Z" fill="white"/>
+                          </svg>`
+                },
+                { 
+                    name: "University College London", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#E03C31"/>
+                            <circle cx="50" cy="50" r="30" fill="white"/>
+                            <text x="50" y="60" font-family="serif" font-size="25" font-weight="bold" fill="#E03C31" text-anchor="middle">UCL</text>
+                          </svg>`
+                }
+            ],
+            germany: [
+                { 
+                    name: "Technical University of Munich", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#3070B3"/>
+                            <text x="50" y="45" font-family="sans-serif" font-size="25" font-weight="bold" fill="white" text-anchor="middle">TUM</text>
+                            <path d="M25,55 L75,55 L75,75 L25,75 Z" fill="white"/>
+                          </svg>`
+                },
+                { 
+                    name: "Ludwig Maximilian University", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#00A651"/>
+                            <circle cx="50" cy="50" r="30" fill="white"/>
+                            <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="#00A651" text-anchor="middle">LMU</text>
+                          </svg>`
+                },
+                { 
+                    name: "Heidelberg University", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#C2093B"/>
+                            <path d="M25,25 L75,25 L75,75 L25,75 Z" fill="white"/>
+                            <text x="50" y="55" font-family="serif" font-size="25" font-weight="bold" fill="#C2093B" text-anchor="middle">HD</text>
+                          </svg>`
+                }
+            ],
+            france: [
+                { 
+                    name: "Sorbonne University", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#0F47AF"/>
+                            <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"/>
+                            <text x="50" y="55" font-family="serif" font-size="25" font-weight="bold" fill="#0F47AF" text-anchor="middle">SU</text>
+                          </svg>`
+                },
+                { 
+                    name: "École Polytechnique", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#8C001A"/>
+                            <polygon points="50,20 80,50 50,80 20,50" fill="white"/>
+                            <text x="50" y="55" font-family="sans-serif" font-size="15" font-weight="bold" fill="#8C001A" text-anchor="middle">EP</text>
+                          </svg>`
+                },
+                { 
+                    name: "Paris Sciences et Lettres", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#2D2D86"/>
+                            <circle cx="50" cy="50" r="30" fill="white"/>
+                            <text x="50" y="55" font-family="sans-serif" font-size="20" font-weight="bold" fill="#2D2D86" text-anchor="middle">PSL</text>
+                          </svg>`
+                },
+                { 
+                    name: "École Normale Supérieure", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#24135F"/>
+                            <rect x="20" y="20" width="60" height="60" fill="white"/>
+                            <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="#24135F" text-anchor="middle">ENS</text>
+                          </svg>`
+                },
+                { 
+                    name: "CentraleSupélec", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#B22234"/>
+                            <path d="M25,25 L75,25 L75,75 L25,75 Z" fill="white"/>
+                            <text x="50" y="55" font-family="sans-serif" font-size="15" font-weight="bold" fill="#B22234" text-anchor="middle">CS</text>
+                          </svg>`
+                }
+            ],
+            australia: [
+                { 
+                    name: "University of Melbourne", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#094183"/>
+                            <path d="M20,30 L80,30 L80,70 L20,70 Z" fill="white"/>
+                            <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="#094183" text-anchor="middle">UM</text>
+                          </svg>`
+                },
+                { 
+                    name: "Australian National University", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#00467F"/>
+                            <circle cx="50" cy="50" r="30" fill="white"/>
+                            <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="#00467F" text-anchor="middle">ANU</text>
+                          </svg>`
+                },
+                { 
+                    name: "University of Sydney", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#D7153A"/>
+                            <path d="M25,25 L75,25 L75,75 L25,75 Z" fill="white"/>
+                            <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="#D7153A" text-anchor="middle">US</text>
+                          </svg>`
+                },
+                { 
+                    name: "University of Queensland", 
+                    logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="100" height="100" fill="#51247A"/>
+                            <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"/>
+                            <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="#51247A" text-anchor="middle">UQ</text>
+                          </svg>`
+                }
+            ]
+        };
+
+        // Function to display universities for a selected country
+        function displayUniversities(country) {
+            const universities = universitiesData[country];
+            const container = document.getElementById('universitiesContent');
+            
+            if (!universities || universities.length === 0) {
+                container.innerHTML = '<div class="no-universities">No participating universities found for this country.</div>';
+                return;
+            }
+            
+            // Check if we need carousel (more than 4 universities)
+            if (universities.length > 4) {
+                let carouselHTML = `
+                    <div id="universitiesCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                `;
+                
+                // Create slides with 4 universities per slide
+                for (let i = 0; i < universities.length; i += 4) {
+                    const isActive = i === 0 ? 'active' : '';
+                    carouselHTML += `<div class="carousel-item ${isActive}"><div class="row">`;
+                    
+                    // Add up to 4 universities in this slide
+                    for (let j = i; j < i + 4 && j < universities.length; j++) {
+                        carouselHTML += `
+                            <div class="col-md-3">
+                                <div class="university-card">
+                                    <div class="university-logo">${universities[j].logo}</div>
+                                    <div class="university-name">${universities[j].name}</div>
+                                </div>
+                            </div>
+                        `;
+                    }
+                    
+                    carouselHTML += `</div></div>`;
+                }
+                
+                carouselHTML += `
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#universitiesCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#universitiesCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                `;
+                
+                container.innerHTML = carouselHTML;
+            } else {
+                // Display all universities without carousel
+                let universitiesHTML = '<div class="row">';
+                
+                universities.forEach(university => {
+                    universitiesHTML += `
+                        <div class="col-md-3">
+                            <div class="university-card">
+                                <div class="university-logo">${university.logo}</div>
+                                <div class="university-name">${university.name}</div>
+                            </div>
+                        </div>
+                    `;
+                });
+                
+                universitiesHTML += '</div>';
+                container.innerHTML = universitiesHTML;
+            }
+        }
+
+        // Initialize with USA universities
+        displayUniversities('usa');
+
+        // Add click event listeners to country buttons
+        document.querySelectorAll('.country-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.country-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Display universities for selected country
+                const country = this.getAttribute('data-country');
+                displayUniversities(country);
             });
         });
     </script>
