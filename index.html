@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Abroad Virtual Expo 2025 | FES Education</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!--script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script-->
+    
+    <style>
+        :root {
+            --fes-blue: #0a3d62;
+            --fes-orange: #e67e22;
+            --fes-light-blue: #3498db;
+            --fes-dark-blue: #072a45;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .fes-gradient-bg {
+            background: linear-gradient(135deg, #0a3d62 0%, #3498db 100%);
+        }
+        .fes-orange-gradient {
+            background: linear-gradient(135deg, #e67e22 0%, #f39c12 100%);
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .countdown-item {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            padding: 10px;
+            min-width: 80px;
+        }
+        .testimonial-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .institution-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .institution-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .btn-primary {
+            background-color: var(--fes-orange);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #d35400;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background-color: white;
+            color: var(--fes-blue);
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #f8f9fa;
+            transform: translateY(-2px);
+        }
+        .text-fes-blue {
+            color: var(--fes-blue);
+        }
+        .text-fes-orange {
+            color: var(--fes-orange);
+        }
+        .bg-fes-blue {
+            background-color: var(--fes-blue);
+        }
+        .bg-fes-orange {
+            background-color: var(--fes-orange);
+        }
+        .bg-fes-light-blue {
+            background-color: var(--fes-light-blue);
+        }
+        .border-fes-orange {
+            border-color: var(--fes-orange);
+        }
+        .border-fes-blue {
+            border-color: var(--fes-blue);
+        }
+        .institution-logo {
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: all 0.3s ease;
+        }
+        .institution-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        .country-tab {
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .country-tab.active {
+            background-color: var(--fes-blue);
+            color: white;
+            border-color: var(--fes-blue);
+        }
+        .country-tab:hover:not(.active) {
+            background-color: #f0f9ff;
+            border-color: var(--fes-light-blue);
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .university-item {
+            transition: all 0.3s ease;
+        }
+        .university-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .flag-icon {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+    
+        *, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.fixed{position:fixed}.z-50{z-index:50}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-6{margin-left:1.5rem}.mr-2{margin-right:0.5rem}.mr-4{margin-right:1rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.block{display:block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-1{height:0.25rem}.h-10{height:2.5rem}.h-12{height:3rem}.h-16{height:4rem}.h-5{height:1.25rem}.h-6{height:1.5rem}.h-8{height:2rem}.w-10{width:2.5rem}.w-12{width:3rem}.w-16{width:4rem}.w-24{width:6rem}.w-5{width:1.25rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.transform{transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.list-inside{list-style-position:inside}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-8{gap:2rem}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.rounded{border-radius:0.25rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-md{border-radius:0.375rem}.border{border-width:1px}.border-t-4{border-top-width:4px}.border-gray-300{--tw-border-opacity:1;border-color:rgb(209 213 219 / var(--tw-border-opacity, 1))}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-gray-50{--tw-bg-opacity:1;background-color:rgb(249 250 251 / var(--tw-bg-opacity, 1))}.bg-green-100{--tw-bg-opacity:1;background-color:rgb(220 252 231 / var(--tw-bg-opacity, 1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.bg-red-100{--tw-bg-opacity:1;background-color:rgb(254 226 226 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-yellow-100{--tw-bg-opacity:1;background-color:rgb(254 249 195 / var(--tw-bg-opacity, 1))}.p-4{padding:1rem}.p-6{padding:1.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-16{padding-top:4rem;padding-bottom:4rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.pb-20{padding-bottom:5rem}.pt-28{padding-top:7rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.leading-tight{line-height:1.25}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81 / var(--tw-text-opacity, 1))}.text-green-800{--tw-text-opacity:1;color:rgb(22 101 52 / var(--tw-text-opacity, 1))}.text-purple-800{--tw-text-opacity:1;color:rgb(107 33 168 / var(--tw-text-opacity, 1))}.text-red-800{--tw-text-opacity:1;color:rgb(153 27 27 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-yellow-800{--tw-text-opacity:1;color:rgb(133 77 14 / var(--tw-text-opacity, 1))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-\[\#d35400\]:hover{--tw-bg-opacity:1;background-color:rgb(211 84 0 / var(--tw-bg-opacity, 1))}.hover\:text-\[\#d35400\]:hover{--tw-text-opacity:1;color:rgb(211 84 0 / var(--tw-text-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000)}@media (min-width: 768px){.md\:mb-0{margin-bottom:0px}.md\:flex{display:flex}.md\:w-1\/2{width:50%}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:text-2xl{font-size:1.5rem;line-height:2rem}.md\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 1024px){.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/FES-Logos.svg" alt="FES Education Logo" class="h-12">
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#benefits" class="text-gray-600 hover:text-fes-orange transition">Benefits</a>
+                <a href="#institutions" class="text-gray-600 hover:text-fes-orange transition">Institutions</a>
+                <a href="#offers" class="text-gray-600 hover:text-fes-orange transition">Offers</a>
+                <a href="#testimonials" class="text-gray-600 hover:text-fes-orange transition">Testimonials</a>
+                <a href="#faq" class="text-gray-600 hover:text-fes-orange transition">FAQ</a>
+            </div>
+            <div>
+                <button class="bg-fes-orange text-white px-6 py-2 rounded-full hover:bg-[#d35400] transition">Register Now</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="fes-gradient-bg pt-28 pb-20 px-4">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 text-white mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4">Unlock Your Global Education Journey</h1>
+                <h2 class="text-xl md:text-2xl mb-6">Study Abroad Virtual Expo 2025</h2>
+                <div class="flex items-center mb-6">
+                    <svg class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                    </svg>
+                    <span>May 15-17, 2025</span>
+                    <svg class="h-6 w-6 ml-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path>
+                    </svg>
+                    <span>Live on Zoom</span>
+                </div>
+                
+                <!-- Countdown Timer -->
+                <div class="mb-8">
+                    <p class="mb-3">Event Starts In:</p>
+                    <div class="flex space-x-4" id="countdown">
+                        <div class="countdown-item text-center">
+                            <div class="text-3xl font-bold" id="days">00</div>
+                            <div class="text-xs">Days</div>
+                        </div>
+                        <div class="countdown-item text-center">
+                            <div class="text-3xl font-bold" id="hours">00</div>
+                            <div class="text-xs">Hours</div>
+                        </div>
+                        <div class="countdown-item text-center">
+                            <div class="text-3xl font-bold" id="minutes">00</div>
+                            <div class="text-xs">Minutes</div>
+                        </div>
+                        <div class="countdown-item text-center">
+                            <div class="text-3xl font-bold" id="seconds">00</div>
+                            <div class="text-xs">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="btn-secondary px-8 py-3 rounded-full font-bold transform hover:scale-105">
+                    Register for Free
+                </button>
+            </div>
+            
+            <div class="md:w-1/2">
+                <div class="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-bold text-fes-blue mb-4">Register Now</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-medium mb-2" for="name">Full Name</label>
+                            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-fes-orange" type="text" id="name" required="">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-medium mb-2" for="email">Email Address</label>
+                            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-fes-orange" type="email" id="email" required="">
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-700 text-sm font-medium mb-2" for="phone">Phone Number</label>
+                            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-fes-orange" type="tel" id="phone" required="">
+                        </div>
+                        <div class="mb-6">
+                            <label class="block text-gray-700 text-sm font-medium mb-2" for="interest">Interested In</label>
+                            <select class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-fes-orange" id="interest">
+                                <option>Undergraduate Programs</option>
+                                <option>Graduate Programs</option>
+                                <option>PhD Programs</option>
+                                <option>Short-term Courses</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-fes-orange text-white py-3 rounded-md font-medium hover:bg-[#d35400] transition">Secure Your Spot</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Benefits Section -->
+    <section id="benefits" class="py-16 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4 text-fes-blue">Why Attend?</h2>
+            <div class="w-24 h-1 bg-fes-orange mx-auto mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-gray-50 p-6 rounded-lg transition duration-300 text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-fes-blue">Global Opportunities</h3>
+                    <p class="text-gray-600">Connect with 100+ prestigious universities from 25+ countries in one virtual platform</p>
+                </div>
+                
+                <div class="card-hover bg-gray-50 p-6 rounded-lg transition duration-300 text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-fes-blue">Scholarship Guidance</h3>
+                    <p class="text-gray-600">Exclusive information on scholarships worth up to $50,000 and financial aid options</p>
+                </div>
+                
+                <div class="card-hover bg-gray-50 p-6 rounded-lg transition duration-300 text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-fes-blue">Application Support</h3>
+                    <p class="text-gray-600">Expert guidance on admission requirements, visa processes, and application procedures</p>
+                </div>
+                
+                <div class="card-hover bg-gray-50 p-6 rounded-lg transition duration-300 text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-fes-blue">One-on-One Counseling</h3>
+                    <p class="text-gray-600">Personal sessions with university representatives and education consultants</p>
+                </div>
+                
+                <div class="card-hover bg-gray-50 p-6 rounded-lg transition duration-300 text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-fes-blue">Career Pathways</h3>
+                    <p class="text-gray-600">Insights on post-graduation work opportunities and career development in different countries</p>
+                </div>
+                
+                <div class="card-hover bg-gray-50 p-6 rounded-lg transition duration-300 text-center">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                        <svg class="h-8 w-8 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-fes-blue">Convenience</h3>
+                    <p class="text-gray-600">Attend from anywhere, save time and travel costs while accessing global education options</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Participating Institutions -->
+    <section id="institutions" class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4 text-fes-blue">Participating Institutions</h2>
+            <div class="w-24 h-1 bg-fes-orange mx-auto mb-12"></div>
+            
+            <!-- Country Tabs -->
+            <div class="flex flex-wrap justify-center mb-8 gap-2">
+                <button class="country-tab active flex items-center px-4 py-2 rounded-full border-2 border-fes-blue bg-fes-blue text-white" data-tab="usa">
+                    <svg class="flag-icon mr-2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="12" fill="#f0f0f0"></circle>
+                        <g>
+                            <rect y="2.8" width="24" height="1.6" fill="#d80027"></rect>
+                            <rect y="6" width="24" height="1.6" fill="#d80027"></rect>
+                            <rect y="9.2" width="24" height="1.6" fill="#d80027"></rect>
+                            <rect y="12.4" width="24" height="1.6" fill="#d80027"></rect>
+                            <rect y="15.6" width="24" height="1.6" fill="#d80027"></rect>
+                            <rect y="18.8" width="24" height="1.6" fill="#d80027"></rect>
+                            <rect width="10" height="10" fill="#2e3192"></rect>
+                            <g fill="#f0f0f0">
+                                <circle cx="2" cy="2" r="0.6"></circle>
+                                <circle cx="5" cy="2" r="0.6"></circle>
+                                <circle cx="8" cy="2" r="0.6"></circle>
+                                <circle cx="2" cy="5" r="0.6"></circle>
+                                <circle cx="5" cy="5" r="0.6"></circle>
+                                <circle cx="8" cy="5" r="0.6"></circle>
+                                <circle cx="2" cy="8" r="0.6"></circle>
+                                <circle cx="5" cy="8" r="0.6"></circle>
+                                <circle cx="8" cy="8" r="0.6"></circle>
+                            </g>
+                        </g>
+                    </svg>
+                    Study in USA
+                </button>
+                <button class="country-tab flex items-center px-4 py-2 rounded-full border-2 border-gray-300" data-tab="uk">
+                    <svg class="flag-icon mr-2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="12" fill="#f0f0f0"></circle>
+                        <g>
+                            <path fill="#0052b4" d="M24,12c0,6.63-5.37,12-12,12S0,18.63,0,12"></path>
+                            <path fill="#d80027" d="M13.5,12L24,18V12H13.5z M10.5,12H0v6l10.5-6z M13.5,12L24,6V0H13.5V12z M10.5,12L0,6V0h10.5V12z"></path>
+                            <path fill="#f0f0f0" d="M24,0H0V24h24V0z M14,10h10v4H14v10h-4V14H0v-4h10V0h4V10z"></path>
+                            <path fill="#d80027" d="M14,10h10v4H14V10z M10,14H0v-4h10V0h4v10h10v4H14v10h-4V14z"></path>
+                        </g>
+                    </svg>
+                    Study in UK
+                </button>
+                <button class="country-tab flex items-center px-4 py-2 rounded-full border-2 border-gray-300" data-tab="canada">
+                    <svg class="flag-icon mr-2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="12" fill="#f0f0f0"></circle>
+                        <g>
+                            <rect x="0" y="0" width="6" height="24" fill="#d80027"></rect>
+                            <rect x="18" y="0" width="6" height="24" fill="#d80027"></rect>
+                            <path fill="#d80027" d="M12,8l1,3h3l-2.5,2l1,3L12,14l-2.5,2l1-3L8,11h3L12,8z"></path>
+                        </g>
+                    </svg>
+                    Study in Canada
+                </button>
+                <button class="country-tab flex items-center px-4 py-2 rounded-full border-2 border-gray-300" data-tab="australia">
+                    <svg class="flag-icon mr-2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="12" fill="#0052b4"></circle>
+                        <g>
+                            <path fill="#f0f0f0" d="M12,0C5.37,0,0,5.37,0,12h24C24,5.37,18.63,0,12,0z"></path>
+                            <path fill="#d80027" d="M12,0C5.37,0,0,5.37,0,12h24C24,5.37,18.63,0,12,0z"></path>
+                            <path fill="#0052b4" d="M12,0C5.37,0,0,5.37,0,12h24C24,5.37,18.63,0,12,0z"></path>
+                            <path fill="#f0f0f0" d="M12,0L0,12h3L15,0H12z M21,0L9,12h3L24,0H21z"></path>
+                            <path fill="#f0f0f0" d="M0,0v3l9,9h3L0,0z M24,0v3l-9,9h-3L24,0z"></path>
+                            <path fill="#f0f0f0" d="M24,24H0V0h24V24z M14,10h10v4H14v10h-4V14H0v-4h10V0h4V10z"></path>
+                            <path fill="#d80027" d="M14,10h10v4H14V10z M10,14H0v-4h10V0h4v10h10v4H14v10h-4V14z"></path>
+                            <circle cx="4.5" cy="4.5" r="0.8" fill="#f0f0f0"></circle>
+                            <circle cx="19.5" cy="4.5" r="0.8" fill="#f0f0f0"></circle>
+                            <circle cx="4.5" cy="19.5" r="0.8" fill="#f0f0f0"></circle>
+                            <circle cx="19.5" cy="19.5" r="0.8" fill="#f0f0f0"></circle>
+                            <circle cx="12" cy="12" r="0.8" fill="#f0f0f0"></circle>
+                        </g>
+                    </svg>
+                    Study in Australia
+                </button>
+                <button class="country-tab flex items-center px-4 py-2 rounded-full border-2 border-gray-300" data-tab="nz">
+                    <svg class="flag-icon mr-2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="12" fill="#0052b4"></circle>
+                        <g>
+                            <path fill="#f0f0f0" d="M12,0C5.37,0,0,5.37,0,12h24C24,5.37,18.63,0,12,0z"></path>
+                            <path fill="#d80027" d="M12,0C5.37,0,0,5.37,0,12h24C24,5.37,18.63,0,12,0z"></path>
+                            <path fill="#0052b4" d="M12,0C5.37,0,0,5.37,0,12h24C24,5.37,18.63,0,12,0z"></path>
+                            <path fill="#f0f0f0" d="M12,0L0,12h3L15,0H12z M21,0L9,12h3L24,0H21z"></path>
+                            <path fill="#f0f0f0" d="M0,0v3l9,9h3L0,0z M24,0v3l-9,9h-3L24,0z"></path>
+                            <path fill="#f0f0f0" d="M24,24H0V0h24V24z M14,10h10v4H14v10h-4V14H0v-4h10V0h4V10z"></path>
+                            <path fill="#d80027" d="M14,10h10v4H14V10z M10,14H0v-4h10V0h4v10h10v4H14v10h-4V14z"></path>
+                            <path fill="#d80027" d="M16,16l1,2l2-1l-1,2l2,1l-2,1l1,2l-2-1l-1,2l-1-2l-2,1l1-2l-2-1l2-1l-1-2l2,1L16,16z"></path>
+                        </g>
+                    </svg>
+                    Study in NZ
+                </button>
+                <button class="country-tab flex items-center px-4 py-2 rounded-full border-2 border-gray-300" data-tab="europe">
+                    <svg class="flag-icon mr-2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="12" fill="#0052b4"></circle>
+                        <g>
+                            <circle cx="12" cy="12" r="12" fill="#0052b4"></circle>
+                            <circle cx="12" cy="12" r="6" fill="#ffda44"></circle>
+                            <g fill="#ffda44">
+                                <path d="M12,6l0.5,1.5H14l-1.2,0.9l0.5,1.5L12,9l-1.2,0.9l0.5-1.5L10,7.5h1.5L12,6z"></path>
+                                <path d="M15.5,7.7l-0.3,1.5l1.3,0.5l-1.5,0.3l-0.3,1.5l-0.7-1.3L12.5,11l0.9-1.2L12.7,8.5L14,8L15.5,7.7z"></path>
+                                <path d="M16.3,11.5l-1.1,1.1l0.8,1.2l-1.5-0.4l-1.1,1.1l0.1-1.5l-1.5-0.4l1.4-0.6l0.1-1.5l0.8,1.2L16.3,11.5z"></path>
+                                <path d="M14.5,15l-1.5,0.3l0,1.4l-1-1.1l-1.5,0.3l0.7-1.3l-1-1.1l1.4,0.1l0.7-1.3l0,1.4L14.5,15z"></path>
+                                <path d="M10.7,16.3l-1.1-1.1l-1.2,0.8l0.4-1.5l-1.1-1.1l1.5,0.1l0.4-1.5l0.6,1.4l1.5,0.1l-1.2,0.8L10.7,16.3z"></path>
+                                <path d="M7.7,14.5L7.4,13l-1.4,0l1.1-1l-0.3-1.5l1.3,0.7l1.1-1l-0.1,1.4l1.3,0.7l-1.4,0L7.7,14.5z"></path>
+                                <path d="M7,10.7l1.1-1.1l-0.8-1.2l1.5,0.4l1.1-1.1l-0.1,1.5l1.5,0.4l-1.4,0.6l-0.1,1.5l-0.8-1.2L7,10.7z"></path>
+                                <path d="M9.5,7.7l1.5-0.3l0-1.4l1,1.1l1.5-0.3l-0.7,1.3l1,1.1l-1.4-0.1l-0.7,1.3l0-1.4L9.5,7.7z"></path>
+                            </g>
+                        </g>
+                    </svg>
+                    Study in Europe
+                </button>
+                <button class="country-tab flex items-center px-4 py-2 rounded-full border-2 border-gray-300" data-tab="asia">
+                    <svg class="flag-icon mr-2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="12" fill="#ffda44"></circle>
+                        <g>
+                            <path fill="#ffda44" d="M12,0C5.37,0,0,5.37,0,12s5.37,12,12,12s12-5.37,12-12S18.63,0,12,0z"></path>
+                            <path fill="#d80027" d="M12,4l1,3h3l-2.5,2l1,3L12,10l-2.5,2l1-3L8,7h3L12,4z"></path>
+                            <path fill="#d80027" d="M5,9l1,3h3l-2.5,2l1,3L5,15l-2.5,2l1-3L1,12h3L5,9z"></path>
+                            <path fill="#d80027" d="M19,9l1,3h3l-2.5,2l1,3L19,15l-2.5,2l1-3L15,12h3L19,9z"></path>
+                        </g>
+                    </svg>
+                    Study in Asia
+                </button>
+                <button class="country-tab flex items-center px-4 py-2 rounded-full border-2 border-gray-300" data-tab="allied">
+                    <svg class="flag-icon mr-2" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="12" fill="#f0f0f0"></circle>
+                        <g>
+                            <path fill="#0052b4" d="M12,0C5.37,0,0,5.37,0,12s5.37,12,12,12s12-5.37,12-12S18.63,0,12,0z"></path>
+                            <path fill="#f0f0f0" d="M12,6c-3.31,0-6,2.69-6,6s2.69,6,6,6s6-2.69,6-6S15.31,6,12,6z"></path>
+                            <path fill="#d80027" d="M12,6c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S13.1,6,12,6z"></path>
+                            <path fill="#d80027" d="M12,14c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S13.1,14,12,14z"></path>
+                            <path fill="#d80027" d="M6,10c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S7.1,10,6,10z"></path>
+                            <path fill="#d80027" d="M18,10c-1.1,0-2,0.9-2,2s0.9,2,2,2s2-0.9,2-2S19.1,10,18,10z"></path>
+                        </g>
+                    </svg>
+                    Allied Services
+                </button>
+            </div>
+            
+            <!-- Tab Content -->
+            <div class="tab-content active" id="usa-tab">
+                <h3 class="text-xl font-bold mb-6 text-center text-fes-blue">Top Universities in the United States</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">H</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Harvard University</h4>
+                                <p class="text-xs text-gray-500">Cambridge, MA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">S</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Stanford University</h4>
+                                <p class="text-xs text-gray-500">Stanford, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">M</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">MIT</h4>
+                                <p class="text-xs text-gray-500">Cambridge, MA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">C</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Columbia University</h4>
+                                <p class="text-xs text-gray-500">New York, NY</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">Y</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Yale University</h4>
+                                <p class="text-xs text-gray-500">New Haven, CT</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">P</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Princeton University</h4>
+                                <p class="text-xs text-gray-500">Princeton, NJ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">U</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">UC Berkeley</h4>
+                                <p class="text-xs text-gray-500">Berkeley, CA</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">U</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Chicago</h4>
+                                <p class="text-xs text-gray-500">Chicago, IL</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="uk-tab">
+                <h3 class="text-xl font-bold mb-6 text-center text-fes-blue">Top Universities in the United Kingdom</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">O</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Oxford</h4>
+                                <p class="text-xs text-gray-500">Oxford</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">C</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Cambridge</h4>
+                                <p class="text-xs text-gray-500">Cambridge</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">I</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Imperial College London</h4>
+                                <p class="text-xs text-gray-500">London</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">L</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">London School of Economics</h4>
+                                <p class="text-xs text-gray-500">London</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">U</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">UCL</h4>
+                                <p class="text-xs text-gray-500">London</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">E</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Edinburgh</h4>
+                                <p class="text-xs text-gray-500">Edinburgh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">M</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Manchester</h4>
+                                <p class="text-xs text-gray-500">Manchester</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">K</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">King's College London</h4>
+                                <p class="text-xs text-gray-500">London</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="canada-tab">
+                <h3 class="text-xl font-bold mb-6 text-center text-fes-blue">Top Universities in Canada</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">T</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Toronto</h4>
+                                <p class="text-xs text-gray-500">Toronto</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">M</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">McGill University</h4>
+                                <p class="text-xs text-gray-500">Montreal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">U</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of British Columbia</h4>
+                                <p class="text-xs text-gray-500">Vancouver</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">A</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Alberta</h4>
+                                <p class="text-xs text-gray-500">Edmonton</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">W</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Waterloo</h4>
+                                <p class="text-xs text-gray-500">Waterloo</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">M</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">McMaster University</h4>
+                                <p class="text-xs text-gray-500">Hamilton</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">C</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Calgary</h4>
+                                <p class="text-xs text-gray-500">Calgary</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">W</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Western University</h4>
+                                <p class="text-xs text-gray-500">London, ON</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="australia-tab">
+                <h3 class="text-xl font-bold mb-6 text-center text-fes-blue">Top Universities in Australia</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">M</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Melbourne</h4>
+                                <p class="text-xs text-gray-500">Melbourne</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">A</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Australian National University</h4>
+                                <p class="text-xs text-gray-500">Canberra</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">S</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Sydney</h4>
+                                <p class="text-xs text-gray-500">Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">U</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">UNSW Sydney</h4>
+                                <p class="text-xs text-gray-500">Sydney</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">M</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Monash University</h4>
+                                <p class="text-xs text-gray-500">Melbourne</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">U</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Queensland</h4>
+                                <p class="text-xs text-gray-500">Brisbane</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">U</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Adelaide</h4>
+                                <p class="text-xs text-gray-500">Adelaide</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">U</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Western Australia</h4>
+                                <p class="text-xs text-gray-500">Perth</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="nz-tab">
+                <h3 class="text-xl font-bold mb-6 text-center text-fes-blue">Top Universities in New Zealand</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">A</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Auckland</h4>
+                                <p class="text-xs text-gray-500">Auckland</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">O</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Otago</h4>
+                                <p class="text-xs text-gray-500">Dunedin</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">V</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Victoria University of Wellington</h4>
+                                <p class="text-xs text-gray-500">Wellington</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">U</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Canterbury</h4>
+                                <p class="text-xs text-gray-500">Christchurch</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">M</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Massey University</h4>
+                                <p class="text-xs text-gray-500">Palmerston North</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">W</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Waikato</h4>
+                                <p class="text-xs text-gray-500">Hamilton</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">A</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Auckland University of Technology</h4>
+                                <p class="text-xs text-gray-500">Auckland</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">L</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Lincoln University</h4>
+                                <p class="text-xs text-gray-500">Christchurch</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="europe-tab">
+                <h3 class="text-xl font-bold mb-6 text-center text-fes-blue">Top Universities in Europe</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">E</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">ETH Zurich</h4>
+                                <p class="text-xs text-gray-500">Switzerland</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">L</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">LMU Munich</h4>
+                                <p class="text-xs text-gray-500">Germany</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">S</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Sorbonne University</h4>
+                                <p class="text-xs text-gray-500">France</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">K</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">KU Leuven</h4>
+                                <p class="text-xs text-gray-500">Belgium</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">T</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Technical University of Munich</h4>
+                                <p class="text-xs text-gray-500">Germany</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">U</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Amsterdam</h4>
+                                <p class="text-xs text-gray-500">Netherlands</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">K</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Karolinska Institute</h4>
+                                <p class="text-xs text-gray-500">Sweden</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">T</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Trinity College Dublin</h4>
+                                <p class="text-xs text-gray-500">Ireland</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="asia-tab">
+                <h3 class="text-xl font-bold mb-6 text-center text-fes-blue">Top Universities in Asia</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">N</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">National University of Singapore</h4>
+                                <p class="text-xs text-gray-500">Singapore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">T</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Tsinghua University</h4>
+                                <p class="text-xs text-gray-500">China</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">U</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">University of Tokyo</h4>
+                                <p class="text-xs text-gray-500">Japan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">S</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Seoul National University</h4>
+                                <p class="text-xs text-gray-500">South Korea</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">H</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Hong Kong University</h4>
+                                <p class="text-xs text-gray-500">Hong Kong</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">N</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Nanyang Technological University</h4>
+                                <p class="text-xs text-gray-500">Singapore</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-3">
+                                <span class="text-fes-blue font-bold">P</span>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-fes-blue">Peking University</h4>
+                                <p class="text-xs text-gray-500">China</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="university-item bg-white p-4 rounded-lg shadow-sm">
+                        <div class="flex items-center">
+                            <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94d84c3ef18d06a8',t:'MTc0OTU1MjUyMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></div></div></div></div></div></section>
+
+    <!-- CTA Section -->
+    <section class="py-16 px-4 fes-gradient-bg text-white">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">Don't Miss This Opportunity!</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of students in exploring global education opportunities from the comfort of your home.</p>
+            <button class="btn-secondary px-8 py-3 rounded-full font-bold transform hover:scale-105">
+                Register Now - It's Free!
+            </button>
+        </div>
+    </section>
+
+    <!-- Who Will You Meet Section -->
+    <section class="py-16 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4 text-fes-blue">Who Will You Meet at the Expo?</h2>
+            <div class="w-24 h-1 bg-fes-orange mx-auto mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="card-hover bg-gray-50 p-6 rounded-lg transition duration-300">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <svg class="h-8 w-8 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-fes-blue">University Representatives</h3>
+                    <p class="text-gray-600">Admission officers and faculty members from prestigious universities who can provide first-hand information about programs, campus life, and admission requirements.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-50 p-6 rounded-lg transition duration-300">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <svg class="h-8 w-8 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-fes-blue">Education Consultants</h3>
+                    <p class="text-gray-600">Experienced advisors who can guide you through the entire study abroad process, from choosing the right program to preparing for your departure.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-50 p-6 rounded-lg transition duration-300">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <svg class="h-8 w-8 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-fes-blue">Alumni &amp; Current Students</h3>
+                    <p class="text-gray-600">Connect with those who have already embarked on their international education journey and can share their real experiences and insights.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-50 p-6 rounded-lg transition duration-300">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <svg class="h-8 w-8 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-fes-blue">Industry Experts</h3>
+                    <p class="text-gray-600">Professionals who can provide insights on career prospects, industry trends, and how international education can enhance your employability.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-50 p-6 rounded-lg transition duration-300">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <svg class="h-8 w-8 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-fes-blue">Visa Specialists</h3>
+                    <p class="text-gray-600">Experts who can clarify visa requirements, application procedures, and post-study work visa options for different countries.</p>
+                </div>
+                
+                <div class="card-hover bg-gray-50 p-6 rounded-lg transition duration-300">
+                    <div class="bg-blue-100 rounded-full w-16 h-16 flex items-center justify-center mb-4">
+                        <svg class="h-8 w-8 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-fes-blue">Scholarship Providers</h3>
+                    <p class="text-gray-600">Representatives from organizations offering scholarships and financial aid to international students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section id="offers" class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4 text-fes-blue">Special Offers for Students</h2>
+            <div class="w-24 h-1 bg-fes-orange mx-auto mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-fes-orange">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-fes-blue">Application Fee Waivers</h3>
+                        <span class="bg-blue-100 text-fes-blue text-xs font-semibold px-2.5 py-0.5 rounded">Save $50-$100</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Exclusive application fee waivers for expo attendees at select universities.</p>
+                    <ul class="text-gray-600 mb-4 list-disc list-inside">
+                        <li>Valid for applications submitted within 30 days</li>
+                        <li>Available for multiple universities</li>
+                    </ul>
+                    <button class="text-fes-orange font-medium hover:text-[#d35400]">Learn More →</button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-fes-orange">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-fes-blue">Priority Application Review</h3>
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded">Exclusive</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Get your application reviewed faster with priority processing.</p>
+                    <ul class="text-gray-600 mb-4 list-disc list-inside">
+                        <li>Expedited decision timeline</li>
+                        <li>Dedicated admission counselor</li>
+                    </ul>
+                    <button class="text-fes-orange font-medium hover:text-[#d35400]">Learn More →</button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-fes-orange">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-fes-blue">Exclusive Scholarships</h3>
+                        <span class="bg-yellow-100 text-yellow-800 text-xs font-semibold px-2.5 py-0.5 rounded">Up to $10,000</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Special scholarship opportunities only for expo participants.</p>
+                    <ul class="text-gray-600 mb-4 list-disc list-inside">
+                        <li>Merit-based awards</li>
+                        <li>Need-based financial aid</li>
+                    </ul>
+                    <button class="text-fes-orange font-medium hover:text-[#d35400]">Learn More →</button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-fes-orange">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-fes-blue">Free Test Prep Resources</h3>
+                        <span class="bg-blue-100 text-fes-blue text-xs font-semibold px-2.5 py-0.5 rounded">Value $200</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Complimentary access to premium IELTS, TOEFL, GRE, and GMAT preparation materials.</p>
+                    <ul class="text-gray-600 mb-4 list-disc list-inside">
+                        <li>Practice tests and study guides</li>
+                        <li>3-month access to online platforms</li>
+                    </ul>
+                    <button class="text-fes-orange font-medium hover:text-[#d35400]">Learn More →</button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-fes-orange">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-fes-blue">Accommodation Discounts</h3>
+                        <span class="bg-red-100 text-red-800 text-xs font-semibold px-2.5 py-0.5 rounded">10-15% Off</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Special rates on student housing and accommodation services.</p>
+                    <ul class="text-gray-600 mb-4 list-disc list-inside">
+                        <li>On-campus and off-campus options</li>
+                        <li>Reduced security deposits</li>
+                    </ul>
+                    <button class="text-fes-orange font-medium hover:text-[#d35400]">Learn More →</button>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-fes-orange">
+                    <div class="flex justify-between items-start mb-4">
+                        <h3 class="text-xl font-bold text-fes-blue">Free SOP &amp; Resume Review</h3>
+                        <span class="bg-purple-100 text-purple-800 text-xs font-semibold px-2.5 py-0.5 rounded">Personalized</span>
+                    </div>
+                    <p class="text-gray-600 mb-4">Professional review and feedback on your Statement of Purpose and Resume.</p>
+                    <ul class="text-gray-600 mb-4 list-disc list-inside">
+                        <li>Expert guidance from admission specialists</li>
+                        <li>One-on-one consultation session</li>
+                    </ul>
+                    <button class="text-fes-orange font-medium hover:text-[#d35400]">Learn More →</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scholarship Testimonials -->
+    <section id="testimonials" class="py-16 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4 text-fes-blue">Top Scholarships Received by Our Students</h2>
+            <div class="w-24 h-1 bg-fes-orange mx-auto mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <svg class="h-6 w-6 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-fes-blue">Priya Sharma</h3>
+                            <p class="text-sm text-gray-600">MBA at Stanford University</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"With FES's guidance, I secured a $45,000 scholarship for my MBA at Stanford. Their counselors helped me highlight my unique experiences in my application, which made all the difference."</p>
+                    <div class="flex items-center">
+                        <span class="text-fes-orange font-bold mr-2">$45,000</span>
+                        <span class="text-gray-600">Merit Scholarship</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <svg class="h-6 w-6 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-fes-blue">Rahul Mehta</h3>
+                            <p class="text-sm text-gray-600">MS in Computer Science at MIT</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"FES helped me navigate the complex scholarship application process. Their strategic approach helped me secure a full-tuition scholarship at MIT, which was beyond my expectations!"</p>
+                    <div class="flex items-center">
+                        <span class="text-fes-orange font-bold mr-2">$50,000</span>
+                        <span class="text-gray-600">Full Tuition Scholarship</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <svg class="h-6 w-6 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-fes-blue">Aisha Khan</h3>
+                            <p class="text-sm text-gray-600">BA in Economics at LSE</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"The scholarship workshop at FES's previous expo was a game-changer for me. I learned exactly how to position myself and ended up receiving a substantial scholarship at LSE."</p>
+                    <div class="flex items-center">
+                        <span class="text-fes-orange font-bold mr-2">$30,000</span>
+                        <span class="text-gray-600">International Excellence Award</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <svg class="h-6 w-6 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-fes-blue">David Chen</h3>
+                            <p class="text-sm text-gray-600">PhD in Biomedical Engineering at ETH Zurich</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">"FES connected me with the right scholarship opportunities for my research interests. Their personalized approach helped me secure funding for my entire PhD program."</p>
+                    <div class="flex items-center">
+                        <span class="text-fes-orange font-bold mr-2">$120,000</span>
+                        <span class="text-gray-600">Research Fellowship (4 years)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose FES Section -->
+    <section class="py-16 px-4 bg-gray-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4 text-fes-blue">Why Choose FES for Your Study Abroad Journey?</h2>
+            <div class="w-24 h-1 bg-fes-orange mx-auto mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
+                            <svg class="h-6 w-6 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2 text-fes-blue">15+ Years of Experience</h3>
+                            <p class="text-gray-600">With over 15 years in international education consulting, we've helped 10,000+ students achieve their study abroad dreams.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
+                            <svg class="h-6 w-6 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2 text-fes-blue">Expert Counselors</h3>
+                            <p class="text-gray-600">Our team includes certified education counselors, many of whom have studied abroad themselves and understand the journey firsthand.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
+                            <svg class="h-6 w-6 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2 text-fes-blue">Direct University Partnerships</h3>
+                            <p class="text-gray-600">We maintain official partnerships with 500+ universities worldwide, giving our students access to exclusive benefits and priority processing.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
+                            <svg class="h-6 w-6 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2 text-fes-blue">Scholarship Success Rate</h3>
+                            <p class="text-gray-600">85% of our students receive some form of scholarship or financial aid, with an average of $18,000 per student.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
+                            <svg class="h-6 w-6 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2 text-fes-blue">End-to-End Support</h3>
+                            <p class="text-gray-600">From university selection to visa approval and pre-departure orientation, we provide comprehensive support at every step.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 rounded-full w-10 h-10 flex items-center justify-center mr-4 mt-1">
+                            <svg class="h-6 w-6 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold mb-2 text-fes-blue">High Success Rate</h3>
+                            <p class="text-gray-600">97% visa success rate and 95% admission success rate to our students' top-choice universities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student & Delegate Testimonials -->
+    <section class="py-16 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4 text-fes-blue">What Our Students and Delegates Say</h2>
+            <div class="w-24 h-1 bg-fes-orange mx-auto mb-12"></div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <svg class="h-6 w-6 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-fes-blue">Ananya Patel</h3>
+                            <p class="text-sm text-gray-600">Student, University of Toronto</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <svg class="w-5 h-5 text-fes-orange" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-fes-orange" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-fes-orange" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-fes-orange" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-fes-orange" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-700">"Attending FES's virtual expo was the best decision I made. I connected with representatives from my dream universities and got all my questions answered in one place. The personalized counseling session was incredibly helpful!"</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <svg class="h-6 w-6 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-fes-blue">Dr. James Wilson</h3>
+                            <p class="text-sm text-gray-600">Admissions Director, Oxford University</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <svg class="w-5 h-5 text-fes-orange" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-fes-orange" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-fes-orange" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-fes-orange" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-fes-orange" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-700">"FES consistently organizes one of the most professional and well-structured education expos. The quality of students we meet through their platform is exceptional, and their pre-screening process ensures we connect with candidates who are a good fit for our programs."</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                            <svg class="h-6 w-6 text-fes-blue" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-fes-blue">Michael Zhang</h3>
+                            <p class="text-sm text-gray-600">Student, University of Melbourne</p>
+                        </div>
+                    </div>
+                    <div class="flex mb-3">
+                        <svg class="w-5 h-5 text-fes-orange" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-fes-orange" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                        </svg>
+                        <svg class="w-5 h-5 text-fes-orange" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07&lt;script&gt;(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML=" window.__cf$cv$params="{r:'94d830f146d67f87',t:'MTc0OTU1MTQwNC4wMDAwMDA='};var" a="document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);&quot;;b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var" if(window.addeventlistener)document.addeventlistener('domcontentloaded',c);else{var="" e="document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&amp;&amp;(document.onreadystatechange=e,c())}}}})();&lt;/script"></path>
+                        </svg>
+                    </div></div></div></div></section>
+           
+    <script>
+        /*!
+ * Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2024 Fonticons, Inc.
+ */
+        (()=>{function R(t,e,a){var r;(e="symbol"==typeof(r=((t,e)=>{if("object"!=typeof t||!t)return t;var a=t[Symbol.toPrimitive];if(void 0===a)return("string"===e?String:Number)(t);if("object"!=typeof(a=a.call(t,e||"default")))return a;throw new TypeError("@@toPrimitive must return a primitive value.")})(e,"string"))?r:r+"")in t?Object.defineProperty(t,e,{value:a,enumerable:!0,configurable:!0,writable:!0}):t[e]=a}function L(e,t){var a,r=Object.keys(e);return Object.getOwnPropertySymbols&&(a=Object.getOwnPropertySymbols(e),t&&(a=a.filter(function(t){return Object.getOwnPropertyDescriptor(e,t).enumerable})),r.push.apply(r,a)),r}function b(e){for(var t=1;t<arguments.length;t++){var a=null!=arguments[t]?arguments[t]:{};t%2?L(Object(a),!0).forEach(function(t){R(e,t,a[t])}):Object.getOwnPropertyDescriptors?Object.defineProperties(e,Object.getOwnPropertyDescriptors(a)):L(Object(a)).forEach(function(t){Object.defineProperty(e,t,Object.getOwnPropertyDescriptor(a,t))})}return e}let T={},Y={},W=null,H={mark:t=()=>{},measure:t};try{"undefined"!=typeof window&&(T=window),"undefined"!=typeof document&&(Y=document),"undefined"!=typeof MutationObserver&&(W=MutationObserver),"undefined"!=typeof performance&&(H=performance)}catch(t){}var{userAgent:t=""}=T.navigator||{};let e=T,g=Y,_=W;var a=H;let U=!!e.document,f=!!g.documentElement&&!!g.head&&"function"==typeof g.addEventListener&&"function"==typeof g.createElement,B=~t.indexOf("MSIE")||~t.indexOf("Trident/");var t={classic:{fa:"solid",fas:"solid","fa-solid":"solid",far:"regular","fa-regular":"regular",fal:"light","fa-light":"light",fat:"thin","fa-thin":"thin",fab:"brands","fa-brands":"brands"},duotone:{fa:"solid",fad:"solid","fa-solid":"solid","fa-duotone":"solid",fadr:"regular","fa-regular":"regular",fadl:"light","fa-light":"light",fadt:"thin","fa-thin":"thin"},sharp:{fa:"solid",fass:"solid","fa-solid":"solid",fasr:"regular","fa-regular":"regular",fasl:"light","fa-light":"light",fast:"thin","fa-thin":"thin"},"sharp-duotone":{fa:"solid",fasds:"solid","fa-solid":"solid",fasdr:"regular","fa-regular":"regular",fasdl:"light","fa-light":"light",fasdt:"thin","fa-thin":"thin"}},X=["fa-classic","fa-duotone","fa-sharp","fa-sharp-duotone"],l="classic",u="duotone",q=[l,u,"sharp","sharp-duotone"],V=new Map([["classic",{defaultShortPrefixId:"fas",defaultStyleId:"solid",styleIds:["solid","regular","light","thin","brands"],futureStyleIds:[],defaultFontWeight:900}],["sharp",{defaultShortPrefixId:"fass",defaultStyleId:"solid",styleIds:["solid","regular","light","thin"],futureStyleIds:[],defaultFontWeight:900}],["duotone",{defaultShortPrefixId:"fad",defaultStyleId:"solid",styleIds:["solid","regular","light","thin"],futureStyleIds:[],defaultFontWeight:900}],["sharp-duotone",{defaultShortPrefixId:"fasds",defaultStyleId:"solid",styleIds:["solid","regular","light","thin"],futureStyleIds:[],defaultFontWeight:900}]]),G=["fak","fa-kit","fakd","fa-kit-duotone"],n={fak:"kit","fa-kit":"kit"},r={fakd:"kit-duotone","fa-kit-duotone":"kit-duotone"},K=["fak","fakd"],J={kit:"fak"},i={"kit-duotone":"fakd"},o={GROUP:"duotone-group",SWAP_OPACITY:"swap-opacity",PRIMARY:"primary",SECONDARY:"secondary"},Q=["fak","fa-kit","fakd","fa-kit-duotone"],Z={classic:{fab:"fa-brands",fad:"fa-duotone",fal:"fa-light",far:"fa-regular",fas:"fa-solid",fat:"fa-thin"},duotone:{fadr:"fa-regular",fadl:"fa-light",fadt:"fa-thin"},sharp:{fass:"fa-solid",fasr:"fa-regular",fasl:"fa-light",fast:"fa-thin"},"sharp-duotone":{fasds:"fa-solid",fasdr:"fa-regular",fasdl:"fa-light",fasdt:"fa-thin"}},$=["fa","fas","far","fal","fat","fad","fadr","fadl","fadt","fab","fass","fasr","fasl","fast","fasds","fasdr","fasdl","fasdt","fa-classic","fa-duotone","fa-sharp","fa-sharp-duotone","fa-solid","fa-regular","fa-light","fa-thin","fa-duotone","fa-brands"],s=(c=[1,2,3,4,5,6,7,8,9,10]).concat([11,12,13,14,15,16,17,18,19,20]),o=[...Object.keys({classic:["fas","far","fal","fat","fad"],duotone:["fadr","fadl","fadt"],sharp:["fass","fasr","fasl","fast"],"sharp-duotone":["fasds","fasdr","fasdl","fasdt"]}),"solid","regular","light","thin","duotone","brands","2xs","xs","sm","lg","xl","2xl","beat","border","fade","beat-fade","bounce","flip-both","flip-horizontal","flip-vertical","flip","fw","inverse","layers-counter","layers-text","layers","li","pull-left","pull-right","pulse","rotate-180","rotate-270","rotate-90","rotate-by","shake","spin-pulse","spin-reverse","spin","stack-1x","stack-2x","stack","ul",o.GROUP,o.SWAP_OPACITY,o.PRIMARY,o.SECONDARY].concat(c.map(t=>"".concat(t,"x"))).concat(s.map(t=>"w-".concat(t))),c="___FONT_AWESOME___";let tt=16,et="svg-inline--fa",y="data-fa-i2svg",at="data-fa-pseudo-element",rt="data-fa-pseudo-element-pending",nt="data-prefix",it="data-icon",ot="fontawesome-i2svg",st="async",lt=["HTML","HEAD","STYLE","SCRIPT"],ft=(()=>{try{return!0}catch(t){return!1}})();function d(t){return new Proxy(t,{get(t,e){return e in t?t[e]:t[l]}})}(s=b({},t))[l]=b(b(b(b({},{"fa-duotone":"duotone"}),t[l]),n),r);let ct=d(s),ut=((t=b({},{classic:{solid:"fas",regular:"far",light:"fal",thin:"fat",brands:"fab"},duotone:{solid:"fad",regular:"fadr",light:"fadl",thin:"fadt"},sharp:{solid:"fass",regular:"fasr",light:"fasl",thin:"fast"},"sharp-duotone":{solid:"fasds",regular:"fasdr",light:"fasdl",thin:"fasdt"}}))[l]=b(b(b(b({},{duotone:"fad"}),t[l]),J),i),d(t)),dt=((n=b({},Z))[l]=b(b({},n[l]),{fak:"fa-kit"}),d(n)),mt=((r=b({},{classic:{"fa-brands":"fab","fa-duotone":"fad","fa-light":"fal","fa-regular":"far","fa-solid":"fas","fa-thin":"fat"},duotone:{"fa-regular":"fadr","fa-light":"fadl","fa-thin":"fadt"},sharp:{"fa-solid":"fass","fa-regular":"fasr","fa-light":"fasl","fa-thin":"fast"},"sharp-duotone":{"fa-solid":"fasds","fa-regular":"fasdr","fa-light":"fasdl","fa-thin":"fasdt"}}))[l]=b(b({},r[l]),{"fa-kit":"fak"}),d(r),/fa(s|r|l|t|d|dr|dl|dt|b|k|kd|ss|sr|sl|st|sds|sdr|sdl|sdt)?[\-\ ]/),ht="fa-layers-text",pt=/Font ?Awesome ?([56 ]*)(Solid|Regular|Light|Thin|Duotone|Brands|Free|Pro|Sharp Duotone|Sharp|Kit)?.*/i,gt=(d(b({},{classic:{900:"fas",400:"far",normal:"far",300:"fal",100:"fat"},duotone:{900:"fad",400:"fadr",300:"fadl",100:"fadt"},sharp:{900:"fass",400:"fasr",300:"fasl",100:"fast"},"sharp-duotone":{900:"fasds",400:"fasdr",300:"fasdl",100:"fasdt"}})),["class","data-prefix","data-icon","data-fa-transform","data-fa-mask"]),vt={GROUP:"duotone-group",SWAP_OPACITY:"swap-opacity",PRIMARY:"primary",SECONDARY:"secondary"},bt=["kit",...o],m=e.FontAwesomeConfig||{},h=(g&&"function"==typeof g.querySelector&&[["data-family-prefix","familyPrefix"],["data-css-prefix","cssPrefix"],["data-family-default","familyDefault"],["data-style-default","styleDefault"],["data-replacement-class","replacementClass"],["data-auto-replace-svg","autoReplaceSvg"],["data-auto-add-css","autoAddCss"],["data-auto-a11y","autoA11y"],["data-search-pseudo-elements","searchPseudoElements"],["data-observe-mutations","observeMutations"],["data-mutate-approach","mutateApproach"],["data-keep-original-source","keepOriginalSource"],["data-measure-performance","measurePerformance"],["data-show-missing-icons","showMissingIcons"]].forEach(t=>{var[e,a]=t,e=""===(t=(t=>{var e=g.querySelector("script["+t+"]");if(e)return e.getAttribute(t)})(e))||"false"!==t&&("true"===t||t);null!=e&&(m[a]=e)}),s={styleDefault:"solid",familyDefault:l,cssPrefix:"fa",replacementClass:et,autoReplaceSvg:!0,autoAddCss:!0,autoA11y:!0,searchPseudoElements:!1,observeMutations:!0,mutateApproach:"async",keepOriginalSource:!0,measurePerformance:!1,showMissingIcons:!0},m.familyPrefix&&(m.cssPrefix=m.familyPrefix),b(b({},s),m)),x=(h.autoReplaceSvg||(h.observeMutations=!1),{}),yt=(Object.keys(s).forEach(e=>{Object.defineProperty(x,e,{enumerable:!0,set:function(t){h[e]=t,yt.forEach(t=>t(x))},get:function(){return h[e]}})}),Object.defineProperty(x,"familyPrefix",{enumerable:!0,set:function(t){h.cssPrefix=t,yt.forEach(t=>t(x))},get:function(){return h.cssPrefix}}),e.FontAwesomeConfig=x,[]),p=tt,v={size:16,x:0,y:0,rotate:0,flipX:!1,flipY:!1},xt="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";function k(){let t=12,e="";for(;0<t--;)e+=xt[62*Math.random()|0];return e}function w(t){var e=[];for(let a=(t||[]).length>>>0;a--;)e[a]=t[a];return e}function kt(t){return t.classList?w(t.classList):(t.getAttribute("class")||"").split(" ").filter(t=>t)}function wt(t){return"".concat(t).replace(/&/g,"&amp;").replace(/"/g,"&quot;").replace(/'/g,"&#39;").replace(/</g,"&lt;").replace(/>/g,"&gt;")}function A(a){return Object.keys(a||{}).reduce((t,e)=>t+"".concat(e,": ").concat(a[e].trim(),";"),"")}function At(t){return t.size!==v.size||t.x!==v.x||t.y!==v.y||t.rotate!==v.rotate||t.flipX||t.flipY}function Pt(){var t,e,a=et,r=x.cssPrefix,n=x.replacementClass;let i=':host,:root{--fa-font-solid:normal 900 1em/1 "Font Awesome 6 Free";--fa-font-regular:normal 400 1em/1 "Font Awesome 6 Free";--fa-font-light:normal 300 1em/1 "Font Awesome 6 Pro";--fa-font-thin:normal 100 1em/1 "Font Awesome 6 Pro";--fa-font-duotone:normal 900 1em/1 "Font Awesome 6 Duotone";--fa-font-duotone-regular:normal 400 1em/1 "Font Awesome 6 Duotone";--fa-font-duotone-light:normal 300 1em/1 "Font Awesome 6 Duotone";--fa-font-duotone-thin:normal 100 1em/1 "Font Awesome 6 Duotone";--fa-font-brands:normal 400 1em/1 "Font Awesome 6 Brands";--fa-font-sharp-solid:normal 900 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-regular:normal 400 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-light:normal 300 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-thin:normal 100 1em/1 "Font Awesome 6 Sharp";--fa-font-sharp-duotone-solid:normal 900 1em/1 "Font Awesome 6 Sharp Duotone";--fa-font-sharp-duotone-regular:normal 400 1em/1 "Font Awesome 6 Sharp Duotone";--fa-font-sharp-duotone-light:normal 300 1em/1 "Font Awesome 6 Sharp Duotone";--fa-font-sharp-duotone-thin:normal 100 1em/1 "Font Awesome 6 Sharp Duotone"}svg:not(:host).svg-inline--fa,svg:not(:root).svg-inline--fa{overflow:visible;box-sizing:content-box}.svg-inline--fa{display:var(--fa-display,inline-block);height:1em;overflow:visible;vertical-align:-.125em}.svg-inline--fa.fa-2xs{vertical-align:.1em}.svg-inline--fa.fa-xs{vertical-align:0}.svg-inline--fa.fa-sm{vertical-align:-.0714285705em}.svg-inline--fa.fa-lg{vertical-align:-.2em}.svg-inline--fa.fa-xl{vertical-align:-.25em}.svg-inline--fa.fa-2xl{vertical-align:-.3125em}.svg-inline--fa.fa-pull-left{margin-right:var(--fa-pull-margin,.3em);width:auto}.svg-inline--fa.fa-pull-right{margin-left:var(--fa-pull-margin,.3em);width:auto}.svg-inline--fa.fa-li{width:var(--fa-li-width,2em);top:.25em}.svg-inline--fa.fa-fw{width:var(--fa-fw-width,1.25em)}.fa-layers svg.svg-inline--fa{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0}.fa-layers-counter,.fa-layers-text{display:inline-block;position:absolute;text-align:center}.fa-layers{display:inline-block;height:1em;position:relative;text-align:center;vertical-align:-.125em;width:1em}.fa-layers svg.svg-inline--fa{transform-origin:center center}.fa-layers-text{left:50%;top:50%;transform:translate(-50%,-50%);transform-origin:center center}.fa-layers-counter{background-color:var(--fa-counter-background-color,#ff253a);border-radius:var(--fa-counter-border-radius,1em);box-sizing:border-box;color:var(--fa-inverse,#fff);line-height:var(--fa-counter-line-height,1);max-width:var(--fa-counter-max-width,5em);min-width:var(--fa-counter-min-width,1.5em);overflow:hidden;padding:var(--fa-counter-padding,.25em .5em);right:var(--fa-right,0);text-overflow:ellipsis;top:var(--fa-top,0);transform:scale(var(--fa-counter-scale,.25));transform-origin:top right}.fa-layers-bottom-right{bottom:var(--fa-bottom,0);right:var(--fa-right,0);top:auto;transform:scale(var(--fa-layers-scale,.25));transform-origin:bottom right}.fa-layers-bottom-left{bottom:var(--fa-bottom,0);left:var(--fa-left,0);right:auto;top:auto;transform:scale(var(--fa-layers-scale,.25));transform-origin:bottom left}.fa-layers-top-right{top:var(--fa-top,0);right:var(--fa-right,0);transform:scale(var(--fa-layers-scale,.25));transform-origin:top right}.fa-layers-top-left{left:var(--fa-left,0);right:auto;top:var(--fa-top,0);transform:scale(var(--fa-layers-scale,.25));transform-origin:top left}.fa-1x{font-size:1em}.fa-2x{font-size:2em}.fa-3x{font-size:3em}.fa-4x{font-size:4em}.fa-5x{font-size:5em}.fa-6x{font-size:6em}.fa-7x{font-size:7em}.fa-8x{font-size:8em}.fa-9x{font-size:9em}.fa-10x{font-size:10em}.fa-2xs{font-size:.625em;line-height:.1em;vertical-align:.225em}.fa-xs{font-size:.75em;line-height:.0833333337em;vertical-align:.125em}.fa-sm{font-size:.875em;line-height:.0714285718em;vertical-align:.0535714295em}.fa-lg{font-size:1.25em;line-height:.05em;vertical-align:-.075em}.fa-xl{font-size:1.5em;line-height:.0416666682em;vertical-align:-.125em}.fa-2xl{font-size:2em;line-height:.03125em;vertical-align:-.1875em}.fa-fw{text-align:center;width:1.25em}.fa-ul{list-style-type:none;margin-left:var(--fa-li-margin,2.5em);padding-left:0}.fa-ul>li{position:relative}.fa-li{left:calc(-1 * var(--fa-li-width,2em));position:absolute;text-align:center;width:var(--fa-li-width,2em);line-height:inherit}.fa-border{border-color:var(--fa-border-color,#eee);border-radius:var(--fa-border-radius,.1em);border-style:var(--fa-border-style,solid);border-width:var(--fa-border-width,.08em);padding:var(--fa-border-padding,.2em .25em .15em)}.fa-pull-left{float:left;margin-right:var(--fa-pull-margin,.3em)}.fa-pull-right{float:right;margin-left:var(--fa-pull-margin,.3em)}.fa-beat{animation-name:fa-beat;animation-delay:var(--fa-animation-delay,0s);animation-direction:var(--fa-animation-direction,normal);animation-duration:var(--fa-animation-duration,1s);animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-bounce{animation-name:fa-bounce;animation-delay:var(--fa-animation-delay,0s);animation-direction:var(--fa-animation-direction,normal);animation-duration:var(--fa-animation-duration,1s);animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-timing-function:var(--fa-animation-timing,cubic-bezier(.28,.84,.42,1))}.fa-fade{animation-name:fa-fade;animation-delay:var(--fa-animation-delay,0s);animation-direction:var(--fa-animation-direction,normal);animation-duration:var(--fa-animation-duration,1s);animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-beat-fade{animation-name:fa-beat-fade;animation-delay:var(--fa-animation-delay,0s);animation-direction:var(--fa-animation-direction,normal);animation-duration:var(--fa-animation-duration,1s);animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-timing-function:var(--fa-animation-timing,cubic-bezier(.4,0,.6,1))}.fa-flip{animation-name:fa-flip;animation-delay:var(--fa-animation-delay,0s);animation-direction:var(--fa-animation-direction,normal);animation-duration:var(--fa-animation-duration,1s);animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-timing-function:var(--fa-animation-timing,ease-in-out)}.fa-shake{animation-name:fa-shake;animation-delay:var(--fa-animation-delay,0s);animation-direction:var(--fa-animation-direction,normal);animation-duration:var(--fa-animation-duration,1s);animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-timing-function:var(--fa-animation-timing,linear)}.fa-spin{animation-name:fa-spin;animation-delay:var(--fa-animation-delay,0s);animation-direction:var(--fa-animation-direction,normal);animation-duration:var(--fa-animation-duration,2s);animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-timing-function:var(--fa-animation-timing,linear)}.fa-spin-reverse{--fa-animation-direction:reverse}.fa-pulse,.fa-spin-pulse{animation-name:fa-spin;animation-direction:var(--fa-animation-direction,normal);animation-duration:var(--fa-animation-duration,1s);animation-iteration-count:var(--fa-animation-iteration-count,infinite);animation-timing-function:var(--fa-animation-timing,steps(8))}@media (prefers-reduced-motion:reduce){.fa-beat,.fa-beat-fade,.fa-bounce,.fa-fade,.fa-flip,.fa-pulse,.fa-shake,.fa-spin,.fa-spin-pulse{animation-delay:-1ms;animation-duration:1ms;animation-iteration-count:1;transition-delay:0s;transition-duration:0s}}@keyframes fa-beat{0%,90%{transform:scale(1)}45%{transform:scale(var(--fa-beat-scale,1.25))}}@keyframes fa-bounce{0%{transform:scale(1,1) translateY(0)}10%{transform:scale(var(--fa-bounce-start-scale-x,1.1),var(--fa-bounce-start-scale-y,.9)) translateY(0)}30%{transform:scale(var(--fa-bounce-jump-scale-x,.9),var(--fa-bounce-jump-scale-y,1.1)) translateY(var(--fa-bounce-height,-.5em))}50%{transform:scale(var(--fa-bounce-land-scale-x,1.05),var(--fa-bounce-land-scale-y,.95)) translateY(0)}57%{transform:scale(1,1) translateY(var(--fa-bounce-rebound,-.125em))}64%{transform:scale(1,1) translateY(0)}100%{transform:scale(1,1) translateY(0)}}@keyframes fa-fade{50%{opacity:var(--fa-fade-opacity,.4)}}@keyframes fa-beat-fade{0%,100%{opacity:var(--fa-beat-fade-opacity,.4);transform:scale(1)}50%{opacity:1;transform:scale(var(--fa-beat-fade-scale,1.125))}}@keyframes fa-flip{50%{transform:rotate3d(var(--fa-flip-x,0),var(--fa-flip-y,1),var(--fa-flip-z,0),var(--fa-flip-angle,-180deg))}}@keyframes fa-shake{0%{transform:rotate(-15deg)}4%{transform:rotate(15deg)}24%,8%{transform:rotate(-18deg)}12%,28%{transform:rotate(18deg)}16%{transform:rotate(-22deg)}20%{transform:rotate(22deg)}32%{transform:rotate(-12deg)}36%{transform:rotate(12deg)}100%,40%{transform:rotate(0)}}@keyframes fa-spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}.fa-rotate-90{transform:rotate(90deg)}.fa-rotate-180{transform:rotate(180deg)}.fa-rotate-270{transform:rotate(270deg)}.fa-flip-horizontal{transform:scale(-1,1)}.fa-flip-vertical{transform:scale(1,-1)}.fa-flip-both,.fa-flip-horizontal.fa-flip-vertical{transform:scale(-1,-1)}.fa-rotate-by{transform:rotate(var(--fa-rotate-angle,0))}.fa-stack{display:inline-block;vertical-align:middle;height:2em;position:relative;width:2.5em}.fa-stack-1x,.fa-stack-2x{bottom:0;left:0;margin:auto;position:absolute;right:0;top:0;z-index:var(--fa-stack-z-index,auto)}.svg-inline--fa.fa-stack-1x{height:1em;width:1.25em}.svg-inline--fa.fa-stack-2x{height:2em;width:2.5em}.fa-inverse{color:var(--fa-inverse,#fff)}.fa-sr-only,.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.fa-sr-only-focusable:not(:focus),.sr-only-focusable:not(:focus){position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}.svg-inline--fa .fa-primary{fill:var(--fa-primary-color,currentColor);opacity:var(--fa-primary-opacity,1)}.svg-inline--fa .fa-secondary{fill:var(--fa-secondary-color,currentColor);opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-primary{opacity:var(--fa-secondary-opacity,.4)}.svg-inline--fa.fa-swap-opacity .fa-secondary{opacity:var(--fa-primary-opacity,1)}.svg-inline--fa mask .fa-primary,.svg-inline--fa mask .fa-secondary{fill:#000}';return"fa"===r&&n===a||(t=new RegExp("\\.".concat("fa","\\-"),"g"),e=new RegExp("\\--".concat("fa","\\-"),"g"),a=new RegExp("\\.".concat(a),"g"),i=i.replace(t,".".concat(r,"-")).replace(e,"--".concat(r,"-")).replace(a,".".concat(n))),i}let Ot=!1;function Nt(){if(x.autoAddCss&&!Ot){var a=Pt();if(a&&f){var r=g.createElement("style"),n=(r.setAttribute("type","text/css"),r.innerHTML=a,g.head.childNodes);let t=null;for(let e=n.length-1;-1<e;e--){var i=n[e],o=(i.tagName||"").toUpperCase();-1<["STYLE","LINK"].indexOf(o)&&(t=i)}g.head.insertBefore(r,t)}Ot=!0}}var J={mixout(){return{dom:{css:Pt,insertCss:Nt}}},hooks(){return{beforeDOMElementCreation(){Nt()},beforeI2svg(){Nt()}}}},P=((i=e||{})[c]||(i[c]={}),i[c].styles||(i[c].styles={}),i[c].hooks||(i[c].hooks={}),i[c].shims||(i[c].shims=[]),i[c]);function St(){g.removeEventListener("DOMContentLoaded",St),Et=1,Ct.map(t=>t())}let Ct=[],Et=!1;function Mt(t){f&&(Et?setTimeout(t,0):Ct.push(t))}function O(t){var a,{tag:e,attributes:r={},children:n=[]}=t;return"string"==typeof t?wt(t):"<".concat(e," ").concat((a=r,Object.keys(a||{}).reduce((t,e)=>t+"".concat(e,'="').concat(wt(a[e]),'" '),"").trim()),">").concat(n.map(O).join(""),"</").concat(e,">")}function jt(t,e,a){if(t&&t[e]&&t[e][a])return{prefix:e,iconName:a,icon:t[e][a]}}function zt(t,e,a,r){for(var n,i,o=Object.keys(t),s=o.length,l=void 0!==r?It(e,r):e,f=void 0===a?(n=1,t[o[0]]):(n=0,a);n<s;n++)f=l(f,t[i=o[n]],i,t);return f}f&&!(Et=(g.documentElement.doScroll?/^loaded|^c/:/^loaded|^i|^c/).test(g.readyState))&&g.addEventListener("DOMContentLoaded",St);var It=function(n,i){return function(t,e,a,r){return n.call(i,t,e,a,r)}};function Ft(t){var e=(t=>{var e=[];let a=0;for(var r=t.length;a<r;){var n,i=t.charCodeAt(a++);55296<=i&&i<=56319&&a<r?56320==(64512&(n=t.charCodeAt(a++)))?e.push(((1023&i)<<10)+(1023&n)+65536):(e.push(i),a--):e.push(i)}return e})(t);return 1===e.length?e[0].toString(16):null}function Dt(r){return Object.keys(r).reduce((t,e)=>{var a=r[e];return!!a.icon?t[a.iconName]=a.icon:t[e]=a,t},{})}function Rt(t,e,a){var{skipHooks:r=!1}=2<arguments.length&&void 0!==a?a:{},n=Dt(e);"function"!=typeof P.hooks.addPack||r?P.styles[t]=b(b({},P.styles[t]||{}),n):P.hooks.addPack(t,Dt(e)),"fas"===t&&Rt("fa",e)}let{styles:N,shims:Lt}=P,Tt=Object.keys(dt),Yt=Tt.reduce((t,e)=>(t[e]=Object.keys(dt[e]),t),{}),S=null,Wt={},Ht={},_t={},Ut={},Bt={};function Xt(t,e){var a=e.split("-"),r=a[0],a=a.slice(1).join("-");return r!==t||""===a||(e=a,~bt.indexOf(e))?null:a}let C=()=>{var t=r=>zt(N,(t,e,a)=>(t[a]=zt(e,r,{}),t),{});Wt=t((e,t,a)=>(t[3]&&(e[t[3]]=a),t[2]&&t[2].filter(t=>"number"==typeof t).forEach(t=>{e[t.toString(16)]=a}),e)),Ht=t((e,t,a)=>(e[a]=a,t[2]&&t[2].filter(t=>"string"==typeof t).forEach(t=>{e[t]=a}),e)),Bt=t((e,t,a)=>{var r=t[2];return e[a]=a,r.forEach(t=>{e[t]=a}),e});let i="far"in N||x.autoFetchSvg;t=zt(Lt,(t,e)=>{var a=e[0];let r=e[1];var n=e[2];return"far"!==r||i||(r="fas"),"string"==typeof a&&(t.names[a]={prefix:r,iconName:n}),"number"==typeof a&&(t.unicodes[a.toString(16)]={prefix:r,iconName:n}),t},{names:{},unicodes:{}});_t=t.names,Ut=t.unicodes,S=Kt(x.styleDefault,{family:x.familyDefault})};function qt(t,e){return(Wt[t]||{})[e]}function E(t,e){return(Bt[t]||{})[e]}function Vt(t){return _t[t]||{prefix:null,iconName:null}}ta=t=>{S=Kt(t.styleDefault,{family:x.familyDefault})},yt.push(ta),C();let Gt=()=>({prefix:null,iconName:null,rest:[]});function Kt(t,e){var{family:a=l}=1<arguments.length&&void 0!==e?e:{},r=ct[a][t];return a!==u||t?(a=ut[a][t]||ut[a][r],r=t in P.styles?t:null,a||r||null):"fad"}function Jt(t){return t.sort().filter((t,e,a)=>a.indexOf(t)===e)}function Qt(t,e){var{skipLookups:a=!1}=1<arguments.length&&void 0!==e?e:{};let r=null,n=$.concat(Q);var i=Jt(t.filter(t=>n.includes(t))),o=Jt(t.filter(t=>!$.includes(t))),[s=null]=i.filter(t=>(r=t,!X.includes(t))),i=(t=>{let a=l,r=Tt.reduce((t,e)=>(t[e]="".concat(x.cssPrefix,"-").concat(e),t),{});return q.forEach(e=>{(t.includes(r[e])||t.some(t=>Yt[e].includes(t)))&&(a=e)}),a})(i),o=b(b({},(t=>{let a=[],r=null;return t.forEach(t=>{var e=Xt(x.cssPrefix,t);e?r=e:t&&a.push(t)}),{iconName:r,rest:a}})(o)),{},{prefix:Kt(s,{family:i})});return b(b(b({},o),(t=>{var{values:e,family:a,canonical:r,givenPrefix:n="",styles:i={},config:o={}}=t,s=a===u,l=e.includes("fa-duotone")||e.includes("fad"),f="duotone"===o.familyDefault,c="fad"===r.prefix||"fa-duotone"===r.prefix;return!s&&(l||f||c)&&(r.prefix="fad"),(e.includes("fa-brands")||e.includes("fab"))&&(r.prefix="fab"),!r.prefix&&Zt.includes(a)&&(Object.keys(i).find(t=>$t.includes(t))||o.autoFetchSvg)&&(s=V.get(a).defaultShortPrefixId,r.prefix=s,r.iconName=E(r.prefix,r.iconName)||r.iconName),"fa"!==r.prefix&&"fa"!==n||(r.prefix=S||"fas"),r})({values:t,family:i,styles:N,config:x,canonical:o,givenPrefix:r})),((t,e,a)=>{let{prefix:r,iconName:n}=a;var i,o;return!t&&r&&n&&(i="fa"===e?Vt(n):{},o=E(r,n),n=i.iconName||o||n,"far"!==(r=i.prefix||r)||N.far||!N.fas||x.autoFetchSvg||(r="fas")),{prefix:r,iconName:n}})(a,r,o))}let Zt=q.filter(t=>t!==l||t!==u),$t=Object.keys(Z).filter(t=>t!==l).map(t=>Object.keys(Z[t])).flat(),te=[],M={},j={},ee=Object.keys(j);function ae(t,e){for(var a=arguments.length,r=new Array(2<a?a-2:0),n=2;n<a;n++)r[n-2]=arguments[n];return(M[t]||[]).forEach(t=>{e=t.apply(null,[e,...r])}),e}function z(t){for(var e=arguments.length,a=new Array(1<e?e-1:0),r=1;r<e;r++)a[r-1]=arguments[r];(M[t]||[]).forEach(t=>{t.apply(null,a)})}function I(t){var e=t,a=Array.prototype.slice.call(arguments,1);return j[e]?j[e].apply(null,a):void 0}function re(t){"fa"===t.prefix&&(t.prefix="fas");var e=t.iconName,a=t.prefix||S;if(e)return e=E(a,e)||e,jt(ne.definitions,a,e)||jt(P.styles,a,e)}let ne=new class{constructor(){this.definitions={}}add(){for(var t=arguments.length,e=new Array(t),a=0;a<t;a++)e[a]=arguments[a];let r=e.reduce(this._pullDefinitions,{});Object.keys(r).forEach(t=>{this.definitions[t]=b(b({},this.definitions[t]||{}),r[t]),Rt(t,r[t]);var e=dt[l][t];e&&Rt(e,r[t]),C()})}reset(){this.definitions={}}_pullDefinitions(i,t){let o=t.prefix&&t.iconName&&t.icon?{0:t}:t;return Object.keys(o).map(t=>{let{prefix:e,iconName:a,icon:r}=o[t];var n=r[2];i[e]||(i[e]={}),0<n.length&&n.forEach(t=>{"string"==typeof t&&(i[e][t]=r)}),i[e][a]=r}),i}},ie={noAuto:()=>{x.autoReplaceSvg=!1,x.observeMutations=!1,z("noAuto")},config:x,dom:{i2svg:function(){var t=0<arguments.length&&void 0!==arguments[0]?arguments[0]:{};return f?(z("beforeI2svg",t),I("pseudoElements2svg",t),I("i2svg",t)):Promise.reject(new Error("Operation requires a DOM of some kind."))},watch:function(){let t=0<arguments.length&&void 0!==arguments[0]?arguments[0]:{},e=t.autoReplaceSvgRoot;!1===x.autoReplaceSvg&&(x.autoReplaceSvg=!0),x.observeMutations=!0,Mt(()=>{F({autoReplaceSvgRoot:e}),z("watch",t)})}},parse:{icon:t=>{var e,a;return null===t?null:"object"==typeof t&&t.prefix&&t.iconName?{prefix:t.prefix,iconName:E(t.prefix,t.iconName)||t.iconName}:Array.isArray(t)&&2===t.length?(e=0===t[1].indexOf("fa-")?t[1].slice(3):t[1],{prefix:a=Kt(t[0]),iconName:E(a,e)||e}):"string"==typeof t&&(-1<t.indexOf("".concat(x.cssPrefix,"-"))||t.match(mt))?{prefix:(a=Qt(t.split(" "),{skipLookups:!0})).prefix||S,iconName:E(a.prefix,a.iconName)||a.iconName}:"string"==typeof t?{prefix:S,iconName:E(S,t)||t}:void 0}},library:ne,findIconDefinition:re,toHtml:O},F=function(){var t=0<arguments.length&&void 0!==arguments[0]?arguments[0]:{},{autoReplaceSvgRoot:t=g}=t;(0<Object.keys(P.styles).length||x.autoFetchSvg)&&f&&x.autoReplaceSvg&&ie.dom.i2svg({node:t})};function oe(e,t){return Object.defineProperty(e,"abstract",{get:t}),Object.defineProperty(e,"html",{get:function(){return e.abstract.map(t=>O(t))}}),Object.defineProperty(e,"node",{get:function(){var t;if(f)return(t=g.createElement("div")).innerHTML=e.html,t.children}}),e}function se(t){let{icons:{main:e,mask:a},prefix:r,iconName:n,transform:i,symbol:o,title:s,maskId:l,titleId:f,extra:c,watchable:u=!1}=t;var d,m,{width:h,height:p}=a.found?a:e,g=K.includes(r),v=[x.replacementClass,n?"".concat(x.cssPrefix,"-").concat(n):""].filter(t=>-1===c.classes.indexOf(t)).filter(t=>""!==t||!!t).concat(c.classes).join(" "),v={children:[],attributes:b(b({},c.attributes),{},{"data-prefix":r,"data-icon":n,class:v,role:c.attributes.role||"img",xmlns:"http://www.w3.org/2000/svg",viewBox:"0 0 ".concat(h," ").concat(p)})},g=g&&!~c.classes.indexOf("fa-fw")?{width:"".concat(h/p*16*.0625,"em")}:{},h=(u&&(v.attributes[y]=""),s&&(v.children.push({tag:"title",attributes:{id:v.attributes["aria-labelledby"]||"title-".concat(f||k())},children:[s]}),delete v.attributes.title),b(b({},v),{},{prefix:r,iconName:n,main:e,mask:a,maskId:l,transform:i,symbol:o,styles:b(b({},g),c.styles)})),{children:p,attributes:v}=a.found&&e.found?I("generateAbstractMask",h)||{children:[],attributes:{}}:I("generateAbstractIcon",h)||{children:[],attributes:{}};return h.children=p,h.attributes=v,o?({prefix:g,iconName:p,children:v,attributes:m,symbol:d}=h,g=!0===d?"".concat(g,"-").concat(x.cssPrefix,"-").concat(p):d,[{tag:"svg",attributes:{style:"display: none;"},children:[{tag:"symbol",attributes:b(b({},m),{},{id:g}),children:v}]}]):({children:p,main:d,mask:m,attributes:g,styles:v,transform:h}=h,At(h)&&d.found&&!m.found&&({width:m,height:d}=d,m={x:m/d/2,y:.5},g.style=A(b(b({},v),{},{"transform-origin":"".concat(m.x+h.x/16,"em ").concat(m.y+h.y/16,"em")}))),[{tag:"svg",attributes:g,children:p}])}function le(t){var{content:e,width:a,height:r,transform:n,title:i,extra:o,watchable:s=!1}=t,l=b(b(b({},o.attributes),i?{title:i}:{}),{},{class:o.classes.join(" ")}),s=(s&&(l[y]=""),b({},o.styles)),o=(At(n)&&(s.transform=(t=>{var{transform:e,width:a=tt,height:r=tt,startCentered:n=!1}=t;let i="";return n&&B?i+="translate(".concat(e.x/p-a/2,"em, ").concat(e.y/p-r/2,"em) "):i+=n?"translate(calc(-50% + ".concat(e.x/p,"em), calc(-50% + ").concat(e.y/p,"em)) "):"translate(".concat(e.x/p,"em, ").concat(e.y/p,"em) "),i=(i+="scale(".concat(e.size/p*(e.flipX?-1:1),", ").concat(e.size/p*(e.flipY?-1:1),") "))+"rotate(".concat(e.rotate,"deg) ")})({transform:n,startCentered:!0,width:a,height:r}),s["-webkit-transform"]=s.transform),A(s)),n=(0<o.length&&(l.style=o),[]);return n.push({tag:"span",attributes:l,children:[e]}),i&&n.push({tag:"span",attributes:{class:"sr-only"},children:[i]}),n}let fe=P.styles;function ce(t){var e=t[0],a=t[1],[r]=t.slice(4);let n=null;return{found:!0,width:e,height:a,icon:n=Array.isArray(r)?{tag:"g",attributes:{class:"".concat(x.cssPrefix,"-").concat(vt.GROUP)},children:[{tag:"path",attributes:{class:"".concat(x.cssPrefix,"-").concat(vt.SECONDARY),fill:"currentColor",d:r[0]}},{tag:"path",attributes:{class:"".concat(x.cssPrefix,"-").concat(vt.PRIMARY),fill:"currentColor",d:r[1]}}]}:{tag:"path",attributes:{fill:"currentColor",d:r}}}}let ue={found:!1,width:512,height:512};function de(i,o){let s=o;return"fa"===o&&null!==x.styleDefault&&(o=S),new Promise((t,e)=>{var a,r,n;if("fa"===s&&(a=Vt(i)||{},i=a.iconName||i,o=a.prefix||o),i&&o&&fe[o]&&fe[o][i])return t(ce(fe[o][i]));r=i,n=o,ft||x.showMissingIcons||!r||console.error('Icon with name "'.concat(r,'" and prefix "').concat(n,'" is missing.')),t(b(b({},ue),{},{icon:x.showMissingIcons&&i&&I("missingIconAbstract")||{}}))})}t=()=>{};let me=x.measurePerformance&&a&&a.mark&&a.measure?a:{mark:t,measure:t},D='FA "6.7.2"',he=t=>{me.mark("".concat(D," ").concat(t," ends")),me.measure("".concat(D," ").concat(t),"".concat(D," ").concat(t," begins"),"".concat(D," ").concat(t," ends"))};var pe={begin:t=>(me.mark("".concat(D," ").concat(t," begins")),()=>he(t)),end:he};let ge=()=>{};function ve(t){return"string"==typeof(t.getAttribute?t.getAttribute(y):null)}function be(e,t){let{ceFn:a="svg"===e.tag?function(t){return g.createElementNS("http://www.w3.org/2000/svg",t)}:function(t){return g.createElement(t)}}=1<arguments.length&&void 0!==t?t:{};if("string"==typeof e)return g.createTextNode(e);let r=a(e.tag);return Object.keys(e.attributes||[]).forEach(function(t){r.setAttribute(t,e.attributes[t])}),(e.children||[]).forEach(function(t){r.appendChild(be(t,{ceFn:a}))}),r}let ye={replace:function(t){let e=t[0];var a;e.parentNode&&(t[1].forEach(t=>{e.parentNode.insertBefore(be(t),e)}),null===e.getAttribute(y)&&x.keepOriginalSource?(a=g.createComment((t=e,a=" ".concat(t.outerHTML," "),"".concat(a,"Font Awesome fontawesome.com "))),e.parentNode.replaceChild(a,e)):e.remove())},nest:function(t){var e=t[0],a=t[1];if(~kt(e).indexOf(x.replacementClass))return ye.replace(t);let r=new RegExp("".concat(x.cssPrefix,"-.*"));delete a[0].attributes.id,a[0].attributes.class&&(n=a[0].attributes.class.split(" ").reduce((t,e)=>((e===x.replacementClass||e.match(r)?t.toSvg:t.toNode).push(e),t),{toNode:[],toSvg:[]}),a[0].attributes.class=n.toSvg.join(" "),0===n.toNode.length?e.removeAttribute("class"):e.setAttribute("class",n.toNode.join(" ")));var n=a.map(t=>O(t)).join("\n");e.setAttribute(y,""),e.innerHTML=n}};function xe(t){t()}function ke(a,t){let r="function"==typeof t?t:ge;if(0===a.length)r();else{let t=xe;(t=x.mutateApproach===st?e.requestAnimationFrame||xe:t)(()=>{var t=!0!==x.autoReplaceSvg&&ye[x.autoReplaceSvg]||ye.replace,e=pe.begin("mutate");a.map(t),e(),r()})}}let we=!1;function Ae(){we=!0}function Pe(){we=!1}let Oe=null;function Ne(t){if(!_)return;if(!x.observeMutations)return;let{treeCallback:i=ge,nodeCallback:o=ge,pseudoElementsCallback:s=ge,observeMutationsRoot:e=g}=t;Oe=new _(t=>{if(!we){let n=S;w(t).forEach(t=>{var e,a,r;"childList"===t.type&&0<t.addedNodes.length&&!ve(t.addedNodes[0])&&(x.searchPseudoElements&&s(t.target),i(t.target)),"attributes"===t.type&&t.target.parentNode&&x.searchPseudoElements&&s(t.target.parentNode),"attributes"===t.type&&ve(t.target)&&~gt.indexOf(t.attributeName)&&("class"===t.attributeName&&(e=t.target,a=e.getAttribute?e.getAttribute(nt):null,r=e.getAttribute?e.getAttribute(it):null,a)&&r?({prefix:a,iconName:r}=Qt(kt(t.target)),t.target.setAttribute(nt,a||n),r&&t.target.setAttribute(it,r)):(e=t.target)&&e.classList&&e.classList.contains&&e.classList.contains(x.replacementClass)&&o(t.target))})}}),f&&Oe.observe(e,{childList:!0,attributes:!0,characterData:!0,subtree:!0})}function Se(t){var e,a,r=t.getAttribute("data-prefix"),n=t.getAttribute("data-icon"),i=void 0!==t.innerText?t.innerText.trim():"",o=Qt(kt(t));return o.prefix||(o.prefix=S),r&&n&&(o.prefix=r,o.iconName=n),o.iconName&&o.prefix||(o.prefix&&0<i.length&&(o.iconName=(e=o.prefix,a=t.innerText,(Ht[e]||{})[a]||qt(o.prefix,Ft(t.innerText)))),!o.iconName&&x.autoFetchSvg&&t.firstChild&&t.firstChild.nodeType===Node.TEXT_NODE&&(o.iconName=t.firstChild.data)),o}function Ce(t,e){var a=1<arguments.length&&void 0!==e?e:{styleParser:!0},{iconName:r,prefix:n,rest:i}=Se(t),o=(l=w((e=t).attributes).reduce((t,e)=>("class"!==t.name&&"style"!==t.name&&(t[e.name]=e.value),t),{}),o=e.getAttribute("title"),s=e.getAttribute("data-fa-title-id"),x.autoA11y&&(o?l["aria-labelledby"]="".concat(x.replacementClass,"-title-").concat(s||k()):(l["aria-hidden"]="true",l.focusable="false")),l),s=ae("parseNodeAttributes",{},t),l=a.styleParser?(t=>{var e=t.getAttribute("style");let a=[];return a=e?e.split(";").reduce((t,e)=>{var a=e.split(":"),r=a[0],a=a.slice(1);return r&&0<a.length&&(t[r]=a.join(":").trim()),t},{}):a})(t):[];return b({iconName:r,title:t.getAttribute("title"),titleId:t.getAttribute("data-fa-title-id"),prefix:n,transform:v,mask:{iconName:null,prefix:null,rest:[]},maskId:null,symbol:!1,extra:{classes:i,styles:l,attributes:o}},s)}let Ee=P.styles;function Me(t){var e="nest"===x.autoReplaceSvg?Ce(t,{styleParser:!1}):Ce(t);return~e.extra.classes.indexOf(ht)?I("generateLayersText",t,e):I("generateSvgReplacementMutation",t,e)}function je(t){let r=1<arguments.length&&void 0!==arguments[1]?arguments[1]:null;if(!f)return Promise.resolve();let e=g.documentElement.classList,n=t=>e.add("".concat(ot,"-").concat(t)),i=t=>e.remove("".concat(ot,"-").concat(t));var a=x.autoFetchSvg?[...G,...$]:X.concat(Object.keys(Ee)),a=(a.includes("fa")||a.push("fa"),[".".concat(ht,":not([").concat(y,"])")].concat(a.map(t=>".".concat(t,":not([").concat(y,"])"))).join(", "));if(0===a.length)return Promise.resolve();let o=[];try{o=w(t.querySelectorAll(a))}catch(t){}if(!(0<o.length))return Promise.resolve();n("pending"),i("complete");let s=pe.begin("onTree"),l=o.reduce((t,e)=>{try{var a=Me(e);a&&t.push(a)}catch(t){ft||"MissingIcon"===t.name&&console.error(t)}return t},[]);return new Promise((e,a)=>{Promise.all(l).then(t=>{ke(t,()=>{n("active"),n("complete"),i("pending"),"function"==typeof r&&r(),s(),e()})}).catch(t=>{s(),a(t)})})}function ze(t){let e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:null;Me(t).then(t=>{t&&ke([t],e)})}function Ie(r){let n=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},{transform:i=v,symbol:o=!1,mask:s=null,maskId:l=null,title:f=null,titleId:c=null,classes:u=[],attributes:d={},styles:m={}}=n;if(r){let{prefix:t,iconName:e,icon:a}=r;return oe(b({type:"icon"},r),()=>(z("beforeDOMElementCreation",{iconDefinition:r,params:n}),x.autoA11y&&(f?d["aria-labelledby"]="".concat(x.replacementClass,"-title-").concat(c||k()):(d["aria-hidden"]="true",d.focusable="false")),se({icons:{main:ce(a),mask:s?ce(s.icon):{found:!1,width:null,height:null,icon:{}}},prefix:t,iconName:e,transform:b(b({},v),i),symbol:o,title:f,maskId:l,titleId:c,extra:{attributes:d,styles:m,classes:u}})))}}let Fe={mixout(){return{icon:(n=Ie,function(t){var e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},a=(t||{}).icon?t:re(t||{});let r=e.mask;return r=r&&((r||{}).icon?r:re(r||{})),n(a,b(b({},e),{},{mask:r}))})};var n},hooks(){return{mutationObserverCallbacks(t){return t.treeCallback=je,t.nodeCallback=ze,t}}},provides(t){t.i2svg=function(t){var{node:e=g,callback:a=()=>{}}=t;return je(e,a)},t.generateSvgReplacementMutation=function(n,t){let{iconName:i,title:o,titleId:s,prefix:l,transform:f,symbol:c,mask:e,maskId:u,extra:d}=t;return new Promise((r,t)=>{Promise.all([de(i,l),e.iconName?de(e.iconName,e.prefix):Promise.resolve({found:!1,width:512,height:512,icon:{}})]).then(t=>{var[e,a]=t;r([n,se({icons:{main:e,mask:a},prefix:l,iconName:i,transform:f,symbol:c,maskId:u,title:o,titleId:s,extra:d,watchable:!0})])}).catch(t)})},t.generateAbstractIcon=function(t){var{children:e,attributes:a,main:r,transform:n,styles:i}=t,i=A(i);0<i.length&&(a.style=i);let o;return At(n)&&(o=I("generateAbstractTransformGrouping",{main:r,transform:n,containerWidth:r.width,iconWidth:r.width})),e.push(o||r.icon),{children:e,attributes:a}}}},De={mixout(){return{layer(t){let a=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},{classes:r=[]}=a;return oe({type:"layer"},()=>{z("beforeDOMElementCreation",{assembler:t,params:a});let e=[];return t(t=>{Array.isArray(t)?t.map(t=>{e=e.concat(t.abstract)}):e=e.concat(t.abstract)}),[{tag:"span",attributes:{class:["".concat(x.cssPrefix,"-layers"),...r].join(" ")},children:e}]})}}}},Re={mixout(){return{counter(n){let i=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},{title:o=null,classes:s=[],attributes:l={},styles:f={}}=i;return oe({type:"counter",content:n},()=>{z("beforeDOMElementCreation",{content:n,params:i});var{content:t,title:e,extra:a}={content:n.toString(),title:o,extra:{attributes:l,styles:f,classes:["".concat(x.cssPrefix,"-layers-counter"),...s]}},r=b(b(b({},a.attributes),e?{title:e}:{}),{},{class:a.classes.join(" ")});return 0<(a=A(a.styles)).length&&(r.style=a),(a=[]).push({tag:"span",attributes:r,children:[t]}),e&&a.push({tag:"span",attributes:{class:"sr-only"},children:[e]}),a})}}}},Le={mixout(){return{text(t){let e=1<arguments.length&&void 0!==arguments[1]?arguments[1]:{},{transform:a=v,title:r=null,classes:n=[],attributes:i={},styles:o={}}=e;return oe({type:"text",content:t},()=>(z("beforeDOMElementCreation",{content:t,params:e}),le({content:t,transform:b(b({},v),a),title:r,extra:{attributes:i,styles:o,classes:["".concat(x.cssPrefix,"-layers-text"),...n]}})))}}},provides(t){t.generateLayersText=function(t,e){var a,r,{title:n,transform:i,extra:o}=e;let s=null,l=null;return B&&(a=parseInt(getComputedStyle(t).fontSize,10),r=t.getBoundingClientRect(),s=r.width/a,l=r.height/a),x.autoA11y&&!n&&(o.attributes["aria-hidden"]="true"),Promise.resolve([t,le({content:t.innerHTML,width:s,height:l,transform:i,title:n,extra:o,watchable:!0})])}}},Te=new RegExp('"',"ug"),Ye=[1105920,1112319],We=b(b(b(b({},{FontAwesome:{normal:"fas",400:"fas"}}),{"Font Awesome 6 Free":{900:"fas",400:"far"},"Font Awesome 6 Pro":{900:"fas",400:"far",normal:"far",300:"fal",100:"fat"},"Font Awesome 6 Brands":{400:"fab",normal:"fab"},"Font Awesome 6 Duotone":{900:"fad",400:"fadr",normal:"fadr",300:"fadl",100:"fadt"},"Font Awesome 6 Sharp":{900:"fass",400:"fasr",normal:"fasr",300:"fasl",100:"fast"},"Font Awesome 6 Sharp Duotone":{900:"fasds",400:"fasdr",normal:"fasdr",300:"fasdl",100:"fasdt"}}),{"Font Awesome 5 Free":{900:"fas",400:"far"},"Font Awesome 5 Pro":{900:"fas",400:"far",normal:"far",300:"fal"},"Font Awesome 5 Brands":{400:"fab",normal:"fab"},"Font Awesome 5 Duotone":{900:"fad"}}),{"Font Awesome Kit":{400:"fak",normal:"fak"},"Font Awesome Kit Duotone":{400:"fakd",normal:"fakd"}}),He=Object.keys(We).reduce((t,e)=>(t[e.toLowerCase()]=We[e],t),{}),_e=Object.keys(He).reduce((t,e)=>{var a=He[e];return t[e]=a[900]||[...Object.entries(a)][0][1],t},{});function Ue(m,h){let p="".concat(rt).concat(h.replace(":","-"));return new Promise((s,a)=>{if(null!==m.getAttribute(p))return s();var r,n,l=w(m.children).filter(t=>t.getAttribute(at)===h)[0],f=e.getComputedStyle(m,h),c=f.getPropertyValue("font-family"),u=c.match(pt),d=f.getPropertyValue("font-weight");let t=f.getPropertyValue("content");if(l&&!u)return m.removeChild(l),s();if(u&&"none"!==t&&""!==t){let t=f.getPropertyValue("content"),i=(n=d,f=c.replace(/^['"]|['"]$/g,"").toLowerCase(),d=parseInt(n),d=isNaN(d)?"normal":d,(He[f]||{})[d]||_e[f]);n=t,c=n.replace(Te,""),n=0,d=(r=c).length,f=(d=55296<=(f=r.charCodeAt(n))&&f<=56319&&n+1<d&&56320<=(d=r.charCodeAt(n+1))&&d<=57343?1024*(f-55296)+d-56320+65536:f)>=Ye[0]&&d<=Ye[1];var{value:c,isSecondary:f}={value:Ft((d=2===c.length&&c[0]===c[1])?c[0]:c),isSecondary:f||d},d=u[0].startsWith("FontAwesome");let e=qt(i,c),o=e;if(d&&(r=c,u=Ut[r],d=qt("fas",r),(c=u||(d?{prefix:"fas",iconName:d}:null)||{prefix:null,iconName:null}).iconName)&&c.prefix&&(e=c.iconName,i=c.prefix),!e||f||l&&l.getAttribute(nt)===i&&l.getAttribute(it)===o)s();else{m.setAttribute(p,o),l&&m.removeChild(l);let r={iconName:null,title:null,titleId:null,prefix:null,transform:v,symbol:!1,mask:{iconName:null,prefix:null,rest:[]},maskId:null,extra:{classes:[],styles:{},attributes:{}}},n=r.extra;n.attributes[at]=h,de(e,i).then(t=>{var e=se(b(b({},r),{},{icons:{main:t,mask:Gt()},prefix:i,iconName:o,extra:n,watchable:!0})),a=g.createElementNS("http://www.w3.org/2000/svg","svg");"::before"===h?m.insertBefore(a,m.firstChild):m.appendChild(a),a.outerHTML=e.map(t=>O(t)).join("\n"),m.removeAttribute(p),s()}).catch(a)}}else s()})}function Be(t){return Promise.all([Ue(t,"::before"),Ue(t,"::after")])}function Xe(t){return!(t.parentNode===document.head||~lt.indexOf(t.tagName.toUpperCase())||t.getAttribute(at)||t.parentNode&&"svg"===t.parentNode.tagName)}function qe(n){if(f)return new Promise((t,e)=>{var a=w(n.querySelectorAll("*")).filter(Xe).map(Be);let r=pe.begin("searchPseudoElements");Ae(),Promise.all(a).then(()=>{r(),Pe(),t()}).catch(()=>{r(),Pe(),e()})})}let Ve={hooks(){return{mutationObserverCallbacks(t){return t.pseudoElementsCallback=qe,t}}},provides(t){t.pseudoElements2svg=function(t){var{node:e=g}=t;x.searchPseudoElements&&qe(e)}}},Ge=!1,Ke={mixout(){return{dom:{unwatch(){Ae(),Ge=!0}}}},hooks(){return{bootstrap(){Ne(ae("mutationObserverCallbacks",{}))},noAuto(){Oe&&Oe.disconnect()},watch(t){var e=t.observeMutationsRoot;Ge?Pe():Ne(ae("mutationObserverCallbacks",{observeMutationsRoot:e}))}}}},Je=t=>t.toLowerCase().split(" ").reduce((t,e)=>{var a=e.toLowerCase().split("-"),r=a[0],n=a.slice(1).join("-");if(r&&"h"===n)t.flipX=!0;else if(r&&"v"===n)t.flipY=!0;else if(n=parseFloat(n),!isNaN(n))switch(r){case"grow":t.size=t.size+n;break;case"shrink":t.size=t.size-n;break;case"left":t.x=t.x-n;break;case"right":t.x=t.x+n;break;case"up":t.y=t.y-n;break;case"down":t.y=t.y+n;break;case"rotate":t.rotate=t.rotate+n}return t},{size:16,x:0,y:0,flipX:!1,flipY:!1,rotate:0}),Qe={mixout(){return{parse:{transform:t=>Je(t)}}},hooks(){return{parseNodeAttributes(t,e){var a=e.getAttribute("data-fa-transform");return a&&(t.transform=Je(a)),t}}},provides(t){t.generateAbstractTransformGrouping=function(t){var{main:e,transform:a,containerWidth:r,iconWidth:n}=t,r={transform:"translate(".concat(r/2," 256)")},i="translate(".concat(32*a.x,", ").concat(32*a.y,") "),o="scale(".concat(a.size/16*(a.flipX?-1:1),", ").concat(a.size/16*(a.flipY?-1:1),") "),a="rotate(".concat(a.rotate," 0 0)"),r={outer:r,inner:{transform:"".concat(i," ").concat(o," ").concat(a)},path:{transform:"translate(".concat(n/2*-1," -256)")}};return{tag:"g",attributes:b({},r.outer),children:[{tag:"g",attributes:b({},r.inner),children:[{tag:e.icon.tag,children:e.icon.children,attributes:b(b({},e.icon.attributes),r.path)}]}]}}}},Ze={x:0,y:0,width:"100%",height:"100%"};function $e(t){return t.attributes&&(t.attributes.fill||(!(1<arguments.length&&void 0!==arguments[1])||arguments[1]))&&(t.attributes.fill="black"),t}n=[J,Fe,De,Re,Le,Ve,Ke,Qe,{hooks(){return{parseNodeAttributes(t,e){var a=e.getAttribute("data-fa-mask"),a=a?Qt(a.split(" ").map(t=>t.trim())):Gt();return a.prefix||(a.prefix=S),t.mask=a,t.maskId=e.getAttribute("data-fa-mask-id"),t}}},provides(t){t.generateAbstractMask=function(t){var{children:e,attributes:a,main:r,mask:n,maskId:i,transform:o}=t,{width:r,icon:s}=r,{width:n,icon:l}=n,o=(t=>{var{transform:e,containerWidth:a,iconWidth:r}=t,a={transform:"translate(".concat(a/2," 256)")},n="translate(".concat(32*e.x,", ").concat(32*e.y,") "),i="scale(".concat(e.size/16*(e.flipX?-1:1),", ").concat(e.size/16*(e.flipY?-1:1),") "),e="rotate(".concat(e.rotate," 0 0)");return{outer:a,inner:{transform:"".concat(n," ").concat(i," ").concat(e)},path:{transform:"translate(".concat(r/2*-1," -256)")}}})({transform:o,containerWidth:n,iconWidth:r}),n={tag:"rect",attributes:b(b({},Ze),{},{fill:"white"})},r=s.children?{children:s.children.map($e)}:{},s={tag:"g",attributes:b({},o.inner),children:[$e(b({tag:s.tag,attributes:b(b({},s.attributes),o.path)},r))]},r={tag:"g",attributes:b({},o.outer),children:[s]},o="mask-".concat(i||k()),s="clip-".concat(i||k()),i={tag:"mask",attributes:b(b({},Ze),{},{id:o,maskUnits:"userSpaceOnUse",maskContentUnits:"userSpaceOnUse"}),children:[n,r]},n={tag:"defs",children:[{tag:"clipPath",attributes:{id:s},children:"g"===(t=l).tag?t.children:[t]},i]};return e.push(n,{tag:"rect",attributes:b({fill:"currentColor","clip-path":"url(#".concat(s,")"),mask:"url(#".concat(o,")")},Ze)}),{children:e,attributes:a}}}},{provides(t){let i=!1;e.matchMedia&&(i=e.matchMedia("(prefers-reduced-motion: reduce)").matches),t.missingIconAbstract=function(){var t=[],e={fill:"currentColor"},a={attributeType:"XML",repeatCount:"indefinite",dur:"2s"},r=(t.push({tag:"path",attributes:b(b({},e),{},{d:"M156.5,447.7l-12.6,29.5c-18.7-9.5-35.9-21.2-51.5-34.9l22.7-22.7C127.6,430.5,141.5,440,156.5,447.7z M40.6,272H8.5 c1.4,21.2,5.4,41.7,11.7,61.1L50,321.2C45.1,305.5,41.8,289,40.6,272z M40.6,240c1.4-18.8,5.2-37,11.1-54.1l-29.5-12.6 C14.7,194.3,10,216.7,8.5,240H40.6z M64.3,156.5c7.8-14.9,17.2-28.8,28.1-41.5L69.7,92.3c-13.7,15.6-25.5,32.8-34.9,51.5 L64.3,156.5z M397,419.6c-13.9,12-29.4,22.3-46.1,30.4l11.9,29.8c20.7-9.9,39.8-22.6,56.9-37.6L397,419.6z M115,92.4 c13.9-12,29.4-22.3,46.1-30.4l-11.9-29.8c-20.7,9.9-39.8,22.6-56.8,37.6L115,92.4z M447.7,355.5c-7.8,14.9-17.2,28.8-28.1,41.5 l22.7,22.7c13.7-15.6,25.5-32.9,34.9-51.5L447.7,355.5z M471.4,272c-1.4,18.8-5.2,37-11.1,54.1l29.5,12.6 c7.5-21.1,12.2-43.5,13.6-66.8H471.4z M321.2,462c-15.7,5-32.2,8.2-49.2,9.4v32.1c21.2-1.4,41.7-5.4,61.1-11.7L321.2,462z M240,471.4c-18.8-1.4-37-5.2-54.1-11.1l-12.6,29.5c21.1,7.5,43.5,12.2,66.8,13.6V471.4z M462,190.8c5,15.7,8.2,32.2,9.4,49.2h32.1 c-1.4-21.2-5.4-41.7-11.7-61.1L462,190.8z M92.4,397c-12-13.9-22.3-29.4-30.4-46.1l-29.8,11.9c9.9,20.7,22.6,39.8,37.6,56.9 L92.4,397z M272,40.6c18.8,1.4,36.9,5.2,54.1,11.1l12.6-29.5C317.7,14.7,295.3,10,272,8.5V40.6z M190.8,50 c15.7-5,32.2-8.2,49.2-9.4V8.5c-21.2,1.4-41.7,5.4-61.1,11.7L190.8,50z M442.3,92.3L419.6,115c12,13.9,22.3,29.4,30.5,46.1 l29.8-11.9C470,128.5,457.3,109.4,442.3,92.3z M397,92.4l22.7-22.7c-15.6-13.7-32.8-25.5-51.5-34.9l-12.6,29.5 C370.4,72.1,384.4,81.5,397,92.4z"})}),b(b({},a),{},{attributeName:"opacity"})),n={tag:"circle",attributes:b(b({},e),{},{cx:"256",cy:"364",r:"28"}),children:[]};return i||n.children.push({tag:"animate",attributes:b(b({},a),{},{attributeName:"r",values:"28;14;28;28;14;28;"})},{tag:"animate",attributes:b(b({},r),{},{values:"1;0;1;1;0;1;"})}),t.push(n),t.push({tag:"path",attributes:b(b({},e),{},{opacity:"1",d:"M263.7,312h-16c-6.6,0-12-5.4-12-12c0-71,77.4-63.9,77.4-107.8c0-20-17.8-40.2-57.4-40.2c-29.1,0-44.3,9.6-59.2,28.7 c-3.9,5-11.1,6-16.2,2.4l-13.1-9.2c-5.6-3.9-6.9-11.8-2.6-17.2c21.2-27.2,46.4-44.7,91.2-44.7c52.3,0,97.4,29.8,97.4,80.2 c0,67.6-77.4,63.5-77.4,107.8C275.7,306.6,270.3,312,263.7,312z"}),children:i?[]:[{tag:"animate",attributes:b(b({},r),{},{values:"1;0;0;0;0;1;"})}]}),i||t.push({tag:"path",attributes:b(b({},e),{},{opacity:"0",d:"M232.5,134.5l7,168c0.3,6.4,5.6,11.5,12,11.5h9c6.4,0,11.7-5.1,12-11.5l7-168c0.3-6.8-5.2-12.5-12-12.5h-23 C237.7,122,232.2,127.7,232.5,134.5z"}),children:[{tag:"animate",attributes:b(b({},r),{},{values:"0;0;1;1;0;0;"})}]}),{tag:"g",attributes:{class:"missing"},children:t}}}},{hooks(){return{parseNodeAttributes(t,e){var a=e.getAttribute("data-fa-symbol");return t.symbol=null!==a&&(""===a||a),t}}}}];{var ta=n;let r={mixoutsTo:ie}.mixoutsTo;te=ta,M={},Object.keys(j).forEach(t=>{-1===ee.indexOf(t)&&delete j[t]}),te.forEach(t=>{let a=t.mixout?t.mixout():{};if(Object.keys(a).forEach(e=>{"function"==typeof a[e]&&(r[e]=a[e]),"object"==typeof a[e]&&Object.keys(a[e]).forEach(t=>{r[e]||(r[e]={}),r[e][t]=a[e][t]})}),t.hooks){let e=t.hooks();Object.keys(e).forEach(t=>{M[t]||(M[t]=[]),M[t].push(e[t])})}t.provides&&t.provides(j)}),r}!function(t){try{for(var e=arguments.length,a=new Array(1<e?e-1:0),r=1;r<e;r++)a[r-1]=arguments[r];t(...a)}catch(t){if(!ft)throw t}}(function(t){U&&(e.FontAwesome||(e.FontAwesome=ie),Mt(()=>{F(),z("bootstrap")})),P.hooks=b(b({},P.hooks),{},{addPack:(t,e)=>{P.styles[t]=b(b({},P.styles[t]||{}),e),C(),F()},addPacks:t=>{t.forEach(t=>{var[e,a]=t;P.styles[e]=b(b({},P.styles[e]||{}),a)}),C(),F()},addShims:t=>{P.shims.push(...t),C(),F()}})})})();
+    </script>                        
+    </body>
+</html>
