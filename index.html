@@ -566,8 +566,309 @@
             padding: 50px;
             color: #7f8c8d;
         }
+/* meet section */
+        .meet-section {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .meet-card {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin: 10px;
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 1px solid #eee;
+        }
+        
+        .meet-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-color: var(--primary-color);
+        }
+        
+        .meet-card .card-img {
+            height: 180px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--secondary-color);
+        }
+        
+        .meet-card .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .meet-card:hover .card-img img {
+            transform: scale(1.05);
+        }
+        
+        .meet-card .card-body {
+            padding: 25px;
+            text-align: center;
+        }
+        
+        .meet-card .card-title {
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--primary-color);
+        }
+        
+        .meet-card .card-text {
+            color: var(--light-text);
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        .meet-section .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        
+        .meet-section .section-title h2 {
+            font-weight: 700;
+            color: var(--primary-color);
+            position: relative;
+            display: inline-block;
+            margin-bottom: 15px;
+        }
+        
+        .meet-section .section-title h2:after {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 3px;
+            background-color: var(--accent-color);
+            bottom: -10px;
+            left: 15%;
+        }
+        
+        .meet-section .section-title p {
+            color: var(--light-text);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        /* offers section */
+
+         .special-offers-section {
+            padding: 70px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .special-offers-section .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .special-offers-section .section-title h2 {
+            color: #1a3c8a;
+            font-weight: 700;
+            font-size: 36px;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 15px;
+        }
+        
+        .special-offers-section .section-title h2:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: #ff5722;
+        }
+        
+        .offers-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            background-color: #fff;
+            height: 100%;
+        }
+        
+        .card-header {
+            background-color: #1a3c8a;
+            color: white;
+            padding: 20px 25px;
+            border-bottom: none;
+        }
+        
+        .card-header h3 {
+            margin: 0;
+            font-weight: 600;
+            font-size: 24px;
+        }
+        
+        .card-body {
+            padding: 30px;
+        }
+        
+        .offer-image {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .offer-image img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.5s ease;
+        }
+        
+        .offer-image:hover img {
+            transform: scale(1.03);
+        }
+        
+        .highlight-badge {
+            background-color: #ff5722;
+            color: white;
+            padding: 6px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        
+        .offers-list {
+            list-style: none;
+            padding-left: 0;
+            margin-bottom: 0;
+        }
+        
+        .offers-list li {
+            padding: 15px 0;
+            position: relative;
+            padding-left: 35px;
+            color: #333;
+            font-size: 16px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .offers-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .offers-list li:before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: #ff5722;
+            font-size: 18px;
+        }
+        
+        .btn-register {
+            background-color: #ff5722;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        
+        .btn-register:hover {
+            background-color: #e64a19;
+            color: white;
+        }
+        
+        .event-details {
+            background-color: #e8f0fe;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .event-details h4 {
+            color: #1a3c8a;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .event-info {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .event-info i {
+            color: #ff5722;
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        /* cta section */
+
+        .cta-section {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+            border-top: 1px solid #e9ecef;
+            border-bottom: 1px solid #e9ecef;
+        }
+        
+        .cta-content {
+            text-align: center;
+        }
+        
+        .cta-heading {
+            color: #0d6efd;
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+        
+        .cta-section .register-btn {
+            background-color: #0d6efd;
+            color: white;
+            font-weight: 600;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+        }
+        
+        .cta-section .register-btn:hover {
+            background-color: #0b5ed7;
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
         
         @media (max-width: 768px) {
+
+            .cta-heading {
+                font-size: 1.5rem;
+            }
+            
+            .cta-section .register-btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+             .meet-section {
+                padding: 40px 0;
+            }
+            
+
             .country-btn {
                 width: 120px;
                 height: 100px;
@@ -584,6 +885,21 @@
             }
             
             .carousel-control-next {
+                right: -10px;
+            }
+             .meet-section {
+                padding: 40px 0;
+            }
+            
+            .meet-section  .section-title h2 {
+                font-size: 1.8rem;
+            }
+            
+            .meet-section  .carousel-control-prev {
+                left: -10px;
+            }
+            
+            .meet-section  .carousel-control-next {
                 right: -10px;
             }
         }
@@ -997,30 +1313,293 @@
             </div>
         </div>
     </section>
+<!-- cta section -->
 
-    <!-- Who Will You Meet -->
-    <section class="py-5" id="meet">
-        <div class="container py-5">
-            <h2 class="section-title">Who Will You Meet in the Overseas Education Fair?</h2>
-            <div class="placeholder-section">
-                <i class="fas fa-users fa-3x mb-3 text-primary"></i>
-                <h4>Coming Soon</h4>
-                <p>Details about who you'll meet at the fair will be confirmed by ICR.</p>
+<section class="cta-section">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 col-lg-8">
+                <div class="cta-content">
+                    <h2 class="cta-heading">Connect with Top Universities – Register for Free!</h2>
+                    <a href="https://www.studies-overseas.com/overseas-education-fair/nagpur" class="register-btn">Register for Free!</a>
+                </div>
             </div>
         </div>
-    </section>
-
+    </div>
+</section>
+<!-- meet section -->
+   <section class="meet-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Who Will You Meet in the Overseas Education Fair?</h2>
+            <p>Connect with university representatives, education experts, and visa consultants all under one roof to get comprehensive guidance for your study abroad journey.</p>
+        </div>
+        
+        <div id="meetCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#meetCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#meetCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+            </div>
+            
+            <div class="carousel-inner">
+                <!-- First Slide -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <!-- University Representatives -->
+                        <div class="col-md-4">
+                            <div class="meet-card">
+                                <div class="card-img">
+                                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="100%" height="100%" fill="#e9ecef"></rect>
+                                        <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translate(-40px, -40px);">
+                                            <path d="M2 22h20V10L12 2 2 10v12zm2-2v-9l8-6 8 6v9H4zm8-4a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+                                        </svg>
+                                    </svg>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">University Representatives</h4>
+                                    <p class="card-text">Meet directly with official representatives from prestigious universities across the globe to get first-hand information about programs, admission requirements, and scholarship opportunities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Education Counselors -->
+                        <div class="col-md-4">
+                            <div class="meet-card">
+                                <div class="card-img">
+                                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="100%" height="100%" fill="#e9ecef"></rect>
+                                        <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translate(-40px, -40px);">
+                                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                                        </svg>
+                                    </svg>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Education Counselors</h4>
+                                    <p class="card-text">Our experienced counselors will guide you through every step of your study abroad journey, from course selection to application process and post-admission support.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Visa Experts -->
+                        <div class="col-md-4">
+                            <div class="meet-card">
+                                <div class="card-img">
+                                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="100%" height="100%" fill="#e9ecef"></rect>
+                                        <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translate(-40px, -40px);">
+                                            <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                                            <circle cx="9" cy="10" r="3"></circle>
+                                            <path d="M17 8h.01M17 12h.01"></path>
+                                        </svg>
+                                    </svg>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Visa Experts</h4>
+                                    <p class="card-text">Get expert advice on student visa requirements and application procedures, including document verification assistance and interview preparation tips.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Second Slide -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <!-- Alumni Network -->
+                        <div class="col-md-4">
+                            <div class="meet-card">
+                                <div class="card-img">
+                                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="100%" height="100%" fill="#e9ecef"></rect>
+                                        <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translate(-40px, -40px);">
+                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                            <circle cx="9" cy="7" r="4"></circle>
+                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                        </svg>
+                                    </svg>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Alumni Network</h4>
+                                    <p class="card-text">Connect with students who have successfully studied abroad and hear their experiences about adapting to new cultures, campus life, and part-time work opportunities.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Financial Advisors -->
+                        <div class="col-md-4">
+                            <div class="meet-card">
+                                <div class="card-img">
+                                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="100%" height="100%" fill="#e9ecef"></rect>
+                                        <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translate(-40px, -40px);">
+                                            <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                                            <circle cx="12" cy="12" r="3"></circle>
+                                            <path d="M12 9v6M9 12h6"></path>
+                                        </svg>
+                                    </svg>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Financial Advisors</h4>
+                                    <p class="card-text">Get expert advice on funding your education abroad through various financial options, including education loans, scholarships, and budget planning for studying abroad.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Test Preparation Experts -->
+                        <div class="col-md-4">
+                            <div class="meet-card">
+                                <div class="card-img">
+                                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="100%" height="100%" fill="#e9ecef"></rect>
+                                        <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translate(-40px, -40px);">
+                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                        </svg>
+                                    </svg>
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">Test Preparation Experts</h4>
+                                    <p class="card-text">Meet with experts who can guide you on IELTS, TOEFL, GRE, GMAT, and other standardized tests with preparation strategies and score improvement tips.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#meetCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#meetCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="#register" class="btn btn-primary btn-lg px-5 py-3">Register for the Fair</a>
+        </div>
+    </div>
+</section>
     <!-- Special Offers -->
-    <section class="py-5 bg-light" id="offers">
-        <div class="container py-5">
-            <h2 class="section-title">Special Offers for Students</h2>
-            <div class="placeholder-section">
-                <i class="fas fa-gift fa-3x mb-3 text-primary"></i>
-                <h4>Coming Soon</h4>
-                <p>Special offers for students will be confirmed by ICR.</p>
+    <section class="special-offers-section" id="special-offers">
+    <div class="container">
+        <div class="section-title">
+            <h2>Special Offers for Students</h2>
+            <p class="text-muted mt-3">Exclusive benefits for your overseas education journey</p>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <div class="offer-image">
+                    <!-- SVG image representing overseas education fair -->
+                    <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;">
+                        <rect width="800" height="500" fill="#e8f0fe"></rect>
+                        
+                        <!-- Background elements -->
+                        <circle cx="150" cy="100" r="50" fill="#c5dcfa"></circle>
+                        <circle cx="650" cy="400" r="70" fill="#c5dcfa"></circle>
+                        <circle cx="700" cy="150" r="40" fill="#c5dcfa"></circle>
+                        
+                        <!-- World map outline -->
+                        <path d="M200,250 C250,200 350,220 400,250 C450,280 550,260 600,300" stroke="#1a3c8a" stroke-width="3" fill="none"></path>
+                        
+                        <!-- Buildings representing universities -->
+                        <rect x="150" y="320" width="80" height="100" fill="#1a3c8a"></rect>
+                        <rect x="160" y="340" width="15" height="25" fill="#ffffff"></rect>
+                        <rect x="190" y="340" width="15" height="25" fill="#ffffff"></rect>
+                        <rect x="160" y="380" width="15" height="25" fill="#ffffff"></rect>
+                        <rect x="190" y="380" width="15" height="25" fill="#ffffff"></rect>
+                        <polygon points="150,320 190,290 230,320" fill="#ff5722"></polygon>
+                        
+                        <rect x="350" y="300" width="100" height="120" fill="#1a3c8a"></rect>
+                        <rect x="365" y="320" width="20" height="30" fill="#ffffff"></rect>
+                        <rect x="415" y="320" width="20" height="30" fill="#ffffff"></rect>
+                        <rect x="365" y="370" width="20" height="30" fill="#ffffff"></rect>
+                        <rect x="415" y="370" width="20" height="30" fill="#ffffff"></rect>
+                        <polygon points="350,300 400,260 450,300" fill="#ff5722"></polygon>
+                        
+                        <rect x="550" y="330" width="90" height="90" fill="#1a3c8a"></rect>
+                        <rect x="565" y="350" width="18" height="25" fill="#ffffff"></rect>
+                        <rect x="607" y="350" width="18" height="25" fill="#ffffff"></rect>
+                        <rect x="565" y="385" width="18" height="25" fill="#ffffff"></rect>
+                        <rect x="607" y="385" width="18" height="25" fill="#ffffff"></rect>
+                        <polygon points="550,330 595,300 640,330" fill="#ff5722"></polygon>
+                        
+                        <!-- Students -->
+                        <circle cx="250" cy="250" r="20" fill="#ff5722"></circle>
+                        <rect x="245" y="270" width="10" height="30" fill="#ff5722"></rect>
+                        <rect x="235" y="280" width="30" height="10" fill="#ff5722"></rect>
+                        <rect x="240" y="300" width="5" height="20" fill="#ff5722"></rect>
+                        <rect x="255" y="300" width="5" height="20" fill="#ff5722"></rect>
+                        
+                        <circle cx="500" cy="230" r="20" fill="#ff5722"></circle>
+                        <rect x="495" y="250" width="10" height="30" fill="#ff5722"></rect>
+                        <rect x="485" y="260" width="30" height="10" fill="#ff5722"></rect>
+                        <rect x="490" y="280" width="5" height="20" fill="#ff5722"></rect>
+                        <rect x="505" y="280" width="5" height="20" fill="#ff5722"></rect>
+                        
+                        <!-- Airplane -->
+                        <path d="M100,150 L150,130 L160,140 L120,160 Z" fill="#1a3c8a"></path>
+                        <path d="M150,130 L180,120 L185,125 L160,140 Z" fill="#1a3c8a"></path>
+                        <path d="M130,145 L140,170 L150,165 L140,140 Z" fill="#1a3c8a"></path>
+                        
+                        <!-- Text -->
+                        <text x="400" y="180" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#1a3c8a">OVERSEAS EDUCATION FAIR</text>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="card offers-card">
+                    <div class="card-header">
+                        <h3>Exclusive Student Benefits</h3>
+                        <p class="mb-0">Available at our upcoming education fair</p>
+                    </div>
+                    
+                    <div class="card-body">
+                        <span class="highlight-badge">Limited Time Offer</span>
+                        
+                        <ul class="offers-list">
+                            <li>Application fee waiver for multiple universities (save up to $300)</li>
+                            <li>On-the-spot admission decisions from university representatives</li>
+                            <li>Exclusive scholarships only available to education fair attendees</li>
+                            <li>Free one-on-one visa counseling with immigration experts</li>
+                            <li>Personalized career guidance and course selection assistance</li>
+                            <li>Free IELTS/TOEFL mock tests and preparation materials</li>
+                            <li>Accommodation and travel guidance for your study destination</li>
+                            <li>Financial planning assistance for overseas education</li>
+                            <li>Meet alumni from top international universities</li>
+                            <li>Special discounts on test preparation courses</li>
+                        </ul>
+                        
+                        <div class="event-details">
+                            <h4>Education Fair Details</h4>
+                            <div class="event-info">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Date: September 15-16, 2023</span>
+                            </div>
+                            <div class="event-info">
+                                <i class="fas fa-clock"></i>
+                                <span>Time: 10:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="event-info">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Venue: Hotel Centre Point, Nagpur</span>
+                            </div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <a href="#register" class="btn-register">Register Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Testimonials & Scholarships -->
     <section class="py-5" id="testimonials">
