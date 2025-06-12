@@ -1,4 +1,6 @@
-<html lang="en"><head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Study Abroad Virtual Expo 2025</title>
@@ -12,13 +14,13 @@
             --light: #f8f9fa;
             --dark: #212529;
         }
-        
+
         body {
             font-family: 'Poppins', sans-serif;
             color: var(--dark);
             background-color: #f9f9f9;
         }
-        
+
         .hero-section {
             position: relative;
             height: 100vh;
@@ -27,7 +29,7 @@
             overflow: hidden;
             cursor: pointer;
         }
-        
+
         .hero-banner {
             position: absolute;
             top: 0;
@@ -42,7 +44,7 @@
             justify-content: center;
             z-index: 1;
         }
-        
+
         .hero-content {
             position: relative;
             z-index: 2;
@@ -51,7 +53,7 @@
             padding: 2rem;
             max-width: 800px;
         }
-        
+
         .hero-overlay {
             position: absolute;
             top: 0;
@@ -61,7 +63,7 @@
             background: rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
-        
+
         .countdown-container {
             background: rgba(255, 255, 255, 0.1);
             border-radius: 10px;
@@ -70,7 +72,7 @@
             max-width: 500px;
             margin: 0 auto;
         }
-        
+
         .countdown-box {
             background: rgba(255, 255, 255, 0.2);
             border-radius: 8px;
@@ -78,20 +80,20 @@
             text-align: center;
             min-width: 80px;
         }
-        
+
         .countdown-number {
             font-size: 2rem;
             font-weight: 700;
             margin-bottom: 0;
         }
-        
+
         .countdown-label {
             font-size: 0.8rem;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
-        
-        
+
+
         .btn-primary {
             background-color: var(--accent);
             border-color: var(--accent);
@@ -100,14 +102,14 @@
             border-radius: 50px;
             transition: all 0.3s ease;
         }
-        
+
         .btn-primary:hover {
             background-color: #e5097f;
             border-color: #e5097f;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(247, 37, 133, 0.3);
         }
-        
+
         .btn-outline-primary {
             color: var(--primary);
             border-color: var(--primary);
@@ -116,14 +118,14 @@
             font-weight: 600;
             transition: all 0.3s ease;
         }
-        
+
         .btn-outline-primary:hover {
             background-color: var(--primary);
             color: white;
             transform: translateY(-3px);
             box-shadow: 0 10px 20px rgba(67, 97, 238, 0.3);
         }
-        
+
         .card {
             border: none;
             border-radius: 15px;
@@ -131,12 +133,12 @@
             transition: all 0.3s ease;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
         }
-        
+
         .card:hover {
             transform: translateY(-10px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
-        
+
         .benefit-card {
             padding: 2rem;
             border-radius: 15px;
@@ -144,12 +146,12 @@
             background: white;
             transition: all 0.3s ease;
         }
-        
+
         .benefit-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
         }
-        
+
         .benefit-icon {
             width: 70px;
             height: 70px;
@@ -162,14 +164,14 @@
             color: var(--primary);
             font-size: 1.8rem;
         }
-        
+
         .testimonial-card {
             background: white;
             border-radius: 15px;
             padding: 2rem;
             position: relative;
         }
-        
+
         .testimonial-card::before {
             content: '"';
             position: absolute;
@@ -180,41 +182,41 @@
             font-family: Georgia, serif;
             line-height: 1;
         }
-        
+
         .avatar {
             width: 60px;
             height: 60px;
             border-radius: 50%;
             object-fit: cover;
         }
-        
+
         .accordion-button:not(.collapsed) {
             background-color: rgba(67, 97, 238, 0.1);
-            color: var(--primary);
+            color: #ff8400;
             box-shadow: none;
         }
-        
+
         .accordion-button:focus {
             box-shadow: none;
             border-color: rgba(67, 97, 238, 0.1);
         }
-        
+
         .form-control {
             border-radius: 50px;
             padding: 0.75rem 1.5rem;
             border: 1px solid #e0e0e0;
         }
-        
+
         .form-control:focus {
             box-shadow: none;
             border-color: var(--primary);
         }
-        
+
         footer {
-            background: var(--dark);
+            background: #253745;
             color: white;
         }
-        
+
         .social-icon {
             width: 40px;
             height: 40px;
@@ -226,12 +228,12 @@
             margin-right: 10px;
             transition: all 0.3s ease;
         }
-        
+
         .social-icon:hover {
             background: var(--accent);
             transform: translateY(-3px);
         }
-        
+
         .placeholder-section {
             background: rgba(67, 97, 238, 0.05);
             border: 2px dashed rgba(67, 97, 238, 0.2);
@@ -239,58 +241,65 @@
             padding: 3rem;
             text-align: center;
         }
-        
+
         /* Modal styling */
         .modal-content {
             border-radius: 15px;
             border: none;
             box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
         }
-        
+
         .modal-header {
             border-bottom: none;
             padding: 2rem 2rem 0;
         }
-        
+
         .modal-body {
             padding: 2rem;
         }
-        
+
         .modal-footer {
             border-top: none;
             padding: 0 2rem 2rem;
         }
-        
+
         .btn-close:focus {
             box-shadow: none;
         }
-        
+
         .btn-register {
             font-size: 1.2rem;
             padding: 1rem 2.5rem;
         }
-        
+
         .pulse-effect {
             animation: pulse 2s infinite;
         }
-        
+
+        iframe .templateWidth, .thankyouPageWrap .tyTemplateWidth {
+            padding: 0px !important;
+        }
+        iframe .backgroundBg {
+            background: None !important;
+        }
+
         @keyframes pulse {
             0% {
                 transform: scale(1);
                 box-shadow: 0 0 0 0 rgba(247, 37, 133, 0.7);
             }
-            
+
             70% {
                 transform: scale(1.05);
                 box-shadow: 0 0 0 15px rgba(247, 37, 133, 0);
             }
-            
+
             100% {
                 transform: scale(1);
                 box-shadow: 0 0 0 0 rgba(247, 37, 133, 0);
             }
         }
-        
+
         /* Institution cards styling */
         .institution-card {
             background: white;
@@ -301,12 +310,12 @@
             display: flex;
             flex-direction: column;
         }
-        
+
         .institution-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
-        
+
         .institution-logo {
             height: 100px;
             display: flex;
@@ -315,25 +324,25 @@
             padding: 1rem;
             background: #f8f9fa;
         }
-        
+
         .institution-logo svg {
             max-height: 80px;
             max-width: 80%;
         }
-        
+
         .institution-details {
             padding: 1.5rem;
             flex-grow: 1;
             display: flex;
             flex-direction: column;
         }
-        
+
         .institution-name {
             font-weight: 700;
             font-size: 1.1rem;
             margin-bottom: 0.5rem;
         }
-        
+
         .institution-location {
             color: #6c757d;
             font-size: 0.9rem;
@@ -341,22 +350,22 @@
             display: flex;
             align-items: center;
         }
-        
+
         .institution-location i {
             margin-right: 0.5rem;
             color: var(--primary);
         }
-        
+
         .institution-programs {
             font-size: 0.9rem;
             margin-bottom: 1rem;
             flex-grow: 1;
         }
-        
+
         .institution-footer {
             margin-top: auto;
         }
-        
+
         .institution-tag {
             display: inline-block;
             background: rgba(67, 97, 238, 0.1);
@@ -367,7 +376,7 @@
             margin-right: 0.5rem;
             margin-bottom: 0.5rem;
         }
-        
+
         .country-filter {
             display: flex;
             flex-wrap: wrap;
@@ -375,7 +384,7 @@
             margin-bottom: 2rem;
             justify-content: center;
         }
-        
+
         .country-btn {
             background: white;
             border: 1px solid #e0e0e0;
@@ -387,17 +396,17 @@
             display: flex;
             align-items: center;
         }
-        
+
         .country-btn.active {
             background: var(--primary);
-            color: white;
+           
             border-color: var(--primary);
         }
-        
+
         .country-btn:hover:not(.active) {
             background: #f8f9fa;
         }
-        
+
         .country-flag {
             width: 20px;
             height: 20px;
@@ -408,45 +417,45 @@
             justify-content: center;
             font-size: 0.8rem;
         }
-        
+
         @media (max-width: 768px) {
             .hero-section {
                 height: auto;
                 min-height: 500px;
             }
-            
+
             .countdown-box {
                 min-width: 60px;
                 padding: 0.5rem;
             }
-            
+
             .countdown-number {
                 font-size: 1.5rem;
             }
-            
+
             .btn-register {
                 font-size: 1rem;
                 padding: 0.75rem 2rem;
             }
-            
+
             .country-filter {
                 flex-wrap: nowrap;
                 overflow-x: auto;
                 padding-bottom: 1rem;
                 justify-content: flex-start;
             }
-            
+
             .country-btn {
                 flex: 0 0 auto;
             }
         }
-        
+
         .section-title {
             text-align: center;
             margin-bottom: 2rem;
             color: #2c3e50;
         }
-        
+
         .country-btn {
             display: flex;
             flex-direction: column;
@@ -461,41 +470,41 @@
             width: 150px;
             height: 120px;
         }
-        
+
         .country-btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-            border-color: #3498db;
+            box-shadow: 0px 4px 28px 0px #00000021;
+            border-color: #ff8400;
         }
-        
+
         .country-btn.active {
             background-color: #e8f4fc;
-            border-color: #3498db;
-            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+            border-color: #ff8400;
+            box-shadow: 0px 4px 28px 0px #00000021;
         }
-        
+
         .country-logo {
             width: 60px;
             height: 60px;
             margin-bottom: 10px;
         }
-        
+
         .country-name {
             font-weight: 600;
             text-align: center;
             font-size: 14px;
         }
-        
+
         .universities-container {
             background-color: #ffffff;
             border-radius: 15px;
             padding: 20px;
             margin-top: 30px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             min-height: 250px;
             position: relative;
         }
-        
+
         .university-card {
             display: flex;
             flex-direction: column;
@@ -507,12 +516,12 @@
             transition: all 0.3s ease;
             height: 180px;
         }
-        
+
         .university-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
-        
+
         .university-logo {
             width: 80px;
             height: 80px;
@@ -522,19 +531,20 @@
             align-items: center;
             justify-content: center;
         }
-        
+
         .university-logo img {
             max-width: 100%;
             max-height: 100%;
         }
-        
+
         .university-name {
             font-weight: 600;
             text-align: center;
             font-size: 14px;
         }
-        
-        .carousel-control-prev, .carousel-control-next {
+
+        .carousel-control-prev,
+        .carousel-control-next {
             width: 40px;
             height: 40px;
             background-color: #3498db;
@@ -543,30 +553,33 @@
             transform: translateY(-50%);
             opacity: 0.8;
         }
-        
+
         .carousel-control-prev {
             left: -20px;
         }
-        
+
         .carousel-control-next {
             right: -20px;
         }
-        
-        .carousel-control-prev:hover, .carousel-control-next:hover {
+
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
             opacity: 1;
         }
-        
-        .carousel-control-prev-icon, .carousel-control-next-icon {
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
             width: 20px;
             height: 20px;
         }
-        
+
         .no-universities {
             text-align: center;
             padding: 50px;
             color: #7f8c8d;
         }
-/* meet section */
+
+        /* meet section */
         .meet-section {
             padding: 60px 0;
             background-color: #fff;
@@ -576,19 +589,19 @@
             background-color: #fff;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
             margin: 10px;
             transition: all 0.3s ease;
             height: 100%;
             border: 1px solid #eee;
         }
-        
+
         .meet-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
             border-color: var(--primary-color);
         }
-        
+
         .meet-card .card-img {
             height: 180px;
             overflow: hidden;
@@ -597,40 +610,41 @@
             justify-content: center;
             background-color: var(--secondary-color);
         }
-        
+
         .meet-card .card-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
-        
+
         .meet-card:hover .card-img img {
             transform: scale(1.05);
         }
-        
+
         .meet-card .card-body {
             padding: 25px;
             text-align: center;
         }
-        
+
         .meet-card .card-title {
             font-weight: 700;
             margin-bottom: 15px;
             color: var(--primary-color);
         }
-        
+
         .meet-card .card-text {
             color: var(--light-text);
             font-size: 0.95rem;
             line-height: 1.6;
         }
+
         .meet-section .section-title {
             position: relative;
             margin-bottom: 40px;
             text-align: center;
         }
-        
+
         .meet-section .section-title h2 {
             font-weight: 700;
             color: var(--primary-color);
@@ -638,7 +652,7 @@
             display: inline-block;
             margin-bottom: 15px;
         }
-        
+
         .meet-section .section-title h2:after {
             content: '';
             position: absolute;
@@ -648,33 +662,34 @@
             bottom: -10px;
             left: 15%;
         }
-        
+
         .meet-section .section-title p {
             color: var(--light-text);
             max-width: 700px;
             margin: 0 auto;
         }
+
         /* offers section */
 
-         .special-offers-section {
+        .special-offers-section {
             padding: 70px 0;
             background-color: #f9f9f9;
         }
-        
+
         .special-offers-section .section-title {
             text-align: center;
             margin-bottom: 50px;
         }
-        
+
         .special-offers-section .section-title h2 {
-            color: #1a3c8a;
+            
             font-weight: 700;
             font-size: 36px;
             position: relative;
             display: inline-block;
             padding-bottom: 15px;
         }
-        
+
         .special-offers-section .section-title h2:after {
             content: '';
             position: absolute;
@@ -685,53 +700,53 @@
             height: 3px;
             background-color: #ff5722;
         }
-        
+
         .offers-card {
             border: none;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             background-color: #fff;
             height: 100%;
         }
-        
+
         .card-header {
             background-color: #1a3c8a;
             color: white;
             padding: 20px 25px;
             border-bottom: none;
         }
-        
+
         .card-header h3 {
             margin: 0;
             font-weight: 600;
             font-size: 24px;
         }
-        
+
         .card-body {
             padding: 30px;
         }
-        
+
         .offer-image {
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        
+
         .offer-image img {
             width: 100%;
             height: auto;
             transition: transform 0.5s ease;
         }
-        
+
         .offer-image:hover img {
             transform: scale(1.03);
         }
-        
+
         .highlight-badge {
             background-color: #ff5722;
             color: white;
@@ -742,13 +757,13 @@
             display: inline-block;
             margin-bottom: 20px;
         }
-        
+
         .offers-list {
             list-style: none;
             padding-left: 0;
             margin-bottom: 0;
         }
-        
+
         .offers-list li {
             padding: 15px 0;
             position: relative;
@@ -757,11 +772,11 @@
             font-size: 16px;
             border-bottom: 1px solid #eee;
         }
-        
+
         .offers-list li:last-child {
             border-bottom: none;
         }
-        
+
         .offers-list li:before {
             content: "\f00c";
             font-family: "Font Awesome 6 Free";
@@ -771,9 +786,9 @@
             color: #ff5722;
             font-size: 18px;
         }
-        
-        .btn-register {
-            background-color: #ff5722;
+
+        .hero-section .btn-register {
+            background-color: #ff8400;
             color: white;
             border: none;
             padding: 12px 30px;
@@ -784,127 +799,641 @@
             display: inline-block;
             margin-top: 20px;
         }
-        
-        .btn-register:hover {
-            background-color: #e64a19;
-            color: white;
-        }
-        
-        .event-details {
-            background-color: #e8f0fe;
-            border-radius: 8px;
-            padding: 20px;
-            margin-top: 30px;
-        }
-        
-        .event-details h4 {
-            color: #1a3c8a;
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-        
-        .event-info {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        
-        .event-info i {
-            color: #ff5722;
-            margin-right: 10px;
-            width: 20px;
+
+        .hero-section .btn-register:hover {
+           background: #fff !important;
+            color: #ff8400 !important;
+            border: 1px solid #ff8400 !important;
         }
 
-        /* cta section */
+        
 
+
+        /* CTA Section */
         .cta-section {
             background-color: #f8f9fa;
-            padding: 40px 0;
-            border-top: 1px solid #e9ecef;
-            border-bottom: 1px solid #e9ecef;
+            padding: 50px 0;
+            position: relative;
+            overflow: hidden;
         }
-        
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #FF8500;
+        }
+
         .cta-content {
             text-align: center;
+            position: relative;
+            z-index: 2;
         }
-        
+
         .cta-heading {
-            color: #0d6efd;
+            color: #212529;
             font-weight: 700;
-            font-size: 2rem;
-            margin-bottom: 25px;
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
         }
-        
+
+        .cta-heading::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 3px;
+            background-color: #FF8500;
+        }
+
         .cta-section .register-btn {
-            background-color: #0d6efd;
+            background: #FF8500;
             color: white;
             font-weight: 600;
-            padding: 12px 30px;
-            border-radius: 5px;
+            padding: 14px 35px;
+            border-radius: 30px;
             font-size: 1.1rem;
             transition: all 0.3s ease;
             border: none;
             text-decoration: none;
+            display: inline-block;
+            
         }
-        
+
         .cta-section .register-btn:hover {
-            background-color: #0b5ed7;
-            color: white;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            background: #fff;
+            color: #ff8400 !important;
+            border: 1px solid #ff8400;
         }
-        
+
+        /* Background decoration */
+        .bg-shape {
+            position: absolute;
+            opacity: 0.05;
+            z-index: 1;
+        }
+
+        .bg-shape-1 {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: #0d6efd;
+            top: -150px;
+            right: -100px;
+        }
+
+        .bg-shape-2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #6610f2;
+            bottom: -100px;
+            left: -50px;
+        }
+
+        .offers-card .register-btn {
+            background: #FF8500;
+            color: white;
+            font-weight: 600;
+            padding: 14px 35px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            
+        }
+
+        .offers-card .register-btn:hover {
+            background: #fff;
+            color: #ff8400 !important;
+            border: 1px solid #ff8400;
+        }
+
+        /* testimonial section */
+
+        .scholarships-section {
+            padding: 70px 0 100px;
+            background: #ffffff;
+        }
+
+        .scholarships-section .carousel-inner {
+            height: 500px;
+        }
+
+        .meet-section .carousel-inner {
+            height: 500px;
+        }
+
+        .scholarships-section .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .scholarships-section .section-title h2 {
+            color: #212529;
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .scholarships-section .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 3px;
+            background-color: #ff8400;
+        }
+
+        .scholarships-section .section-title p {
+            color: #6c757d;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .scholarship-slider {
+            position: relative;
+            padding: 20px 0 50px;
+        }
+
+        .scholarship-card {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+            height: 100%;
+            transition: transform 0.3s ease;
+            margin: 15px;
+            border-bottom: 5px solid #ff8400;
+        }
+
+        .scholarship-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .student-profile {
+            background: #0d9bd7;
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .student-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 15px;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #0d6efd;
+            border: 4px solid white;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .student-name {
+            font-weight: 700;
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+
+        .student-place {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .student-place i {
+            margin-right: 5px;
+        }
+
+        .scholarship-info {
+            padding: 25px;
+        }
+
+        .scholarship-details p {
+            color: #6c757d;
+            margin-bottom: 0;
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        .scholarships-section .carousel-indicators {
+            bottom: -40px;
+        }
+
+        .scholarships-section .carousel-indicators button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #dee2e6;
+            opacity: 0.5;
+            margin: 0 5px;
+        }
+
+        .scholarships-section .carousel-indicators button.active {
+            background-color: #0d6efd;
+            opacity: 1;
+        }
+
+        /* delegates section */
+
+        .testimonials-section {
+            padding: 70px 0 100px;
+            background-color: #f8f9fa;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials-section .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .testimonials-section .section-title h2 {
+            color: #212529;
+            font-weight: 700;
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .testimonials-section .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 3px;
+            background-color: #ff8400;
+        }
+
+        .testimonials-section .section-title p {
+            color: #6c757d;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .testimonials-section .subsection-title {
+            text-align: center;
+            margin-bottom: 30px;
+            margin-top: 50px;
+        }
+
+        .testimonials-section .subsection-title h3 {
+            color: #212529;
+            font-weight: 600;
+            font-size: 1.8rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .testimonials-section .subsection-title h3::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 2px;
+            background-color: #ff8400;
+        }
+
+        /* Testimonial Styles */
+        .testimonials-section .testimonial-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            padding: 30px;
+            margin: 10px;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-bottom: 4px solid #ff8400;
+            height: 280px;
+        }
+
+        .testimonials-section .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .testimonials-section .testimonial-quote {
+            font-size: 1rem;
+            color: #6c757d;
+            margin-bottom: 20px;
+            position: relative;
+            padding-left: 25px;
+            line-height: 1.6;
+            height: 120px;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+        }
+
+        .testimonials-section .testimonial-quote::before {
+            /* content: '"'; */
+            font-size: 4rem;
+            color: #e9ecef;
+            position: absolute;
+            top: -30px;
+            left: -10px;
+            font-family: Georgia, serif;
+            z-index: 0;
+        }
+
+        .testimonials-section .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background-color: #e9ecef;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: 700;
+            color: #0d6efd;
+            font-size: 1.5rem;
+            border: 2px solid #0d6efd;
+        }
+
+        .author-info h5 {
+            margin: 0;
+            font-weight: 600;
+            color: #212529;
+            font-size: 1.1rem;
+        }
+
+        .author-info p {
+            margin: 0;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+
+        /* YouTube Video Styles */
+        .video-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            margin: 10px;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            border-bottom: 4px solid #ff8400;
+            height: 100%;
+        }
+
+        .video-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .video-thumbnail {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-thumbnail img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background-color: rgba(255, 0, 0, 0.8);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .video-card:hover .play-button {
+            background-color: rgba(255, 0, 0, 1);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .video-info {
+            padding: 15px;
+        }
+
+        .video-title {
+            font-weight: 600;
+            color: #212529;
+            margin-bottom: 5px;
+            font-size: 1rem;
+            line-height: 1.4;
+            height: 2.8rem;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+
+
+
+        /* Bootstrap Carousel Customization */
+        .testimonials-carousel .carousel {
+            margin-bottom: 50px;
+        }
+
+        .testimonial-carousel .carousel-indicators {
+            bottom: -40px;
+        }
+
+        .testimonials-carousel .carousel-indicators button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #dee2e6;
+            opacity: 0.5;
+            margin: 0 5px;
+        }
+
+        .testimonial-carousel .carousel-indicators button.active {
+            background-color: #0d6efd;
+            opacity: 1;
+        }
+
+        .video-carousel .carousel-indicators button.active {
+            background-color: #ff0000;
+            opacity: 1;
+        }
+
+        .video-carousel .carousel-indicators {
+            bottom: -40px;
+        }
+
+        .testimonials-section .carousel-inner {
+            padding-bottom: 20px;
+        }
+
+        .testimonials-section .bg-shape {
+            position: absolute;
+            opacity: 0.05;
+            z-index: 0;
+        }
+
+        .testimonials-section .bg-shape-1 {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: #0d6efd;
+            top: -150px;
+            right: -100px;
+        }
+
+        .testimonials-section .bg-shape-2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: #ff0000;
+            bottom: -100px;
+            left: -50px;
+        }
+
+        .socialicons {
+            position: relative;
+            z-index: 1;
+            width: 100%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+            margin-top: 40px;
+            border-bottom: 1px solid;
+            padding-bottom: 40px;
+        }
+
+        .socialicons img {
+            width: 50%;
+        }
+
+        .final-cta .register-btn{
+            background: #FF8500;
+            color: white;
+            font-weight: 600;
+            padding: 14px 35px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+        }
+
         @media (max-width: 768px) {
 
-            .cta-heading {
-                font-size: 1.5rem;
+            .testimonial-card {
+                padding: 20px;
+                height: 300px;
             }
-            
+
+            .testimonial-quote {
+                font-size: 0.9rem;
+            }
+
+            .scholarships-section .section-title h2 {
+                font-size: 1.8rem;
+            }
+
+            .scholarship-card {
+                margin: 10px 5px;
+            }
+
+            .cta-heading {
+                font-size: 1.8rem;
+            }
+
             .cta-section .register-btn {
-                padding: 10px 20px;
+                padding: 12px 25px;
                 font-size: 1rem;
             }
-             .meet-section {
+
+            .meet-section {
                 padding: 40px 0;
             }
-            
+
 
             .country-btn {
                 width: 120px;
                 height: 100px;
                 padding: 10px;
             }
-            
+
             .country-logo {
                 width: 40px;
                 height: 40px;
             }
-            
+
             .carousel-control-prev {
                 left: -10px;
             }
-            
+
             .carousel-control-next {
                 right: -10px;
             }
-             .meet-section {
+
+            .meet-section {
                 padding: 40px 0;
             }
-            
-            .meet-section  .section-title h2 {
+
+            .meet-section .section-title h2 {
                 font-size: 1.8rem;
             }
-            
-            .meet-section  .carousel-control-prev {
+
+            .meet-section .carousel-control-prev {
                 left: -10px;
             }
-            
-            .meet-section  .carousel-control-next {
+
+            .meet-section .carousel-control-next {
                 right: -10px;
             }
         }
     </style>
 </head>
+
 <body class="" style="">
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
@@ -933,15 +1462,17 @@
                         <a class="nav-link" href="#faq">FAQ</a>
                     </li>
                     <li class="nav-item ms-lg-3">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register Now</button>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Register
+                            Now</button>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
+
     <!-- Hero Section -->
-    <section class="hero-section" id="hero" onclick="openRegisterModal()">
+    <section class="hero-section" id="hero">
         <div class="hero-banner">
             <div class="hero-content">
                 <h1 class="display-4 fw-bold mb-3">Study Abroad Virtual Expo 2025: Explore Your Future!</h1>
@@ -978,7 +1509,7 @@
                     </div>
                 </div>
                 <div class="mt-4">
-                    <button class="btn btn-primary btn-lg btn-register pulse-effect" data-bs-toggle="modal" data-bs-target="#registerModal">
+                    <button class="btn btn-primary btn-lg btn-register pulse-effect" id="zf_button_652002" >
                         <i class="fas fa-paper-plane me-2"></i> Register for Free
                     </button>
                 </div>
@@ -986,49 +1517,35 @@
         </div>
     </section>
 
-    <!-- Registration Modal -->
-    <div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" style="display: none;" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <!-- Modal -->
+<div class="modal fade" id="zohoFormModal" tabindex="-1" aria-labelledby="zohoFormLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-0 border-0">
+      <div class="modal-body p-0">
+        <iframe 
+          src="https://forms.zohopublic.com/yourformlink" 
+          frameborder="0" 
+          style="width:100%; height:600px;" 
+          allowtransparency="true">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Registration Modal 
+    <div class="modal fade" id="zohoFormModal" tabindex="-1" aria-labelledby="zohoFormModalLabel" aria-hidden="true"
+        style="display: none;">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title fw-bold" id="registerModalLabel">Register for the Virtual Expo</h5>
+                    
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <form id="registrationForm">
-                        <div class="mb-3">
-                            <label for="fullName" class="form-label">Full Name</label>
-                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required="">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email address" required="">
-                        </div>
-                        <div class="mb-3">
-                            <label for="phone" class="form-label">Phone Number (Optional)</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
-                        </div>
-                        <div class="mb-3">
-                            <label for="interest" class="form-label">Area of Interest</label>
-                            <select class="form-select" id="interest" required="">
-                                <option value="" selected="" disabled="">Select your area of interest</option>
-                                <option value="undergraduate">Undergraduate Programs</option>
-                                <option value="postgraduate">Postgraduate Programs</option>
-                                <option value="phd">PhD Programs</option>
-                                <option value="scholarships">Scholarships</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="form-check mb-3">
-                            <input class="form-check-input" type="checkbox" id="agreeTerms" required="">
-                            <label class="form-check-label" for="agreeTerms">
-                                I agree to receive updates about the expo and related educational opportunities
-                            </label>
-                        </div>
-                        <div class="text-center">
-                            <button type="submit" class="btn btn-primary btn-lg px-5">Complete Registration</button>
-                        </div>
-                    </form>
+                <div class="modal-body p-0">
+                    <div class="zoho-form-container" id="zohoFormContainer">
+                        
+                    </div>
                 </div>
             </div>
         </div>
@@ -1041,7 +1558,12 @@
                 <div class="col-lg-8 mx-auto text-center">
                     <h2 class="section-title text-center">Why Attend?</h2>
                     <p class="lead">
-                        Attending a Study Abroad Virtual Expo is a smart step for any student looking to shape their future on a global scale. These events offer direct access to top international universities, leading employers, and industry professionals, all in one virtual space. Whether you are searching for the right academic program, exploring internship options, or planning your next career move, the expo provides a unique opportunity to gather insights, ask questions, and make meaningful connections—all from the comfort of your home.
+                        Attending a Study Abroad Virtual Expo is a smart step for any student looking to shape their
+                        future on a global scale. These events offer direct access to top international universities,
+                        leading employers, and industry professionals, all in one virtual space. Whether you are
+                        searching for the right academic program, exploring internship options, or planning your next
+                        career move, the expo provides a unique opportunity to gather insights, ask questions, and make
+                        meaningful connections—all from the comfort of your home.
                     </p>
                 </div>
             </div>
@@ -1074,18 +1596,16 @@
                     </div>
                 </div>
             </div>
-            <div class="text-center mt-5">
-                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Connect with Top Universities – Register for Free!</button>
-            </div>
+            
         </div>
     </section>
 
-   
 
-   <section class="participating-institutions">
+
+    <section class="participating-institutions">
         <div class="container py-5">
             <h2 class="section-title">Participating Institutions</h2>
-            
+
             <div class="country-buttons-container">
                 <div class="row justify-content-center">
                     <div class="col-auto">
@@ -1159,9 +1679,15 @@
                         <div class="country-btn" data-country="uk">
                             <svg class="country-logo" viewBox="0 0 512 512">
                                 <rect width="512" height="512" fill="#f0f0f0"></rect>
-                                <path fill="#0052b4" d="M512,512H0V0H512z M300.5,256L512,68V0H447l-196,132.8L54.5,0H0v68L211.5,256L0,444v68h54.5l196.5-132.8L447,512h65v-68L300.5,256z"></path>
-                                <path fill="#d80027" d="M512,0v40.3L322.8,166.6h66.7L512,40.3V0H512z M189.2,166.6L0,40.3V0h66.7L256,126.3h-66.8V166.6z M0,471.7l189.2-126.3h-66.7L0,471.7V512h66.7L256,385.7h-66.8V471.7z M445.2,385.7L512,430.3V512h-66.7L256,385.7h66.8V385.7H445.2z"></path>
-                                <path fill="#d80027" d="M0,0.1h512v512H0V0.1z M512,221.5H291.8V0.1h-71.7v221.4H0v71.7h220.1v221.4h71.7V293.2H512V221.5z"></path>
+                                <path fill="#0052b4"
+                                    d="M512,512H0V0H512z M300.5,256L512,68V0H447l-196,132.8L54.5,0H0v68L211.5,256L0,444v68h54.5l196.5-132.8L447,512h65v-68L300.5,256z">
+                                </path>
+                                <path fill="#d80027"
+                                    d="M512,0v40.3L322.8,166.6h66.7L512,40.3V0H512z M189.2,166.6L0,40.3V0h66.7L256,126.3h-66.8V166.6z M0,471.7l189.2-126.3h-66.7L0,471.7V512h66.7L256,385.7h-66.8V471.7z M445.2,385.7L512,430.3V512h-66.7L256,385.7h66.8V385.7H445.2z">
+                                </path>
+                                <path fill="#d80027"
+                                    d="M0,0.1h512v512H0V0.1z M512,221.5H291.8V0.1h-71.7v221.4H0v71.7h220.1v221.4h71.7V293.2H512V221.5z">
+                                </path>
                             </svg>
                             <div class="country-name">United Kingdom</div>
                         </div>
@@ -1192,11 +1718,21 @@
                                 <rect width="512" height="512" fill="#0052b4"></rect>
                                 <g fill="#f0f0f0">
                                     <path d="M256,0 L256,256 L0,256 L0,0 L256,0 z"></path>
-                                    <polygon points="160,128 170,153 196,153 175,169 185,194 160,178 135,194 145,169 124,153 150,153"></polygon>
-                                    <polygon points="85,85 93,100 110,100 96,110 104,125 85,115 66,125 74,110 60,100 77,100"></polygon>
-                                    <polygon points="85,256-85 93,256-70 110,256-70 96,256-60 104,256-45 85,256-55 66,256-45 74,256-60 60,256-70 77,256-70"></polygon>
-                                    <polygon points="256-85,256-85 256-93,256-70 256-110,256-70 256-96,256-60 256-104,256-45 256-85,256-55 256-66,256-45 256-74,256-60 256-60,256-70 256-77,256-70"></polygon>
-                                    <path d="M382,199 L364,199 L364,217 L346,217 L346,235 L364,235 L364,253 L382,253 L382,235 L400,235 L400,217 L382,217 z"></path>
+                                    <polygon
+                                        points="160,128 170,153 196,153 175,169 185,194 160,178 135,194 145,169 124,153 150,153">
+                                    </polygon>
+                                    <polygon
+                                        points="85,85 93,100 110,100 96,110 104,125 85,115 66,125 74,110 60,100 77,100">
+                                    </polygon>
+                                    <polygon
+                                        points="85,256-85 93,256-70 110,256-70 96,256-60 104,256-45 85,256-55 66,256-45 74,256-60 60,256-70 77,256-70">
+                                    </polygon>
+                                    <polygon
+                                        points="256-85,256-85 256-93,256-70 256-110,256-70 256-96,256-60 256-104,256-45 256-85,256-55 256-66,256-45 256-74,256-60 256-60,256-70 256-77,256-70">
+                                    </polygon>
+                                    <path
+                                        d="M382,199 L364,199 L364,217 L346,217 L346,235 L364,235 L364,253 L382,253 L382,235 L400,235 L400,217 L382,217 z">
+                                    </path>
                                     <path d="M419,273 L410,259 L401,273 L419,273 z"></path>
                                     <path d="M401,239 L410,253 L419,239 L401,239 z"></path>
                                     <path d="M444,248 L430,239 L430,257 L444,248 z"></path>
@@ -1207,7 +1743,9 @@
                                     <path d="M363,248 L377,257 L377,239 L363,248 z"></path>
                                 </g>
                                 <g fill="#d80027">
-                                    <path d="M256,0 L256,256 L0,256 L0,0 L256,0 z M144,0 L112,0 L112,112 L0,112 L0,144 L112,144 L112,256 L144,256 L144,144 L256,144 L256,112 L144,112 z"></path>
+                                    <path
+                                        d="M256,0 L256,256 L0,256 L0,0 L256,0 z M144,0 L112,0 L112,112 L0,112 L0,144 L112,144 L112,256 L144,256 L144,144 L256,144 L256,112 L144,112 z">
+                                    </path>
                                     <path d="M0,0 L0,16 L208,144 L256,144 L256,112 L48,0 L0,0 z"></path>
                                     <path d="M0,256 L0,240 L208,112 L256,112 L256,144 L48,256 L0,256 z"></path>
                                     <path d="M0,0 L0,16 L208,144 L256,144 L256,112 L48,0 L0,0 z"></path>
@@ -1223,88 +1761,108 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="universities-container">
                 <div id="universitiesContent">
                     <div id="universitiesCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                <div class="carousel-item active carousel-item-start"><div class="row">
-                            <div class="col-md-3">
-                                <div class="university-card">
-                                    <div class="university-logo"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="100" height="100" fill="#A51C30"></rect>
-                            <text x="50" y="50" font-family="serif" font-size="70" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">H</text>
-                            <text x="50" y="75" font-family="serif" font-size="12" fill="white" text-anchor="middle">VERITAS</text>
-                          </svg></div>
-                                    <div class="university-name">Harvard University</div>
+                            <div class="carousel-item active carousel-item-start">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="university-card">
+                                            <div class="university-logo"><svg viewBox="0 0 100 100"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="100" height="100" fill="#A51C30"></rect>
+                                                    <text x="50" y="50" font-family="serif" font-size="70"
+                                                        font-weight="bold" fill="white" text-anchor="middle"
+                                                        dominant-baseline="middle">H</text>
+                                                    <text x="50" y="75" font-family="serif" font-size="12" fill="white"
+                                                        text-anchor="middle">VERITAS</text>
+                                                </svg></div>
+                                            <div class="university-name">Harvard University</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="university-card">
+                                            <div class="university-logo"><svg viewBox="0 0 100 100"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="100" height="100" fill="#8C1515"></rect>
+                                                    <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"></path>
+                                                    <path d="M30,30 L70,30 L70,70 L30,70 Z" fill="#8C1515"></path>
+                                                    <text x="50" y="55" font-family="serif" font-size="20"
+                                                        font-weight="bold" fill="white" text-anchor="middle">S</text>
+                                                </svg></div>
+                                            <div class="university-name">Stanford University</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="university-card">
+                                            <div class="university-logo"><svg viewBox="0 0 100 100"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="100" height="100" fill="#A31F34"></rect>
+                                                    <rect x="10" y="30" width="15" height="40" fill="white"></rect>
+                                                    <rect x="30" y="30" width="15" height="40" fill="white"></rect>
+                                                    <rect x="50" y="30" width="15" height="40" fill="white"></rect>
+                                                    <rect x="70" y="30" width="20" height="15" fill="white"></rect>
+                                                    <rect x="70" y="55" width="20" height="15" fill="white"></rect>
+                                                </svg></div>
+                                            <div class="university-name">MIT</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="university-card">
+                                            <div class="university-logo"><svg viewBox="0 0 100 100"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="100" height="100" fill="#00356B"></rect>
+                                                    <text x="50" y="60" font-family="serif" font-size="50"
+                                                        font-weight="bold" fill="white" text-anchor="middle">Y</text>
+                                                    <path d="M30,75 L70,75 L70,80 L30,80 Z" fill="white"></path>
+                                                </svg></div>
+                                            <div class="university-name">Yale University</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        
-                            <div class="col-md-3">
-                                <div class="university-card">
-                                    <div class="university-logo"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="100" height="100" fill="#8C1515"></rect>
-                            <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"></path>
-                            <path d="M30,30 L70,30 L70,70 L30,70 Z" fill="#8C1515"></path>
-                            <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">S</text>
-                          </svg></div>
-                                    <div class="university-name">Stanford University</div>
+                            <div class="carousel-item carousel-item-next carousel-item-start">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <div class="university-card">
+                                            <div class="university-logo"><svg viewBox="0 0 100 100"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="100" height="100" fill="#FF8F00"></rect>
+                                                    <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"></path>
+                                                    <text x="50" y="60" font-family="serif" font-size="40"
+                                                        font-weight="bold" fill="#FF8F00" text-anchor="middle">P</text>
+                                                </svg></div>
+                                            <div class="university-name">Princeton University</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <div class="university-card">
+                                            <div class="university-logo"><svg viewBox="0 0 100 100"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <rect width="100" height="100" fill="#B9D9EB"></rect>
+                                                    <circle cx="50" cy="50" r="30" fill="white"></circle>
+                                                    <text x="50" y="60" font-family="serif" font-size="40"
+                                                        font-weight="bold" fill="#B9D9EB" text-anchor="middle">C</text>
+                                                </svg></div>
+                                            <div class="university-name">Columbia University</div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        
-                            <div class="col-md-3">
-                                <div class="university-card">
-                                    <div class="university-logo"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="100" height="100" fill="#A31F34"></rect>
-                            <rect x="10" y="30" width="15" height="40" fill="white"></rect>
-                            <rect x="30" y="30" width="15" height="40" fill="white"></rect>
-                            <rect x="50" y="30" width="15" height="40" fill="white"></rect>
-                            <rect x="70" y="30" width="20" height="15" fill="white"></rect>
-                            <rect x="70" y="55" width="20" height="15" fill="white"></rect>
-                          </svg></div>
-                                    <div class="university-name">MIT</div>
-                                </div>
-                            </div>
-                        
-                            <div class="col-md-3">
-                                <div class="university-card">
-                                    <div class="university-logo"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="100" height="100" fill="#00356B"></rect>
-                            <text x="50" y="60" font-family="serif" font-size="50" font-weight="bold" fill="white" text-anchor="middle">Y</text>
-                            <path d="M30,75 L70,75 L70,80 L30,80 Z" fill="white"></path>
-                          </svg></div>
-                                    <div class="university-name">Yale University</div>
-                                </div>
-                            </div>
-                        </div></div><div class="carousel-item carousel-item-next carousel-item-start"><div class="row">
-                            <div class="col-md-3">
-                                <div class="university-card">
-                                    <div class="university-logo"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="100" height="100" fill="#FF8F00"></rect>
-                            <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"></path>
-                            <text x="50" y="60" font-family="serif" font-size="40" font-weight="bold" fill="#FF8F00" text-anchor="middle">P</text>
-                          </svg></div>
-                                    <div class="university-name">Princeton University</div>
-                                </div>
-                            </div>
-                        
-                            <div class="col-md-3">
-                                <div class="university-card">
-                                    <div class="university-logo"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="100" height="100" fill="#B9D9EB"></rect>
-                            <circle cx="50" cy="50" r="30" fill="white"></circle>
-                            <text x="50" y="60" font-family="serif" font-size="40" font-weight="bold" fill="#B9D9EB" text-anchor="middle">C</text>
-                          </svg></div>
-                                    <div class="university-name">Columbia University</div>
-                                </div>
-                            </div>
-                        </div></div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#universitiesCarousel" data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#universitiesCarousel"
+                            data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#universitiesCarousel" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#universitiesCarousel"
+                            data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
@@ -1313,350 +1871,457 @@
             </div>
         </div>
     </section>
-<!-- cta section -->
+    <!-- cta section -->
 
-<section class="cta-section">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-10 col-lg-8">
-                <div class="cta-content">
-                    <h2 class="cta-heading">Connect with Top Universities – Register for Free!</h2>
-                    <a href="https://www.studies-overseas.com/overseas-education-fair/nagpur" class="register-btn">Register for Free!</a>
+    <section class="cta-section">
+        <div class="bg-shape bg-shape-1"></div>
+        <div class="bg-shape bg-shape-2"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-8">
+                    <div class="cta-content">
+                        <h2 class="cta-heading">Connect with Top Universities – Register for Free!</h2>
+                        <a href="https://www.studies-overseas.com/overseas-education-fair/nagpur"
+                            class="register-btn">Register for Free!</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<!-- meet section -->
-   <section class="meet-section">
-    <div class="container">
-        <div class="section-title">
-            <h2>Who Will You Meet in the Overseas Education Fair?</h2>
-            <p>Connect with university representatives, education experts, and visa consultants all under one roof to get comprehensive guidance for your study abroad journey.</p>
-        </div>
-        
-        <div id="meetCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#meetCarousel" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#meetCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active" aria-current="true"></button>
+    </section>
+    <!-- meet section -->
+    <section class="meet-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Who Will You Meet in the Overseas Education Fair?</h2>
+                <p>Connect with university representatives, education experts, and visa consultants all under one roof
+                    to get comprehensive guidance for your study abroad journey.</p>
             </div>
-            
-            <div class="carousel-inner">
-                <!-- First Slide -->
-                <div class="carousel-item">
-                    <div class="row">
-                        <!-- University Representatives -->
-                        <div class="col-md-4">
-                            <div class="meet-card">
-                                <div class="card-img">
-                                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="100%" height="100%" fill="#e9ecef"></rect>
-                                        <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translate(-40px, -40px);">
-                                            <path d="M2 22h20V10L12 2 2 10v12zm2-2v-9l8-6 8 6v9H4zm8-4a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"></path>
+
+            <div id="meetCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#meetCarousel" data-bs-slide-to="0" class=""
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#meetCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                        class="active" aria-current="true"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <!-- First Slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- University Representatives -->
+                            <div class="col-md-4">
+                                <div class="meet-card">
+                                    <div class="card-img">
+                                        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="100%" height="100%" fill="#e9ecef"></rect>
+                                            <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none"
+                                                stroke="#0d6efd" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" style="transform: translate(-40px, -40px);">
+                                                <path
+                                                    d="M2 22h20V10L12 2 2 10v12zm2-2v-9l8-6 8 6v9H4zm8-4a3 3 0 1 0 0-6 3 3 0 0 0 0 6z">
+                                                </path>
+                                            </svg>
                                         </svg>
-                                    </svg>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">University Representatives</h4>
+                                        <p class="card-text">Meet directly with official representatives from
+                                            prestigious universities across the globe to get first-hand information
+                                            about programs, admission requirements, and scholarship opportunities.</p>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">University Representatives</h4>
-                                    <p class="card-text">Meet directly with official representatives from prestigious universities across the globe to get first-hand information about programs, admission requirements, and scholarship opportunities.</p>
+                            </div>
+
+                            <!-- Education Counselors -->
+                            <div class="col-md-4">
+                                <div class="meet-card">
+                                    <div class="card-img">
+                                        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="100%" height="100%" fill="#e9ecef"></rect>
+                                            <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none"
+                                                stroke="#0d6efd" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" style="transform: translate(-40px, -40px);">
+                                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5">
+                                                </path>
+                                            </svg>
+                                        </svg>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Education Counselors</h4>
+                                        <p class="card-text">Our experienced counselors will guide you through every
+                                            step of your study abroad journey, from course selection to application
+                                            process and post-admission support.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Visa Experts -->
+                            <div class="col-md-4">
+                                <div class="meet-card">
+                                    <div class="card-img">
+                                        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="100%" height="100%" fill="#e9ecef"></rect>
+                                            <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none"
+                                                stroke="#0d6efd" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" style="transform: translate(-40px, -40px);">
+                                                <rect x="3" y="4" width="18" height="16" rx="2"></rect>
+                                                <circle cx="9" cy="10" r="3"></circle>
+                                                <path d="M17 8h.01M17 12h.01"></path>
+                                            </svg>
+                                        </svg>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Visa Experts</h4>
+                                        <p class="card-text">Get expert advice on student visa requirements and
+                                            application procedures, including document verification assistance and
+                                            interview preparation tips.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Education Counselors -->
-                        <div class="col-md-4">
-                            <div class="meet-card">
-                                <div class="card-img">
-                                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="100%" height="100%" fill="#e9ecef"></rect>
-                                        <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translate(-40px, -40px);">
-                                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </div>
+
+                    <!-- Second Slide -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <!-- Alumni Network -->
+                            <div class="col-md-4">
+                                <div class="meet-card">
+                                    <div class="card-img">
+                                        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="100%" height="100%" fill="#e9ecef"></rect>
+                                            <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none"
+                                                stroke="#0d6efd" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" style="transform: translate(-40px, -40px);">
+                                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                                <circle cx="9" cy="7" r="4"></circle>
+                                                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
+                                            </svg>
                                         </svg>
-                                    </svg>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Education Counselors</h4>
-                                    <p class="card-text">Our experienced counselors will guide you through every step of your study abroad journey, from course selection to application process and post-admission support.</p>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Alumni Network</h4>
+                                        <p class="card-text">Connect with students who have successfully studied abroad
+                                            and hear their experiences about adapting to new cultures, campus life, and
+                                            part-time work opportunities.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <!-- Visa Experts -->
-                        <div class="col-md-4">
-                            <div class="meet-card">
-                                <div class="card-img">
-                                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="100%" height="100%" fill="#e9ecef"></rect>
-                                        <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translate(-40px, -40px);">
-                                            <rect x="3" y="4" width="18" height="16" rx="2"></rect>
-                                            <circle cx="9" cy="10" r="3"></circle>
-                                            <path d="M17 8h.01M17 12h.01"></path>
+
+                            <!-- Financial Advisors -->
+                            <div class="col-md-4">
+                                <div class="meet-card">
+                                    <div class="card-img">
+                                        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="100%" height="100%" fill="#e9ecef"></rect>
+                                            <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none"
+                                                stroke="#0d6efd" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" style="transform: translate(-40px, -40px);">
+                                                <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                                <path d="M12 9v6M9 12h6"></path>
+                                            </svg>
                                         </svg>
-                                    </svg>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Financial Advisors</h4>
+                                        <p class="card-text">Get expert advice on funding your education abroad through
+                                            various financial options, including education loans, scholarships, and
+                                            budget planning for studying abroad.</p>
+                                    </div>
                                 </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Visa Experts</h4>
-                                    <p class="card-text">Get expert advice on student visa requirements and application procedures, including document verification assistance and interview preparation tips.</p>
+                            </div>
+
+                            <!-- Test Preparation Experts -->
+                            <div class="col-md-4">
+                                <div class="meet-card">
+                                    <div class="card-img">
+                                        <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                                            <rect width="100%" height="100%" fill="#e9ecef"></rect>
+                                            <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none"
+                                                stroke="#0d6efd" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" style="transform: translate(-40px, -40px);">
+                                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                                <path
+                                                    d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z">
+                                                </path>
+                                            </svg>
+                                        </svg>
+                                    </div>
+                                    <div class="card-body">
+                                        <h4 class="card-title">Test Preparation Experts</h4>
+                                        <p class="card-text">Meet with experts who can guide you on IELTS, TOEFL, GRE,
+                                            GMAT, and other standardized tests with preparation strategies and score
+                                            improvement tips.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Second Slide -->
-                <div class="carousel-item active">
-                    <div class="row">
-                        <!-- Alumni Network -->
-                        <div class="col-md-4">
-                            <div class="meet-card">
-                                <div class="card-img">
-                                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="100%" height="100%" fill="#e9ecef"></rect>
-                                        <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translate(-40px, -40px);">
-                                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-                                            <circle cx="9" cy="7" r="4"></circle>
-                                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"></path>
-                                        </svg>
-                                    </svg>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Alumni Network</h4>
-                                    <p class="card-text">Connect with students who have successfully studied abroad and hear their experiences about adapting to new cultures, campus life, and part-time work opportunities.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Financial Advisors -->
-                        <div class="col-md-4">
-                            <div class="meet-card">
-                                <div class="card-img">
-                                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="100%" height="100%" fill="#e9ecef"></rect>
-                                        <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translate(-40px, -40px);">
-                                            <rect x="2" y="5" width="20" height="14" rx="2"></rect>
-                                            <circle cx="12" cy="12" r="3"></circle>
-                                            <path d="M12 9v6M9 12h6"></path>
-                                        </svg>
-                                    </svg>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Financial Advisors</h4>
-                                    <p class="card-text">Get expert advice on funding your education abroad through various financial options, including education loans, scholarships, and budget planning for studying abroad.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Test Preparation Experts -->
-                        <div class="col-md-4">
-                            <div class="meet-card">
-                                <div class="card-img">
-                                    <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-                                        <rect width="100%" height="100%" fill="#e9ecef"></rect>
-                                        <svg x="50%" y="50%" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#0d6efd" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="transform: translate(-40px, -40px);">
-                                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
-                                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
-                                        </svg>
-                                    </svg>
-                                </div>
-                                <div class="card-body">
-                                    <h4 class="card-title">Test Preparation Experts</h4>
-                                    <p class="card-text">Meet with experts who can guide you on IELTS, TOEFL, GRE, GMAT, and other standardized tests with preparation strategies and score improvement tips.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#meetCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#meetCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#meetCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#meetCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+
+           
         </div>
-        
-        <div class="text-center mt-5">
-            <a href="#register" class="btn btn-primary btn-lg px-5 py-3">Register for the Fair</a>
-        </div>
-    </div>
-</section>
+    </section>
     <!-- Special Offers -->
     <section class="special-offers-section" id="special-offers">
-    <div class="container">
-        <div class="section-title">
-            <h2>Special Offers for Students</h2>
-            <p class="text-muted mt-3">Exclusive benefits for your overseas education journey</p>
-        </div>
-        
-        <div class="row">
-            <div class="col-lg-6 mb-4 mb-lg-0">
-                <div class="offer-image">
-                    <!-- SVG image representing overseas education fair -->
-                    <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto;">
-                        <rect width="800" height="500" fill="#e8f0fe"></rect>
-                        
-                        <!-- Background elements -->
-                        <circle cx="150" cy="100" r="50" fill="#c5dcfa"></circle>
-                        <circle cx="650" cy="400" r="70" fill="#c5dcfa"></circle>
-                        <circle cx="700" cy="150" r="40" fill="#c5dcfa"></circle>
-                        
-                        <!-- World map outline -->
-                        <path d="M200,250 C250,200 350,220 400,250 C450,280 550,260 600,300" stroke="#1a3c8a" stroke-width="3" fill="none"></path>
-                        
-                        <!-- Buildings representing universities -->
-                        <rect x="150" y="320" width="80" height="100" fill="#1a3c8a"></rect>
-                        <rect x="160" y="340" width="15" height="25" fill="#ffffff"></rect>
-                        <rect x="190" y="340" width="15" height="25" fill="#ffffff"></rect>
-                        <rect x="160" y="380" width="15" height="25" fill="#ffffff"></rect>
-                        <rect x="190" y="380" width="15" height="25" fill="#ffffff"></rect>
-                        <polygon points="150,320 190,290 230,320" fill="#ff5722"></polygon>
-                        
-                        <rect x="350" y="300" width="100" height="120" fill="#1a3c8a"></rect>
-                        <rect x="365" y="320" width="20" height="30" fill="#ffffff"></rect>
-                        <rect x="415" y="320" width="20" height="30" fill="#ffffff"></rect>
-                        <rect x="365" y="370" width="20" height="30" fill="#ffffff"></rect>
-                        <rect x="415" y="370" width="20" height="30" fill="#ffffff"></rect>
-                        <polygon points="350,300 400,260 450,300" fill="#ff5722"></polygon>
-                        
-                        <rect x="550" y="330" width="90" height="90" fill="#1a3c8a"></rect>
-                        <rect x="565" y="350" width="18" height="25" fill="#ffffff"></rect>
-                        <rect x="607" y="350" width="18" height="25" fill="#ffffff"></rect>
-                        <rect x="565" y="385" width="18" height="25" fill="#ffffff"></rect>
-                        <rect x="607" y="385" width="18" height="25" fill="#ffffff"></rect>
-                        <polygon points="550,330 595,300 640,330" fill="#ff5722"></polygon>
-                        
-                        <!-- Students -->
-                        <circle cx="250" cy="250" r="20" fill="#ff5722"></circle>
-                        <rect x="245" y="270" width="10" height="30" fill="#ff5722"></rect>
-                        <rect x="235" y="280" width="30" height="10" fill="#ff5722"></rect>
-                        <rect x="240" y="300" width="5" height="20" fill="#ff5722"></rect>
-                        <rect x="255" y="300" width="5" height="20" fill="#ff5722"></rect>
-                        
-                        <circle cx="500" cy="230" r="20" fill="#ff5722"></circle>
-                        <rect x="495" y="250" width="10" height="30" fill="#ff5722"></rect>
-                        <rect x="485" y="260" width="30" height="10" fill="#ff5722"></rect>
-                        <rect x="490" y="280" width="5" height="20" fill="#ff5722"></rect>
-                        <rect x="505" y="280" width="5" height="20" fill="#ff5722"></rect>
-                        
-                        <!-- Airplane -->
-                        <path d="M100,150 L150,130 L160,140 L120,160 Z" fill="#1a3c8a"></path>
-                        <path d="M150,130 L180,120 L185,125 L160,140 Z" fill="#1a3c8a"></path>
-                        <path d="M130,145 L140,170 L150,165 L140,140 Z" fill="#1a3c8a"></path>
-                        
-                        <!-- Text -->
-                        <text x="400" y="180" font-family="Arial" font-size="24" font-weight="bold" text-anchor="middle" fill="#1a3c8a">OVERSEAS EDUCATION FAIR</text>
-                    </svg>
-                </div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Special Offers for Students</h2>
+                <p class="text-muted mt-3">Exclusive benefits for your overseas education journey</p>
             </div>
-            
-            <div class="col-lg-6">
-                <div class="card offers-card">
-                    <div class="card-header">
-                        <h3>Exclusive Student Benefits</h3>
-                        <p class="mb-0">Available at our upcoming education fair</p>
+
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="offer-image">
+                        <!-- SVG image representing overseas education fair -->
+                        <svg viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg"
+                            style="width: 100%; height: auto;">
+                            <rect width="800" height="500" fill="#e8f0fe"></rect>
+
+                            <!-- Background elements -->
+                            <circle cx="150" cy="100" r="50" fill="#c5dcfa"></circle>
+                            <circle cx="650" cy="400" r="70" fill="#c5dcfa"></circle>
+                            <circle cx="700" cy="150" r="40" fill="#c5dcfa"></circle>
+
+                            <!-- World map outline -->
+                            <path d="M200,250 C250,200 350,220 400,250 C450,280 550,260 600,300" stroke="#1a3c8a"
+                                stroke-width="3" fill="none"></path>
+
+                            <!-- Buildings representing universities -->
+                            <rect x="150" y="320" width="80" height="100" fill="#1a3c8a"></rect>
+                            <rect x="160" y="340" width="15" height="25" fill="#ffffff"></rect>
+                            <rect x="190" y="340" width="15" height="25" fill="#ffffff"></rect>
+                            <rect x="160" y="380" width="15" height="25" fill="#ffffff"></rect>
+                            <rect x="190" y="380" width="15" height="25" fill="#ffffff"></rect>
+                            <polygon points="150,320 190,290 230,320" fill="#ff5722"></polygon>
+
+                            <rect x="350" y="300" width="100" height="120" fill="#1a3c8a"></rect>
+                            <rect x="365" y="320" width="20" height="30" fill="#ffffff"></rect>
+                            <rect x="415" y="320" width="20" height="30" fill="#ffffff"></rect>
+                            <rect x="365" y="370" width="20" height="30" fill="#ffffff"></rect>
+                            <rect x="415" y="370" width="20" height="30" fill="#ffffff"></rect>
+                            <polygon points="350,300 400,260 450,300" fill="#ff5722"></polygon>
+
+                            <rect x="550" y="330" width="90" height="90" fill="#1a3c8a"></rect>
+                            <rect x="565" y="350" width="18" height="25" fill="#ffffff"></rect>
+                            <rect x="607" y="350" width="18" height="25" fill="#ffffff"></rect>
+                            <rect x="565" y="385" width="18" height="25" fill="#ffffff"></rect>
+                            <rect x="607" y="385" width="18" height="25" fill="#ffffff"></rect>
+                            <polygon points="550,330 595,300 640,330" fill="#ff5722"></polygon>
+
+                            <!-- Students -->
+                            <circle cx="250" cy="250" r="20" fill="#ff5722"></circle>
+                            <rect x="245" y="270" width="10" height="30" fill="#ff5722"></rect>
+                            <rect x="235" y="280" width="30" height="10" fill="#ff5722"></rect>
+                            <rect x="240" y="300" width="5" height="20" fill="#ff5722"></rect>
+                            <rect x="255" y="300" width="5" height="20" fill="#ff5722"></rect>
+
+                            <circle cx="500" cy="230" r="20" fill="#ff5722"></circle>
+                            <rect x="495" y="250" width="10" height="30" fill="#ff5722"></rect>
+                            <rect x="485" y="260" width="30" height="10" fill="#ff5722"></rect>
+                            <rect x="490" y="280" width="5" height="20" fill="#ff5722"></rect>
+                            <rect x="505" y="280" width="5" height="20" fill="#ff5722"></rect>
+
+                            <!-- Airplane -->
+                            <path d="M100,150 L150,130 L160,140 L120,160 Z" fill="#1a3c8a"></path>
+                            <path d="M150,130 L180,120 L185,125 L160,140 Z" fill="#1a3c8a"></path>
+                            <path d="M130,145 L140,170 L150,165 L140,140 Z" fill="#1a3c8a"></path>
+
+                            <!-- Text -->
+                            <text x="400" y="180" font-family="Arial" font-size="24" font-weight="bold"
+                                text-anchor="middle" fill="#1a3c8a">OVERSEAS EDUCATION FAIR</text>
+                        </svg>
                     </div>
-                    
-                    <div class="card-body">
-                        <span class="highlight-badge">Limited Time Offer</span>
-                        
-                        <ul class="offers-list">
-                            <li>Application fee waiver for multiple universities (save up to $300)</li>
-                            <li>On-the-spot admission decisions from university representatives</li>
-                            <li>Exclusive scholarships only available to education fair attendees</li>
-                            <li>Free one-on-one visa counseling with immigration experts</li>
-                            <li>Personalized career guidance and course selection assistance</li>
-                            <li>Free IELTS/TOEFL mock tests and preparation materials</li>
-                            <li>Accommodation and travel guidance for your study destination</li>
-                            <li>Financial planning assistance for overseas education</li>
-                            <li>Meet alumni from top international universities</li>
-                            <li>Special discounts on test preparation courses</li>
-                        </ul>
-                        
-                        <div class="event-details">
-                            <h4>Education Fair Details</h4>
-                            <div class="event-info">
-                                <i class="fas fa-calendar-alt"></i>
-                                <span>Date: September 15-16, 2023</span>
-                            </div>
-                            <div class="event-info">
-                                <i class="fas fa-clock"></i>
-                                <span>Time: 10:00 AM - 6:00 PM</span>
-                            </div>
-                            <div class="event-info">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <span>Venue: Hotel Centre Point, Nagpur</span>
-                            </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="card offers-card">
+                        <div class="card-header">
+                            <h3>Exclusive Student Benefits</h3>
+                            <p class="mb-0">Available at our upcoming education fair</p>
                         </div>
-                        
-                        <div class="text-center">
-                            <a href="#register" class="btn-register">Register Now</a>
+
+                        <div class="card-body">
+                            <span class="highlight-badge">Limited Time Offer</span>
+
+                            <ul class="offers-list">
+                                <li>Application fee waiver for multiple universities (save up to $300)</li>
+                                <li>On-the-spot admission decisions from university representatives</li>
+                                <li>Exclusive scholarships only available to education fair attendees</li>
+                                <li>Free one-on-one visa counseling with immigration experts</li>
+                                <li>Personalized career guidance and course selection assistance</li>
+                                <li>Free IELTS/TOEFL mock tests and preparation materials</li>
+                                <li>Accommodation and travel guidance for your study destination</li>
+                                <li>Financial planning assistance for overseas education</li>
+                                <li>Meet alumni from top international universities</li>
+                                <li>Special discounts on test preparation courses</li>
+                            </ul>
+
+                           
+
+                            <div class="text-center">
+                                <a href="#register" class="register-btn">Register Now</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- Testimonials & Scholarships -->
-    <section class="py-5" id="testimonials">
-        <div class="container py-5">
-            <h2 class="section-title">Top Scholarships Received by Students</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0">
-                                    <div class="avatar bg-primary text-white d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-user"></i>
-                                    </div>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h5 class="mb-0">Sarah Johnson</h5>
-                                    <small class="text-muted">University of Cambridge</small>
-                                </div>
-                            </div>
-                            <p class="card-text">Received a full-tuition scholarship worth $45,000 for the Masters in International Business program.</p>
-                        </div>
+    <section class="scholarships-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Top Scholarships Received by Students</h2>
+                <p>Our students have received prestigious scholarships from top universities around the world, enabling
+                    them to pursue their academic dreams without financial constraints.</p>
+            </div>
+
+            <div class="scholarship-slider">
+                <div id="scholarshipCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#scholarshipCarousel" data-bs-slide-to="0" class="active"
+                            aria-label="Slide 1" aria-current="true"></button>
+                        <button type="button" data-bs-target="#scholarshipCarousel" data-bs-slide-to="1"
+                            aria-label="Slide 2" class=""></button>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0">
-                                    <div class="avatar bg-primary text-white d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-user"></i>
+
+                    <div class="carousel-inner">
+                        <!-- First Slide -->
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <!-- Scholarship Card 1 -->
+                                <div class="col-md-4">
+                                    <div class="scholarship-card">
+                                        <div class="student-profile">
+                                            <div class="student-image">RP</div>
+                                            <h3 class="student-name">Rahul Patel</h3>
+                                            <div class="student-place">
+                                                <i class="fas fa-map-marker-alt"></i> Nagpur, Maharashtra
+                                            </div>
+                                        </div>
+                                        <div class="scholarship-info">
+                                            <div class="scholarship-details">
+                                                <p>Full tuition scholarship for Master's in Computer Science program at
+                                                    University of Toronto</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h5 class="mb-0">Raj Patel</h5>
-                                    <small class="text-muted">Stanford University</small>
+
+                                <!-- Scholarship Card 2 -->
+                                <div class="col-md-4">
+                                    <div class="scholarship-card">
+                                        <div class="student-profile">
+                                            <div class="student-image">AP</div>
+                                            <h3 class="student-name">Ananya Puri</h3>
+                                            <div class="student-place">
+                                                <i class="fas fa-map-marker-alt"></i> Mumbai, Maharashtra
+                                            </div>
+                                        </div>
+                                        <div class="scholarship-info">
+                                            <div class="scholarship-details">
+                                                <p>International Excellence Scholarship for MBA program at University of
+                                                    Melbourne</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scholarship Card 3 -->
+                                <div class="col-md-4">
+                                    <div class="scholarship-card">
+                                        <div class="student-profile">
+                                            <div class="student-image">VK</div>
+                                            <h3 class="student-name">Vikram Kumar</h3>
+                                            <div class="student-place">
+                                                <i class="fas fa-map-marker-alt"></i> Delhi, NCR
+                                            </div>
+                                        </div>
+                                        <div class="scholarship-info">
+                                            <div class="scholarship-details">
+                                                <p>President's Scholarship for Engineering program at Imperial College
+                                                    London</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <p class="card-text">Awarded the Global Leaders Scholarship of $60,000 for the Computer Science program.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <div class="d-flex align-items-center mb-3">
-                                <div class="flex-shrink-0">
-                                    <div class="avatar bg-primary text-white d-flex align-items-center justify-content-center">
-                                        <i class="fas fa-user"></i>
+
+                        <!-- Second Slide -->
+                        <div class="carousel-item">
+                            <div class="row">
+                                <!-- Scholarship Card 4 -->
+                                <div class="col-md-4">
+                                    <div class="scholarship-card">
+                                        <div class="student-profile">
+                                            <div class="student-image">NS</div>
+                                            <h3 class="student-name">Neha Sharma</h3>
+                                            <div class="student-place">
+                                                <i class="fas fa-map-marker-alt"></i> Pune, Maharashtra
+                                            </div>
+                                        </div>
+                                        <div class="scholarship-info">
+                                            <div class="scholarship-details">
+                                                <p>Global Leaders Scholarship for Business Analytics program at New York
+                                                    University</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h5 class="mb-0">Maria Rodriguez</h5>
-                                    <small class="text-muted">University of Toronto</small>
+
+                                <!-- Scholarship Card 5 -->
+                                <div class="col-md-4">
+                                    <div class="scholarship-card">
+                                        <div class="student-profile">
+                                            <div class="student-image">AK</div>
+                                            <h3 class="student-name">Arjun Kapoor</h3>
+                                            <div class="student-place">
+                                                <i class="fas fa-map-marker-alt"></i> Bangalore, Karnataka
+                                            </div>
+                                        </div>
+                                        <div class="scholarship-info">
+                                            <div class="scholarship-details">
+                                                <p>ASEAN Undergraduate Scholarship for Computer Engineering at National
+                                                    University of Singapore</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Scholarship Card 6 -->
+                                <div class="col-md-4">
+                                    <div class="scholarship-card">
+                                        <div class="student-profile">
+                                            <div class="student-image">SM</div>
+                                            <h3 class="student-name">Sanjay Mehta</h3>
+                                            <div class="student-place">
+                                                <i class="fas fa-map-marker-alt"></i> Hyderabad, Telangana
+                                            </div>
+                                        </div>
+                                        <div class="scholarship-info">
+                                            <div class="scholarship-details">
+                                                <p>DAAD Scholarship for Mechanical Engineering program at Technical
+                                                    University of Munich</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <p class="card-text">Received the International Excellence Award covering 75% of tuition for her Medical Sciences degree.</p>
                         </div>
                     </div>
                 </div>
@@ -1671,11 +2336,14 @@
                 <div class="col-lg-6 mb-4 mb-lg-0">
                     <h2 class="section-title">Why choose FES for Your Study Abroad Journey?</h2>
                     <p>
-                        FES sets apart in the unwavering commitment to compliance-focused processes and our reputation as trusted leaders in immigration services worldwide. We combine smart technology with a seamless user experience to ensure efficiency at every step. With a rapidly expanding network across India and strategic global partnerships with leading institutions, we continue to strengthen our presence across international landscapes, offering unparalleled support to students and professionals alike.
+                        FES sets apart in the unwavering commitment to compliance-focused processes and our reputation
+                        as trusted leaders in immigration services worldwide. We combine smart technology with a
+                        seamless user experience to ensure efficiency at every step. With a rapidly expanding network
+                        across India and strategic global partnerships with leading institutions, we continue to
+                        strengthen our presence across international landscapes, offering unparalleled support to
+                        students and professionals alike.
                     </p>
-                    <div class="mt-4">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#registerModal">Start Your Journey Today</button>
-                    </div>
+                   
                 </div>
                 <div class="col-lg-6">
                     <div class="row g-3">
@@ -1722,13 +2390,300 @@
     </section>
 
     <!-- Student Testimonials -->
-    <section class="py-5" id="student-testimonials">
-        <div class="container py-5">
-            <h2 class="section-title">Check What Our Students &amp; Delegates Say!</h2>
-            <div class="placeholder-section">
-                <i class="fas fa-quote-right fa-3x mb-3 text-primary"></i>
-                <h4>Coming Soon</h4>
-                <p>Student and delegate testimonials will be confirmed by ICR.</p>
+    <section class="testimonials-section">
+        <div class="bg-shape bg-shape-1"></div>
+        <div class="bg-shape bg-shape-2"></div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Check What Our Students &amp; Delegates Say</h2>
+                <p>Hear directly from our students and university delegates about their experiences with our services
+                </p>
+            </div>
+
+            <!-- YouTube Videos Slider -->
+            <div class="subsection-title">
+                <h3>Student Success Stories</h3>
+            </div>
+
+            <div id="videoCarousel" class="carousel slide video-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="0" class=""
+                        aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#videoCarousel" data-bs-slide-to="1" aria-label="Slide 2"
+                        class="active" aria-current="true"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <!-- First Slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Video 1 -->
+                            <div class="col-md-4">
+                                <div class="video-card">
+                                    <a href="https://www.youtube.com/watch?v=example1" target="_blank"
+                                        class="video-link">
+                                        <div class="video-thumbnail">
+                                           
+                                         <iframe width="100%" height="200" src="https://www.youtube.com/embed/c-vwfJvK3OU" title="Vaishnavi&#39;s Success Story | Fragomen Educational Services #studyabroad" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                          
+                                        </div>
+                                    </a>
+                                    <div class="video-info">
+                                        <h4 class="video-title">Vaishnavi's Success Story </h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video 2 -->
+                            <div class="col-md-4">
+                                <div class="video-card">
+                                    <a href="https://www.youtube.com/watch?v=example2" target="_blank"
+                                        class="video-link">
+                                        <div class="video-thumbnail">
+                                           
+                                            <iframe width="100%" height="200" src="https://www.youtube.com/embed/OEgp38N9f6U" title="My Journey to New Zealand | Fragomen Educational Services" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                          
+                                        </div>
+                                    </a>
+                                    <div class="video-info">
+                                        <h4 class="video-title">Liesel’s Success Story
+                                        </h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video 3 -->
+                            <div class="col-md-4">
+                                <div class="video-card">
+                                    <a href="https://www.youtube.com/watch?v=example3" target="_blank"
+                                        class="video-link">
+                                        <div class="video-thumbnail">
+                                           
+                                          <iframe width="100%" height="200" src="https://www.youtube.com/embed/rOsdQDYEL-U" title="Sai Pranavesh Success Story | Fragomen Educational Services" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                          
+                                        </div>
+                                    </a>
+                                    <div class="video-info">
+                                        <h4 class="video-title">Sai Pranavesh Success Story
+                                        </h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Slide -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <!-- Video 4 -->
+                            <div class="col-md-4">
+                                <div class="video-card">
+                                    <a href="https://www.youtube.com/watch?v=example4" target="_blank"
+                                        class="video-link">
+                                        <div class="video-thumbnail">
+                                            
+                                          <iframe width="100%" height="200" src="https://www.youtube.com/embed/1flz3GifIa0?si=6mY9fDV0b7AlDZd0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                          
+                                        </div>
+                                    </a>
+                                    <div class="video-info">
+                                        <h4 class="video-title">MBA in Australia - Ananya's Experience at Melbourne
+                                            Business School</h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video 5 -->
+                            <div class="col-md-4">
+                                <div class="video-card">
+                                    <a href="https://www.youtube.com/watch?v=example5" target="_blank"
+                                        class="video-link">
+                                        <div class="video-thumbnail">
+                                            
+                                          <iframe width="100%" height="200" src="https://www.youtube.com/embed/1flz3GifIa0?si=6mY9fDV0b7AlDZd0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                          
+                                        </div>
+                                    </a>
+                                    <div class="video-info">
+                                        <h4 class="video-title">Computer Science at NUS - Arjun's Singapore Experience
+                                        </h4>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Video 6 -->
+                            <div class="col-md-4">
+                                <div class="video-card">
+                                    <a href="https://www.youtube.com/watch?v=example6" target="_blank"
+                                        class="video-link">
+                                        <div class="video-thumbnail">
+                                           
+                                          <iframe width="100%" height="200" src="https://www.youtube.com/embed/1flz3GifIa0?si=6mY9fDV0b7AlDZd0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                                          
+                                           
+                                        </div>
+                                    </a>
+                                    <div class="video-info">
+                                        <h4 class="video-title">My DAAD Scholarship Journey - Sanjay's German Adventure
+                                        </h4>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Slider -->
+            <div class="subsection-title">
+                <h3>Student &amp; Delegate Testimonials</h3>
+            </div>
+
+            <div id="testimonialCarousel" class="carousel slide testimonial-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
+                        aria-label="Slide 1" aria-current="true"></button>
+                    <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2" class=""></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <!-- Testimonial 1 -->
+                            <div class="col-md-4">
+                                <div class="testimonial-card">
+
+                                    <div class="testimonial-quote">
+                                        The education fair was extremely helpful in guiding me through the application
+                                        process. I got to interact directly with university representatives which made a
+                                        huge difference in my decision making.
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <div class="author-image">AP</div>
+                                        <div class="author-info">
+                                            <h5>Ananya Patel</h5>
+                                            <p>MBA Student, University of Melbourne</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 2 -->
+                            <div class="col-md-4">
+                                <div class="testimonial-card">
+
+                                    <div class="testimonial-quote">
+                                        The organization of the education fair was impeccable. We were able to connect
+                                        with numerous qualified students who were genuinely interested in our programs.
+                                        Looking forward to participating again!
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <div class="author-image">JW</div>
+                                        <div class="author-info">
+                                            <h5>James Wilson</h5>
+                                            <p>Admissions Officer, University of Toronto</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 3 -->
+                            <div class="col-md-4">
+                                <div class="testimonial-card">
+
+                                    <div class="testimonial-quote">
+                                        I was confused about which country to choose for my higher studies. The
+                                        counselors at the fair provided me with detailed information about various
+                                        universities and helped me make an informed decision.
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <div class="author-image">RK</div>
+                                        <div class="author-info">
+                                            <h5>Rahul Kumar</h5>
+                                            <p>Engineering Student, Imperial College London</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Slide -->
+                    <div class="carousel-item">
+                        <div class="row">
+                            <!-- Testimonial 4 -->
+                            <div class="col-md-4">
+                                <div class="testimonial-card">
+
+                                    <div class="testimonial-quote">
+                                        The quality of students we met at the fair was exceptional. The pre-screening
+                                        process ensured that we interacted with candidates who were a good fit for our
+                                        institution. We've already admitted several students from this event.
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <div class="author-image">SL</div>
+                                        <div class="author-info">
+                                            <h5>Sarah Lee</h5>
+                                            <p>International Recruiter, NYU</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 5 -->
+                            <div class="col-md-4">
+                                <div class="testimonial-card">
+
+                                    <div class="testimonial-quote">
+                                        The visa guidance provided was invaluable. I had my visa approved in the first
+                                        attempt thanks to the detailed preparation and documentation support from the
+                                        counselors.
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <div class="author-image">SM</div>
+                                        <div class="author-info">
+                                            <h5>Sanjay Mehta</h5>
+                                            <p>Computer Science Student, TU Munich</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Testimonial 6 -->
+                            <div class="col-md-4">
+                                <div class="testimonial-card">
+
+                                    <div class="testimonial-quote">
+                                        This was our first time participating in an education fair in Nagpur, and we
+                                        were impressed by the level of organization and the quality of prospective
+                                        students we met.
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <div class="author-image">EM</div>
+                                        <div class="author-info">
+                                            <h5>Emma Miller</h5>
+                                            <p>Recruitment Manager, University of Melbourne</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1742,23 +2697,30 @@
                     <div class="accordion mt-5" id="faqAccordion">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     What is the Study Abroad Virtual Expo 2025?
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    The Study Abroad Virtual Expo 2025 is a premier online event connecting students with top international universities, leading employers, and industry professionals. From academic program exploration to selecting the destination, the expo provides valuable insights and one-on-one interactions—all from the comfort of your home.
+                                    The Study Abroad Virtual Expo 2025 is a premier online event connecting students
+                                    with top international universities, leading employers, and industry professionals.
+                                    From academic program exploration to selecting the destination, the expo provides
+                                    valuable insights and one-on-one interactions—all from the comfort of your home.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Why should I attend this expo?
                                 </button>
                             </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
                                     Attending the expo is a smart step toward shaping your global future. It offers:
                                     <ul>
@@ -1772,42 +2734,54 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     What makes this event unique?
                                 </button>
                             </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    What sets this expo apart is our focus on compliance and trusted leadership in immigration services. We offer:
+                                    What sets this expo apart is our focus on compliance and trusted leadership in
+                                    immigration services. We offer:
                                     <ul>
                                         <li>A seamless user experience powered by smart technology.</li>
                                         <li>Strategic global partnerships with leading institutions.</li>
-                                        <li>Experience in guiding students through a smooth visa and application process.</li>
+                                        <li>Experience in guiding students through a smooth visa and application
+                                            process.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                     Who can benefit from this event?
                                 </button>
                             </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Whether you're a student searching for academic programs, planning to study abroad, or exploring your next career move, this event is tailored for you. It's perfect for anyone seeking to make informed decisions about their education and professional future.
+                                    Whether you're a student searching for academic programs, planning to study abroad,
+                                    or exploring your next career move, this event is tailored for you. It's perfect for
+                                    anyone seeking to make informed decisions about their education and professional
+                                    future.
                                 </div>
                             </div>
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                     How can I participate in the event?
                                 </button>
                             </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    Participation is simple! Just register for free on our website. Once registered, you'll receive a link to access the virtual platform where you can:
+                                    Participation is simple! Just register for free on our website. Once registered,
+                                    you'll receive a link to access the virtual platform where you can:
                                     <ul>
                                         <li>Schedule one-on-one meetings with admissions officers.</li>
                                         <li>Join interactive workshops and live Q&amp;A sessions.</li>
@@ -1823,64 +2797,32 @@
     </section>
 
     <!-- Final CTA -->
-    <section class="py-5 bg-primary text-white">
+    <section class="py-5 bg-primary text-whit final-cta">
         <div class="container py-5 text-center">
-            <h2 class="mb-4">Ready to Explore Global Education Opportunities?</h2>
-            <p class="lead mb-4">Join thousands of students at the Study Abroad Virtual Expo 2025 and take the first step toward your international education journey.</p>
-            <button class="btn btn-lg btn-light" data-bs-toggle="modal" data-bs-target="#registerModal">Register Now - It's Free!</button>
+            <h2 class="mb-4">Your Study Abroad Journey Starts Here </h2>
+
+            <button class="register-btn" onclick="openRegisterModal()">Register Now for
+                Free!</button>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="py-5">
+    
         <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <h5 class="text-white mb-4">Study Abroad Virtual Expo 2025</h5>
-                    <p class="text-white-50">Your gateway to global education opportunities and international career advancement.</p>
-                    <div class="d-flex mt-4">
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-2">
-                    <h5 class="text-white mb-4">Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#about" class="text-white-50 text-decoration-none">About</a></li>
-                        <li class="mb-2"><a href="#institutions" class="text-white-50 text-decoration-none">Institutions</a></li>
-                        <li class="mb-2"><a href="#offers" class="text-white-50 text-decoration-none">Special Offers</a></li>
-                        <li class="mb-2"><a href="#faq" class="text-white-50 text-decoration-none">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h5 class="text-white mb-4">Contact Us</h5>
-                    <ul class="list-unstyled text-white-50">
-                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@studyabroadexpo.com</li>
-                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +1 (123) 456-7890</li>
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h5 class="text-white mb-4">Subscribe</h5>
-                    <p class="text-white-50">Stay updated with the latest news and offers.</p>
-                    <form>
-                        <div class="input-group mb-3">
-                            <input type="email" class="form-control" placeholder="Email Address" required="">
-                            <button class="btn btn-accent" type="submit"><i class="fas fa-paper-plane"></i></button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <hr class="mt-5 mb-4 border-secondary">
-            <div class="row">
+            
+            <div class="socialicons"><a href="https://www.linkedin.com/company/fragomeneducationalservices" target="_blank"><img class="img-fluid" src="/sites/default/files/2024-07/linkedin-svg.svg" alt="" width="30" height="30" loading="lazy"></a> <a href="https://www.facebook.com/fragomeneducationalservices" target="_blank"><img src="/sites/default/files/2024-07/facebook-svg.svg" alt="" width="30" height="46" loading="lazy"></a> <a href="https://x.com/IndiaFes" target="_blank"><img src="/sites/default/files/2024-07/X (Twitter).svg" alt="" width="28" height="28" loading="lazy"></a> <a href="https://www.instagram.com/fragomeneducationalservices" target="_blank"><img src="/sites/default/files/2024-07/Instagram.svg" alt="" width="30" height="30" loading="lazy"></a><a href="https://www.youtube.com/@fragomeneducationalservices" target="_blank"><img src="/sites/default/files/2024-07/YouTube.svg" alt="" width="40" height="40" loading="lazy"></a></div>
+            <div class="row mt-5">
                 <div class="col-md-6 text-center text-md-start">
-                    <p class="text-white-50 mb-0">© 2025 Study Abroad Virtual Expo. All rights reserved.</p>
+                    <p class="text-white mb-0">© 2025 Fragomen Immigration Services India Pvt. Ltd. and affiliates. All Rights Reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="text-white-50 mb-0">
-                        <a href="#" class="text-white-50 text-decoration-none">Privacy Policy</a> | 
-                        <a href="#" class="text-white-50 text-decoration-none">Terms of Service</a>
+                    <p class="text-white mb-0">
+                        <a href="#" class="text-white text-decoration-none">Privacy Policy</a> |
+                        <a href="#" class="text-white text-decoration-none">Privacy Policy</a> |
+                        <a href="#" class="text-white text-decoration-none">Privacy Policy</a> |
+    
+                        <a href="#" class="text-white text-decoration-none">Terms of Service</a>
                     </p>
                 </div>
             </div>
@@ -1891,21 +2833,21 @@
     <script>
         // Countdown Timer
         const countDownDate = new Date("July 26, 2025 00:00:00").getTime();
-        
-        const countdown = setInterval(function() {
+
+        const countdown = setInterval(function () {
             const now = new Date().getTime();
             const distance = countDownDate - now;
-            
+
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
             const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
             const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
+
             document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
             document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
             document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
             document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
-            
+
             if (distance < 0) {
                 clearInterval(countdown);
                 document.getElementById("days").innerHTML = "00";
@@ -1914,15 +2856,15 @@
                 document.getElementById("seconds").innerHTML = "00";
             }
         }, 1000);
-        
+
         // Smooth scrolling for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 if (targetId === '#') return;
-                
+
                 const targetElement = document.querySelector(targetId);
                 if (targetElement) {
                     window.scrollTo({
@@ -1932,55 +2874,50 @@
                 }
             });
         });
+
         
-        // Form submission
-        document.getElementById('registrationForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Here you would typically send the form data to your server
-            // For this demo, we'll just show a success message
-            
-            const modal = bootstrap.Modal.getInstance(document.getElementById('registerModal'));
-            modal.hide();
-            
-            // Create and show success alert
-            const alertDiv = document.createElement('div');
-            alertDiv.className = 'alert alert-success alert-dismissible fade show fixed-top m-3';
-            alertDiv.setAttribute('role', 'alert');
-            alertDiv.innerHTML = `
-                <strong>Registration Successful!</strong> Thank you for registering for the Study Abroad Virtual Expo 2025. We'll send you more details soon.
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            `;
-            document.body.appendChild(alertDiv);
-            
-            // Clear form
-            this.reset();
-            
-            // Remove alert after 5 seconds
-            setTimeout(() => {
-                alertDiv.remove();
-            }, 5000);
-        });
-        
+
         // Function to open registration modal when clicking on hero banner
         function openRegisterModal() {
-            const registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
-            registerModal.show();
+            // const registerModal = new bootstrap.Modal(document.getElementById('registerModal'));
+            // registerModal.show();
+
+            const zohoFormModal = new bootstrap.Modal(document.getElementById('zohoFormModal'));
+            loadZohoForm();
+            zohoFormModal.show();
+            
+            // const zohoFormContainer = document.getElementById('zohoFormContainer');
+
+            // Function to load Zoho form
+            function loadZohoForm() {
+  const container = document.getElementById('zohoFormContainer');
+  if (!container.querySelector('iframe')) {
+    const iframe = document.createElement('iframe');
+    iframe.setAttribute('aria-label', 'FES Registration Form');
+    iframe.frameBorder = "0";
+    iframe.style.cssText = 'height:500px;width:99%;border:none;';
+    //iframe.src = 'https://forms.zohopublic.in/fragomenindia/form/PANIndiaFESRegistrationForm/formperma/0lxVQ8EB5IklQPapsANfEQNVe3N4Fc45h8P_3VSd250';
+    iframe.src='https://forms.zohopublic.in/savannahj1095gm1/form/CollectDataForFest/formperma/PRAxtR_HfeZ8hvPFDWjLDfgh9t4kumVEhTy9Wf6lMTI'
+    iframe.loading = 'lazy';
+    container.appendChild(iframe);
+  }
+}
+
         }
-        
+
         // Institution filtering
         document.querySelectorAll('.country-btn').forEach(button => {
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function () {
                 // Remove active class from all buttons
                 document.querySelectorAll('.country-btn').forEach(btn => {
                     btn.classList.remove('active');
                 });
-                
+
                 // Add active class to clicked button
                 this.classList.add('active');
-                
+
                 const country = this.getAttribute('data-country');
-                
+
                 // Show all items if "all" is selected
                 if (country === 'all') {
                     document.querySelectorAll('.institution-item').forEach(item => {
@@ -1991,7 +2928,7 @@
                     document.querySelectorAll('.institution-item').forEach(item => {
                         item.style.display = 'none';
                     });
-                    
+
                     // Show only items with matching country
                     document.querySelectorAll(`.institution-item[data-country="${country}"]`).forEach(item => {
                         item.style.display = 'block';
@@ -2002,16 +2939,16 @@
         // University data by country with proper university logos
         const universitiesData = {
             usa: [
-                { 
-                    name: "Harvard University", 
+                {
+                    name: "Harvard University",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#A51C30"/>
                             <text x="50" y="50" font-family="serif" font-size="70" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">H</text>
                             <text x="50" y="75" font-family="serif" font-size="12" fill="white" text-anchor="middle">VERITAS</text>
                           </svg>`
                 },
-                { 
-                    name: "Stanford University", 
+                {
+                    name: "Stanford University",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#8C1515"/>
                             <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"/>
@@ -2019,8 +2956,8 @@
                             <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">S</text>
                           </svg>`
                 },
-                { 
-                    name: "MIT", 
+                {
+                    name: "MIT",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#A31F34"/>
                             <rect x="10" y="30" width="15" height="40" fill="white"/>
@@ -2030,24 +2967,24 @@
                             <rect x="70" y="55" width="20" height="15" fill="white"/>
                           </svg>`
                 },
-                { 
-                    name: "Yale University", 
+                {
+                    name: "Yale University",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#00356B"/>
                             <text x="50" y="60" font-family="serif" font-size="50" font-weight="bold" fill="white" text-anchor="middle">Y</text>
                             <path d="M30,75 L70,75 L70,80 L30,80 Z" fill="white"/>
                           </svg>`
                 },
-                { 
-                    name: "Princeton University", 
+                {
+                    name: "Princeton University",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#FF8F00"/>
                             <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"/>
                             <text x="50" y="60" font-family="serif" font-size="40" font-weight="bold" fill="#FF8F00" text-anchor="middle">P</text>
                           </svg>`
                 },
-                { 
-                    name: "Columbia University", 
+                {
+                    name: "Columbia University",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#B9D9EB"/>
                             <circle cx="50" cy="50" r="30" fill="white"/>
@@ -2056,32 +2993,32 @@
                 }
             ],
             uk: [
-                { 
-                    name: "University of Oxford", 
+                {
+                    name: "University of Oxford",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#002147"/>
                             <text x="50" y="40" font-family="serif" font-size="30" font-weight="bold" fill="white" text-anchor="middle">OX</text>
                             <path d="M30,50 L70,50 L70,70 L50,80 L30,70 Z" fill="white"/>
                           </svg>`
                 },
-                { 
-                    name: "University of Cambridge", 
+                {
+                    name: "University of Cambridge",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#A3C1AD"/>
                             <path d="M20,30 L80,30 L80,70 L20,70 Z" fill="white"/>
                             <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="#A3C1AD" text-anchor="middle">CAM</text>
                           </svg>`
                 },
-                { 
-                    name: "Imperial College London", 
+                {
+                    name: "Imperial College London",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#003E74"/>
                             <text x="50" y="45" font-family="serif" font-size="30" font-weight="bold" fill="white" text-anchor="middle">ICL</text>
                             <path d="M30,55 L70,55 L70,70 L30,70 Z" fill="white"/>
                           </svg>`
                 },
-                { 
-                    name: "University College London", 
+                {
+                    name: "University College London",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#E03C31"/>
                             <circle cx="50" cy="50" r="30" fill="white"/>
@@ -2090,24 +3027,24 @@
                 }
             ],
             germany: [
-                { 
-                    name: "Technical University of Munich", 
+                {
+                    name: "Technical University of Munich",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#3070B3"/>
                             <text x="50" y="45" font-family="sans-serif" font-size="25" font-weight="bold" fill="white" text-anchor="middle">TUM</text>
                             <path d="M25,55 L75,55 L75,75 L25,75 Z" fill="white"/>
                           </svg>`
                 },
-                { 
-                    name: "Ludwig Maximilian University", 
+                {
+                    name: "Ludwig Maximilian University",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#00A651"/>
                             <circle cx="50" cy="50" r="30" fill="white"/>
                             <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="#00A651" text-anchor="middle">LMU</text>
                           </svg>`
                 },
-                { 
-                    name: "Heidelberg University", 
+                {
+                    name: "Heidelberg University",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#C2093B"/>
                             <path d="M25,25 L75,25 L75,75 L25,75 Z" fill="white"/>
@@ -2116,40 +3053,40 @@
                 }
             ],
             france: [
-                { 
-                    name: "Sorbonne University", 
+                {
+                    name: "Sorbonne University",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#0F47AF"/>
                             <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"/>
                             <text x="50" y="55" font-family="serif" font-size="25" font-weight="bold" fill="#0F47AF" text-anchor="middle">SU</text>
                           </svg>`
                 },
-                { 
-                    name: "École Polytechnique", 
+                {
+                    name: "École Polytechnique",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#8C001A"/>
                             <polygon points="50,20 80,50 50,80 20,50" fill="white"/>
                             <text x="50" y="55" font-family="sans-serif" font-size="15" font-weight="bold" fill="#8C001A" text-anchor="middle">EP</text>
                           </svg>`
                 },
-                { 
-                    name: "Paris Sciences et Lettres", 
+                {
+                    name: "Paris Sciences et Lettres",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#2D2D86"/>
                             <circle cx="50" cy="50" r="30" fill="white"/>
                             <text x="50" y="55" font-family="sans-serif" font-size="20" font-weight="bold" fill="#2D2D86" text-anchor="middle">PSL</text>
                           </svg>`
                 },
-                { 
-                    name: "École Normale Supérieure", 
+                {
+                    name: "École Normale Supérieure",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#24135F"/>
                             <rect x="20" y="20" width="60" height="60" fill="white"/>
                             <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="#24135F" text-anchor="middle">ENS</text>
                           </svg>`
                 },
-                { 
-                    name: "CentraleSupélec", 
+                {
+                    name: "CentraleSupélec",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#B22234"/>
                             <path d="M25,25 L75,25 L75,75 L25,75 Z" fill="white"/>
@@ -2158,32 +3095,32 @@
                 }
             ],
             australia: [
-                { 
-                    name: "University of Melbourne", 
+                {
+                    name: "University of Melbourne",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#094183"/>
                             <path d="M20,30 L80,30 L80,70 L20,70 Z" fill="white"/>
                             <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="#094183" text-anchor="middle">UM</text>
                           </svg>`
                 },
-                { 
-                    name: "Australian National University", 
+                {
+                    name: "Australian National University",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#00467F"/>
                             <circle cx="50" cy="50" r="30" fill="white"/>
                             <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="#00467F" text-anchor="middle">ANU</text>
                           </svg>`
                 },
-                { 
-                    name: "University of Sydney", 
+                {
+                    name: "University of Sydney",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#D7153A"/>
                             <path d="M25,25 L75,25 L75,75 L25,75 Z" fill="white"/>
                             <text x="50" y="55" font-family="serif" font-size="20" font-weight="bold" fill="#D7153A" text-anchor="middle">US</text>
                           </svg>`
                 },
-                { 
-                    name: "University of Queensland", 
+                {
+                    name: "University of Queensland",
                     logo: `<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                             <rect width="100" height="100" fill="#51247A"/>
                             <path d="M20,20 L80,20 L80,80 L20,80 Z" fill="white"/>
@@ -2197,24 +3134,24 @@
         function displayUniversities(country) {
             const universities = universitiesData[country];
             const container = document.getElementById('universitiesContent');
-            
+
             if (!universities || universities.length === 0) {
                 container.innerHTML = '<div class="no-universities">No participating universities found for this country.</div>';
                 return;
             }
-            
+
             // Check if we need carousel (more than 4 universities)
             if (universities.length > 4) {
                 let carouselHTML = `
                     <div id="universitiesCarousel" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
                 `;
-                
+
                 // Create slides with 4 universities per slide
                 for (let i = 0; i < universities.length; i += 4) {
                     const isActive = i === 0 ? 'active' : '';
                     carouselHTML += `<div class="carousel-item ${isActive}"><div class="row">`;
-                    
+
                     // Add up to 4 universities in this slide
                     for (let j = i; j < i + 4 && j < universities.length; j++) {
                         carouselHTML += `
@@ -2226,10 +3163,10 @@
                             </div>
                         `;
                     }
-                    
+
                     carouselHTML += `</div></div>`;
                 }
-                
+
                 carouselHTML += `
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#universitiesCarousel" data-bs-slide="prev">
@@ -2242,12 +3179,12 @@
                         </button>
                     </div>
                 `;
-                
+
                 container.innerHTML = carouselHTML;
             } else {
                 // Display all universities without carousel
                 let universitiesHTML = '<div class="row">';
-                
+
                 universities.forEach(university => {
                     universitiesHTML += `
                         <div class="col-md-3">
@@ -2258,7 +3195,7 @@
                         </div>
                     `;
                 });
-                
+
                 universitiesHTML += '</div>';
                 container.innerHTML = universitiesHTML;
             }
@@ -2269,21 +3206,403 @@
 
         // Add click event listeners to country buttons
         document.querySelectorAll('.country-btn').forEach(button => {
-            button.addEventListener('click', function() {
+            button.addEventListener('click', function () {
                 // Remove active class from all buttons
                 document.querySelectorAll('.country-btn').forEach(btn => {
                     btn.classList.remove('active');
                 });
-                
+
                 // Add active class to clicked button
                 this.classList.add('active');
-                
+
                 // Display universities for selected country
                 const country = this.getAttribute('data-country');
                 displayUniversities(country);
             });
         });
-    </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94db643045012f6d',t:'MTc0OTU4NDk2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
 
-</body></html>
+        document.addEventListener('DOMContentLoaded', function () {
+            var myCarousel = document.getElementById('scholarshipCarousel');
+            var carousel = new bootstrap.Carousel(myCarousel, {
+                interval: 5000,
+                wrap: true
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Video Carousel
+            var videoCarousel = new bootstrap.Carousel(document.getElementById('videoCarousel'), {
+                interval: 5000,
+                wrap: true
+            });
+
+            // Initialize Testimonial Carousel
+            var testimonialCarousel = new bootstrap.Carousel(document.getElementById('testimonialCarousel'), {
+                interval: 4000,
+                wrap: true
+            });
+        });
+
+        // document.addEventListener('DOMContentLoaded', function () {
+        //     // Get the banner section and modal elements
+        //     const bannerSection = document.getElementById('bannerSection');
+        //     const zohoFormModal = new bootstrap.Modal(document.getElementById('zohoFormModal'));
+        //     const zohoFormContainer = document.getElementById('zohoFormContainer');
+
+        //     // Function to load Zoho form
+        //     function loadZohoForm() {
+        //         // Replace the loading indicator with the actual Zoho form
+        //         // You'll need to replace this with your actual Zoho form embed code
+        //         setTimeout(() => {
+        //             zohoFormContainer.innerHTML = `
+        //             <!-- Replace this with your actual Zoho form embed code -->
+        //             <iframe aria-label='FES Registration Form' frameborder="0" style="height:500px;width:99%;border:none;" src='https://forms.zohopublic.in/fragomenindia/form/PANIndiaFESRegistrationForm/formperma/0lxVQ8EB5IklQPapsANfEQNVe3N4Fc45h8P_3VSd250'></iframe>
+        //         `;
+        //         }, 1000); // Simulating loading time
+        //     }
+
+        //     // Add click event to the banner section
+        //     bannerSection.addEventListener('click', function () {
+        //        loadZohoForm();
+        //         zohoFormModal.show();
+                
+        //     });
+
+            // Reset form container when modal is hidden
+           // document.getElementById('zohoFormModal').addEventListener('hidden.bs.modal', function () {
+             //   zohoFormContainer.innerHTML = `
+                // <div class="zoho-form-loading">
+                //     <i class="fas fa-circle-notch"></i>
+                //     <p>Loading form...</p>
+                // </div>
+           // `;
+           // });
+        //});
+
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'94db643045012f6d',t:'MTc0OTU4NDk2MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+    
+
+
+    <style>
+
+.zf_lB_Dimmer_652002{ 
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: rgb(0, 0, 0);
+    opacity: 0.8;
+    z-index: 10000000;
+}
+
+.zf_lB_Container_652002{
+	position: fixed;
+	background-color: white;
+	margin: 0;
+	margin-right: 0px;
+	padding: 0;
+	height: 917px;
+	width:  70%;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%);
+	border: 7px solid none;
+	max-height: calc(100% - 60px);
+	z-index: 999999;
+	transition: height 0.5s ease;
+	outline : none;
+}
+
+p{
+margin-bottom: 10px;
+}
+
+.zf_lB_Wrapper_652002{
+	position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: 0;
+    margin-top: -180px;
+    z-index: 10000001;
+}
+
+.zf_main_id_652002{
+	height: calc(100% - 0px);
+	display: flex;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+
+.zf_lb_closeform_652002 {
+    position: absolute;
+    right: -20px;
+    background: #2f2e2e;
+    padding: 0;
+    border-radius: 50%;
+    width: 34px;
+    height: 34px;
+    top: -15px;
+    cursor: pointer;
+    border: 2px solid #d9d9d9;
+}
+.zf_lb_closeform_652002:before, .zf_lb_closeform_652002:after {
+    position: absolute;
+    left: 16px;
+    content: ' ';
+    height: 19px;
+    width: 2px;
+    top: 7px;
+    background-color: #f7f7f7;
+}
+
+.zf_lb_closeform_652002:before {
+  transform: rotate(45deg);
+}
+.zf_lb_closeform_652002:after {
+  transform: rotate(-45deg);
+} 
+
+
+
+@media screen and (min-device-width: 10px) and (max-device-width: 380px) {  
+   .zf_lB_Container_652002 {
+  width: 270px !important;
+} 
+}
+
+@media screen and (min-device-width: 360px) and (max-device-width: 480px) {  
+   .zf_lB_Container_652002 {
+  width: 350px !important;
+} 
+}
+
+@media screen and (min-device-width: 440px) and (max-device-width: 500px) {  
+   .zf_lB_Container_652002 {
+  width: 380px !important;
+} 
+}
+
+@media only screen  and (min-width:500px) and (max-width:600px)  {  
+ 	.zf_lB_Container_652002 {
+	width: 450px;
+ }
+}
+
+@media only screen  and (min-width:601px) and (max-width:700px)  {  
+ 	.zf_lB_Container_652002 {
+	width: 540px;
+ }
+}
+
+@media only screen  and (min-width:700px) and (max-width:800px)  { 
+.zf_lB_Container_652002 {
+	width: 650px;
+ }
+}
+
+@media screen and (min-device-width: 801px) and (max-device-width: 1268px) {  
+   .zf_lB_Container_652002 {
+  width: 750px !important;
+} 
+}
+
+</style>      
+
+
+
+
+
+
+<script type="text/javascript">(function() {
+	try{
+
+			if( document.readyState == "complete" ){ 
+				onloadActions_652002();
+			}  else {
+			  	window.addEventListener('load', function (){
+			  		onloadActions_652002();
+			  	}, false);
+			}
+
+			function onloadActions_652002(){
+				constructDiv_652002();
+				loadZForm_652002();
+			}
+
+			function constructDiv_652002(){
+				var iframeDiv = document.createElement("div");
+				iframeDiv.setAttribute('id','PRAxtR_HfeZ8hvPFDWjLDfgh9t4kumVEhTy9Wf6lMTI_652002');
+				iframeDiv.setAttribute('class','zf_main_id_652002');
+
+				var closeFormDiv = document.createElement("div");
+				closeFormDiv.setAttribute('id','deleteform_652002');
+				closeFormDiv.setAttribute('class','zf_lb_closeform_652002');
+				closeFormDiv.setAttribute('tabindex', 0);
+				
+
+				var containerDiv = document.createElement("div");
+				containerDiv.setAttribute('id','containerDiv_652002');
+				containerDiv.setAttribute('class','zf_lB_Container_652002 ');
+				containerDiv.appendChild(iframeDiv);
+				containerDiv.appendChild(closeFormDiv);
+				
+				var wrapperDiv = document.createElement("div");
+				wrapperDiv.setAttribute('class','zf_lB_Wrapper_652002');
+				wrapperDiv.appendChild(containerDiv);
+
+
+				var dimmerDiv = document.createElement("div");
+				dimmerDiv.setAttribute('class','zf_lB_Dimmer_652002');
+				dimmerDiv.setAttribute('elname','popup_box');
+
+				var mainDiv = document.createElement("div");
+				mainDiv.setAttribute('id','formsLightBox_652002');
+				mainDiv.style.display = "none";
+				mainDiv.appendChild(wrapperDiv);
+				mainDiv.appendChild(dimmerDiv);
+
+				document.body.appendChild(mainDiv);
+
+			}
+
+			function showZForm_652002(){
+				var iframe = document.getElementById("PRAxtR_HfeZ8hvPFDWjLDfgh9t4kumVEhTy9Wf6lMTI_652002").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					loadZForm_652002();
+					
+				} 
+				document.getElementById("formsLightBox_652002").style.display = "block"; 
+				document.body.style.overflow = "hidden";
+				setTimeout(function() {
+				    var containerDiv = document.getElementById("containerDiv_652002");
+				    containerDiv.setAttribute('tabindex', '-1');
+				    containerDiv.focus();
+				}, 100);
+			}
+
+			function deleteZForm_652002() {
+				var divCont = document.getElementById("formsLightBox_652002");
+				divCont.style.display="none";
+				document.body.style.overflow = "";
+
+				var iframe = document.getElementById("PRAxtR_HfeZ8hvPFDWjLDfgh9t4kumVEhTy9Wf6lMTI_652002").getElementsByTagName("iframe")[0];
+				iframe.remove();
+			}
+
+			function loadZForm_652002() {
+				var iframe = document.getElementById("PRAxtR_HfeZ8hvPFDWjLDfgh9t4kumVEhTy9Wf6lMTI_652002").getElementsByTagName("iframe")[0];
+				if(iframe == undefined ||iframe.length == 0){
+					var f = document.createElement("iframe");
+					//f.src = getsrcurlZForm_652002('https://forms.zohopublic.in/savannahj1095gm1/form/CollectDataForFest/formperma/PRAxtR_HfeZ8hvPFDWjLDfgh9t4kumVEhTy9Wf6lMTI?zf_rszfm=1&utm_medium=Expo');
+				    f.src = getsrcurlZForm_652002('https://forms.zohopublic.in/fragomenindia/form/PANIndiaFESRegistrationForm/formperma/0lxVQ8EB5IklQPapsANfEQNVe3N4Fc45h8P_3VSd250?utm_source=Event&utm_medium=Expo&utm_content=Global%20Virtual%20Education%20Expo%20-%2026_Jul_25')
+					f.style.border="none";
+					f.style.minWidth="100%";
+					f.style.overflow="hidden";
+					var d = document.getElementById("PRAxtR_HfeZ8hvPFDWjLDfgh9t4kumVEhTy9Wf6lMTI_652002");
+					d.appendChild(f);
+
+					var deleteForm = document.getElementById("deleteform_652002");
+					deleteForm.onclick =  deleteZForm_652002;
+					deleteForm.addEventListener("keydown", function (event) {
+						if (event.key === "Enter" || event.keyCode === 13 || event.key === " " || event.keyCode === 32) {
+							event.preventDefault();
+							deleteZForm_652002();
+						}
+					});
+
+					
+
+					window.addEventListener('message', function (){
+						var evntData = event.data;
+						if( evntData && evntData.constructor == String ){
+							var zf_ifrm_data = evntData.split("|");
+							if ( zf_ifrm_data.length == 2 || zf_ifrm_data.length == 3 ) {
+								var zf_perma = zf_ifrm_data[0];
+								var zf_ifrm_ht_nw = ( parseInt(zf_ifrm_data[1], 10) + 15 ) + "px";
+								var iframe = document.getElementById("PRAxtR_HfeZ8hvPFDWjLDfgh9t4kumVEhTy9Wf6lMTI_652002").getElementsByTagName("iframe")[0];
+								if ( (iframe.src).indexOf('formperma') > 0 && (iframe.src).indexOf(zf_perma) > 0 ) {
+									var prevIframeHeight = iframe.style.height;
+
+									var zf_tout = false;
+									if( zf_ifrm_data.length == 3 ) {
+									    iframe.scrollIntoView();
+									    zf_tout = true;
+									}
+
+									if ( prevIframeHeight != zf_ifrm_ht_nw ) {
+										if( zf_tout ) {
+											setTimeout(function(){
+										        iframe.style.minHeight = zf_ifrm_ht_nw;
+												var containerDiv = document.getElementById("containerDiv_652002");
+												containerDiv.style.height=zf_ifrm_ht_nw;
+										    },500);
+										} else {
+										    iframe.style.minHeight = zf_ifrm_ht_nw;
+											var containerDiv = document.getElementById("containerDiv_652002");
+											containerDiv.style.height=zf_ifrm_ht_nw;
+										}
+									}
+								}
+							}
+						}
+
+					}, false);
+				}
+			}
+
+			
+
+			function getsrcurlZForm_652002(zf_src) {
+				try {
+					
+					if ( typeof ZFAdvLead !== "undefined" && typeof zfutm_zfAdvLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFAdvLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFAdvLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfAdvLead.zfautm_gC_enc( ZFAdvLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+
+					if ( typeof ZFLead !== "undefined" && typeof zfutm_zfLead !== "undefined" ) {
+						for( var prmIdx = 0 ; prmIdx < ZFLead.utmPNameArr.length ; prmIdx ++ ) {
+				        	var utmPm = ZFLead.utmPNameArr[ prmIdx ];
+				        	var utmVal = zfutm_zfLead.zfutm_gC_enc( ZFLead.utmPNameArr[ prmIdx ] );
+					        if ( typeof utmVal !== "undefined" ) {
+					          if ( utmVal != "" ){
+					            if(zf_src.indexOf('?') > 0){
+					              zf_src = zf_src+'&'+utmPm+'='+utmVal;//No I18N
+					            }else{
+					              zf_src = zf_src+'?'+utmPm+'='+utmVal;//No I18N
+					            }
+					          }
+					        }
+				      	}
+					}
+				}catch(e){}
+				return zf_src;
+			}
+			var buttonElem = document.getElementById("zf_button_652002");
+            var bannerElem = document.getElementById("hero")
+			
+			buttonElem.addEventListener("click", showZForm_652002);
+            bannerElem.addEventListener("click", showZForm_652002);
+		
+			
+	}catch(e){}
+})();
+</script>		
+    
+
+</body>
+
+</html>
